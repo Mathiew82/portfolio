@@ -5,28 +5,39 @@ export const store = createStore({
   // ------------------------------
   state () {
     return {
-      demo: []
+      repos: []
     }
   },
   // Actions
   // ------------------------------
   actions: {
-    actionDemo ({ commit }) {
-      //
+    async initRepos ({ commit }, username) {
+      return new Promise((resolve, reject) => {
+        fetch(`https://api.github.com/users/${username}/repos`)
+          .then(response => {
+            response.json().then(res => {
+              commit('SET_REPOS', res)
+              resolve()
+            })
+          })
+          .catch(error => {
+            reject(error)
+          })
+      })
     }
   },
   // Mutations
   // ------------------------------
   mutations: {
-    MUTATION_DEMO (state, demo) {
-      state.demo = demo
+    SET_REPOS (state, repos) {
+      state.repos = repos
     }
   },
   // Getters
   // ------------------------------
   getters: {
-    getDemo (state) {
-      return state.demo
+    getRepos (state) {
+      return state.repos.filter(i => !i.fork)
     }
   },
   // Plugins
