@@ -38,12 +38,15 @@ h4 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
   margin: 75px 0;
+  font-style: italic;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 a {
@@ -87,28 +90,47 @@ ul {
     justify-content: flex-start;
     align-items: center;
 
-    li > a {
-      font-size: 18px;
-      font-weight: 600;
-      margin-right: var(--default-space);
-      padding-bottom: 5px;
-      position: relative;
+    li {
+      > a {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: var(--default-space);
+        padding: 14px 24px 16px;
+        position: relative;
 
-      &:after {
-        width: 0%;
-        height: 3px;
-        background-color: var(--black-color);
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: width var(--min-time-transition);
+        &:after {
+          width: 0%;
+          height: 3px;
+          background-color: var(--black-color);
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width var(--min-time-transition);
+        }
+
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+        }
       }
 
-      &:hover {
-        &:after {
-          width: 100%;
+      &:last-of-type > a {
+        background-color: var(--black-color);
+        border-radius: 5px;
+        color: var(--white-color);
+        margin-left: 20px;
+        transition: background-color var(--extra-time-transition);
+
+        &:hover {
+          background-color: var(--violet-color);
+          transition: background-color ease .01s;
+
+          &:after {
+            width: 0%;
+          }
         }
       }
     }
@@ -116,18 +138,33 @@ ul {
 }
 
 .repos {
-  margin-bottom: 75px;
-
-  > li {
+  .repos__item {
     width: 100%;
     min-height: 110px;
     border: 2px solid var(--black-color);
     border-radius: 8px;
-    margin-bottom: var(--default-space);
     padding: var(--default-space);
 
-    > .repos_description {
+    > .repos-title {
+      font-weight: 600;
+    }
+
+    > .repos-description {
       margin-bottom: var(--default-space);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    > .repos-language {
+      > .repos-language__circle {
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+      }
     }
   }
 }
@@ -136,13 +173,13 @@ ul {
   margin-top: 7px;
 
   > li {
-    background-color: var(--black-color);
     border-radius: 8px;
     color: var(--white-color);
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0 var(--half-space) var(--half-space) 0;
     padding: 14px 24px 16px;
+    text-shadow: 2px 2px 0 rgba(black, .6);
   }
 }

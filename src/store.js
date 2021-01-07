@@ -1,11 +1,99 @@
 import { createStore, createLogger } from 'vuex'
+import dataFaker from './dataFaker'
 
 export const store = createStore({
   // State
   // ------------------------------
   state () {
     return {
-      repos: []
+      repos: [],
+      colors: [
+        '--green-color',
+        '--blue-color',
+        '--violet-color',
+        '--light-violet-color',
+        '--meat-color',
+        '--red-color',
+        '--yellow-color'
+      ],
+      skills: [
+        {
+          name: 'HTML',
+          color: '--red-color'
+        },
+        {
+          name: 'CSS',
+          color: '--blue-color'
+        },
+        {
+          name: 'SASS',
+          color: '--light-violet-color'
+        },
+        {
+          name: 'Responsive Design',
+          color: '--red-color'
+        },
+        {
+          name: 'JavaScript',
+          color: '--yellow-color'
+        },
+        {
+          name: 'TypeScript',
+          color: '--violet-color'
+        },
+        {
+          name: 'Vue.js',
+          color: '--green-color'
+        },
+        {
+          name: 'Node.js',
+          color: '--green-color'
+        },
+        {
+          name: 'Element.io',
+          color: '--blue-color'
+        },
+        {
+          name: 'Quasar',
+          color: '--violet-color'
+        },
+        {
+          name: 'Vuetify',
+          color: '--blue-color'
+        },
+        {
+          name: 'Bootstrap',
+          color: '--violet-color'
+        },
+        {
+          name: 'Bulma',
+          color: '--green-color'
+        },
+        {
+          name: 'POO',
+          color: '--violet-color'
+        },
+        {
+          name: 'Ajax',
+          color: '--blue-color'
+        },
+        {
+          name: 'PHP',
+          color: '--violet-color'
+        },
+        {
+          name: 'MongoDB',
+          color: '--green-color'
+        },
+        {
+          name: 'MySQL',
+          color: '--blue-color'
+        },
+        {
+          name: 'Git',
+          color: '--red-color'
+        }
+      ]
     }
   },
   // Actions
@@ -13,16 +101,18 @@ export const store = createStore({
   actions: {
     async initRepos ({ commit }, username) {
       return new Promise((resolve, reject) => {
-        fetch(`https://api.github.com/users/${username}/repos`)
-          .then(response => {
-            response.json().then(res => {
-              commit('SET_REPOS', res)
-              resolve()
-            })
-          })
-          .catch(error => {
-            reject(error)
-          })
+        commit('SET_REPOS', dataFaker)
+        resolve()
+        // fetch(`https://api.github.com/users/${username}/repos?sort=updated&direction=asc`)
+        //   .then(response => {
+        //     response.json().then(res => {
+        //       commit('SET_REPOS', res)
+        //       resolve()
+        //     })
+        //   })
+        //   .catch(error => {
+        //     reject(error)
+        //   })
       })
     }
   },
@@ -37,7 +127,13 @@ export const store = createStore({
   // ------------------------------
   getters: {
     getRepos (state) {
-      return state.repos.filter(i => !i.fork).splice(2)
+      return state.repos.filter(i => !i.fork && i.id !== 237088223)
+    },
+    getColors (state) {
+      return state.colors
+    },
+    getSkills (state) {
+      return state.skills
     }
   },
   // Plugins

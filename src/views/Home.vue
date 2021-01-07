@@ -1,45 +1,44 @@
 <template>
-  <h1 class="tac">Bienvenid@ a mi Portfolio</h1>
+  <h1 class="tac">Bienvenid@ a mi Portfolio!!</h1>
 
   <h2>Repositorios en Github</h2>
-  <ul
-    v-if="getRepos"
-    class="repos">
-    <li v-for="repo in getRepos" :key="repo.id">
-      <a :href="repo.html_url" target="_blank">
-        {{ repo.name }}
-      </a>
-      <div class="repos_description">{{ repo.description }}</div>
-      <div class="repos_language">{{ repo.language }} {{ repo.stargazers_count }}</div>
-    </li>
-  </ul>
+  <div class="row repos m-negative-row">
+    <div
+      v-for="repo in getRepos"
+      :key="repo.id"
+      class="col xs-12 sm-6 md-4 lg-4">
+      <div class="repos__item">
+        <a
+          :href="repo.html_url"
+          target="_blank"
+          class="repos-title">
+          <i class="icon icon-folder-open-empty" /> {{ repo.name }}
+        </a>
+        <div class="repos-description">{{ repo.description }}</div>
+        <div class="repos-language">
+          <span class="repos-language__circle" :style="`background: var(${technologyColors[repo.language]})`"></span> {{ repo.language }}
+          <i class="icon icon-star-empty" />{{ repo.stargazers_count }}
+          <span v-if="repo.forks">
+            <i class="icon icon-fork" />{{ repo.forks }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>Mis Skills</h2>
+  <h2 class="mt75">Mis Skills</h2>
   <ul class="skills">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>SASS</li>
-    <li>Responsive Design</li>
-    <li>JavaScript</li>
-    <li>TypeScript</li>
-    <li>Vue.js</li>
-    <li>Node.js</li>
-    <li>MongoDB</li>
-    <li>Element.io</li>
-    <li>Quasar</li>
-    <li>Vuetify</li>
-    <li>Bootstrap</li>
-    <li>Bulma</li>
-    <li>Ajax</li>
-    <li>POO</li>
-    <li>PHP</li>
-    <li>MySQL</li>
-    <li>Git</li>
+    <li
+      v-for="skill in getSkills"
+      :key="skill"
+      :style="`background: var(${skill.color})`">
+      {{ skill.name }}
+    </li>
   </ul>
 </template>
 
 <script>
-import { onBeforeMount, computed } from 'vue'
+import { onBeforeMount, computed, reactive } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -48,6 +47,15 @@ export default {
     // Store
     // ------------------------------
     const store = useStore()
+
+    // Properties
+    // ------------------------------
+    const technologyColors = reactive({
+      CSS: '--violet-color',
+      HTML: '--red-color',
+      JavaScript: '--yellow-color',
+      Vue: '--green-color'
+    })
 
     // Life Cycle
     // ------------------------------
@@ -58,6 +66,8 @@ export default {
     // Computed
     // ------------------------------
     const getRepos = computed(() => store.getters.getRepos)
+    const getColors = computed(() => store.getters.getColors)
+    const getSkills = computed(() => store.getters.getSkills)
 
     // Methods
     // ------------------------------
@@ -68,7 +78,10 @@ export default {
     // Return
     // ------------------------------
     return {
-      getRepos
+      technologyColors,
+      getRepos,
+      getColors,
+      getSkills
     }
   }
 }

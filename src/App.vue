@@ -3,6 +3,11 @@
     <ul>
       <li>
         <a href="#skills">
+          Repositorios
+        </a>
+      </li>
+      <li>
+        <a href="#skills">
           Skills
         </a>
       </li>
@@ -14,16 +19,6 @@
       <li>
         <a href="#projects">
           Trabajos
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          Linkedin
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          Github
         </a>
       </li>
       <li>
