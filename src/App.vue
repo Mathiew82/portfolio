@@ -1,5 +1,8 @@
 <template>
   <nav class="nav-menu">
+    <img
+      src="/mi-logo.png"
+      class="logo" />
     <ul>
       <li>
         <a href="#skills">
@@ -18,7 +21,7 @@
       </li>
       <li>
         <a href="#projects">
-          Trabajos
+          Proyectos
         </a>
       </li>
       <li>
@@ -29,6 +32,19 @@
     </ul>
   </nav>
   <router-view />
+  <footer>
+    <span>
+      Mi nombre es Alberto Mateo y soy desarrollador Front-End de aplicaciones web.
+    </span>
+    <span>
+      <a href="#" data-title="Linkedin">
+        <i class="icon icon-linkedin-squared" />
+      </a>
+      <a href="#" data-title="Github">
+        <i class="icon icon-github-squared" />
+      </a>
+    </span>
+  </footer>
 </template>
 
 <script>

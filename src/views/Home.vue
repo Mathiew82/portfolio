@@ -26,13 +26,23 @@
     </div>
   </div>
 
-  <h2 class="mt75">Mis Skills</h2>
+  <h2 class="mt75">Skills</h2>
   <ul class="skills">
     <li
       v-for="skill in getSkills"
       :key="skill"
       :style="`background: var(${skill.color})`">
       {{ skill.name }}
+    </li>
+  </ul>
+
+  <h2 class="mt75">Experiencia</h2>
+
+  <h2 class="mt75">Proyectos</h2>
+  <ul class="projects">
+    <li>
+      <a href="#">Compress Images JS</a>
+      <br>Comprime imágenes y está desarrollado con JavaScript
     </li>
   </ul>
 </template>
