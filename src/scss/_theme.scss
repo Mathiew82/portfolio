@@ -24,8 +24,12 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 20px;
   padding: var(--default-space);
+
+  @media (max-width: 768px) {
+    padding: var(--half-space);
+  }
 }
 
 h1,
@@ -39,16 +43,24 @@ h4 {
 
 h1 {
   color: var(--blue-color);
-  font-size: 70px;
+  font-size: 60px;
   margin: 75px 0;
   font-style: italic;
-  text-shadow: 4px 4px 0 rgba(black, .8);
+  text-shadow: 2px 2px 0 rgba(black, .6);
   text-transform: uppercase;
   transform: rotate(-3deg);
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+  }
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 42px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 }
 
 a {
@@ -139,6 +151,10 @@ ul {
         }
       }
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -151,12 +167,17 @@ ul {
     padding: var(--default-space);
 
     > .repos-title {
-      font-size: 18px;
+      display: block;
+      font-size: 22px;
       font-weight: 600;
     }
 
     > .repos-description {
       margin-bottom: var(--default-space);
+    }
+
+    > .repos-title,
+    > .repos-description {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
