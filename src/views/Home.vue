@@ -1,18 +1,18 @@
 <template>
-  <h1>Bienvenido a mi Portfolio</h1>
+  <h1 class="tac">Bienvenid@ a mi Portfolio</h1>
 
-  <h2>Repositorios Github</h2>
-  <div
+  <h2>Repositorios en Github</h2>
+  <ul
     v-if="getRepos"
     class="repos">
-    <ul>
-      <li v-for="repo in getRepos" :key="repo.id">
-        <a :href="repo.html_url" target="_blank">
-          {{ repo.name }}
-        </a>
-      </li>
-    </ul>
-  </div>
+    <li v-for="repo in getRepos" :key="repo.id">
+      <a :href="repo.html_url" target="_blank">
+        {{ repo.name }}
+      </a>
+      <div class="repos_description">{{ repo.description }}</div>
+      <div class="repos_language">{{ repo.language }} {{ repo.stargazers_count }}</div>
+    </li>
+  </ul>
 
   <h2>Mis Skills</h2>
   <ul class="skills">

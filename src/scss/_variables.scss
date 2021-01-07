@@ -1,11 +1,9 @@
 :root {
   // Colors
-  --primary-color: #064;
-  --secondary-color: #286;
   --white-color: white;
   --black-color: black;
-  --bg-color: #ddd;
-  --text-color: #222;
+  --bg-color: white;
+  --text-color: #282828;
 
   // Transitions
   --min-time-transition: .2s;
@@ -16,4 +14,5 @@
   --default-space: 20px;
   --half-space: 10px;
   --mid-half-space: 5px;
+  --double-space: 40px;
 }

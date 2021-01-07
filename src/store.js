@@ -37,7 +37,7 @@ export const store = createStore({
   // ------------------------------
   getters: {
     getRepos (state) {
-      return state.repos.filter(i => !i.fork)
+      return state.repos.filter(i => !i.fork).splice(2)
     }
   },
   // Plugins
