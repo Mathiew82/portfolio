@@ -37,10 +37,16 @@
       Mi nombre es Alberto Mateo y soy desarrollador Front-End de aplicaciones web. Gracias por visitar mi sitio! :)
     </span>
     <span>
-      <a href="#" data-title="Linkedin">
+      <a
+        href="#"
+        data-title="Linkedin"
+        target="_blank">
         <i class="icon icon-linkedin-squared" />
       </a>
-      <a href="#" data-title="Github">
+      <a
+        href="#"
+        data-title="Github"
+        target="_blank">
         <i class="icon icon-github-squared" />
       </a>
     </span>

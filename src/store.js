@@ -71,11 +71,11 @@ export const store = createStore({
         },
         {
           name: 'POO',
-          color: '--violet-color'
+          color: '--red-color'
         },
         {
           name: 'Ajax',
-          color: '--blue-color'
+          color: '--yellow-color'
         },
         {
           name: 'PHP',
@@ -88,6 +88,10 @@ export const store = createStore({
         {
           name: 'MySQL',
           color: '--blue-color'
+        },
+        {
+          name: 'Redux',
+          color: '--violet-color'
         },
         {
           name: 'Git',

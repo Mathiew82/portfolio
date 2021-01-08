@@ -92,8 +92,7 @@
         oct. 2016 - nov. 2017
       </div>
       <div class="experience__description">
-        Participar en proyectos junto al equipo de desarrolladores, tanto en Back-end, como en Front-end.
-        <p>Tecnologías utilizadas: HTML5, CSS3, SASS, Bootstrap, Foundation, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, CodeIgniter, MySQL, y control de versiones con GIT (SourceTree).</p>
+        Tecnologías utilizadas: HTML5, CSS3, SASS, Bootstrap, Foundation, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, CodeIgniter, MySQL, y GIT.
       </div>
     </span>
   </div>
@@ -117,7 +116,11 @@
   <h2 class="mt75">Proyectos</h2>
   <ul class="projects">
     <li>
-      <a href="#">Compress Images JS</a>
+      <a
+        href="https://compress-images-js.com/"
+        target="_blank">
+        Compress Images JS
+      </a>
       <br>Comprime imágenes y está desarrollado con JavaScript
     </li>
   </ul>

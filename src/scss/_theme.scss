@@ -38,7 +38,7 @@ h3,
 h4 {
   color: var(--black-color);
   letter-spacing: -2px;
-  margin-bottom: var(--half-space);
+  margin-bottom: var(--default-space);
 }
 
 h1 {
@@ -46,9 +46,9 @@ h1 {
   font-size: 60px;
   margin: 75px 0;
   font-style: italic;
-  text-shadow: 3px 3px 0 rgba(black, .1);
+  text-shadow: 3px 3px 0 rgba(black, .2);
   text-transform: uppercase;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
 
   @media (max-width: 768px) {
     font-size: 38px;
@@ -219,15 +219,21 @@ ul {
 
   > .experience-left-content {
     > .experience__logo {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
       border: 2px solid var(--black-color);
-      border-radius: 90px;
+      border-radius: 75px;
+
+      @media (max-width: 768px) {
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+      }
     }
   }
 
   > .experience-right-content {
-    padding: var(--half-space) 0 0 var(--double-space);
+    padding: var(--mid-half-space) 0 0 var(--double-space);
 
     > .experience__name {
       font-size: 26px;
@@ -242,6 +248,22 @@ ul {
 
     > .experience__date {
       color: var(--grey-color);
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 0 0 var(--half-space);
+
+      > .experience__name {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        > span {
+          display: block;
+          font-size: 16px;
+          font-weight: 400;
+          margin-left: 0;
+        }
+      }
     }
   }
 }
