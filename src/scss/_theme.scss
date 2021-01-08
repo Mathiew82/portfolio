@@ -42,11 +42,11 @@ h4 {
 }
 
 h1 {
-  color: var(--blue-color);
+  color: var(--black-color);
   font-size: 60px;
   margin: 75px 0;
   font-style: italic;
-  text-shadow: 2px 2px 0 rgba(black, .6);
+  text-shadow: 3px 3px 0 rgba(black, .1);
   text-transform: uppercase;
   transform: rotate(-3deg);
 
@@ -211,6 +211,41 @@ ul {
   }
 }
 
+.experience {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: var(--double-space);
+
+  > .experience-left-content {
+    > .experience__logo {
+      width: 180px;
+      height: 180px;
+      border: 2px solid var(--black-color);
+      border-radius: 90px;
+    }
+  }
+
+  > .experience-right-content {
+    padding: var(--half-space) 0 0 var(--double-space);
+
+    > .experience__name {
+      font-size: 26px;
+      font-weight: 700;
+      > span {
+        color: var(--violet-color);
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: var(--half-space);
+      }
+    }
+
+    > .experience__date {
+      color: var(--grey-color);
+    }
+  }
+}
+
 .projects {
   margin-top: 7px;
 
@@ -227,6 +262,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 150px;
+  margin-bottom: var(--double-space);
 
   a {
     overflow: visible;
