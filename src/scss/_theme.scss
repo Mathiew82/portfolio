@@ -200,6 +200,7 @@ ul {
   margin-top: 7px;
 
   > li {
+    border: 2px solid var(--black-color);
     border-radius: var(--border-radius-default);
     color: var(--white-color);
     display: inline-block;

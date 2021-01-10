@@ -1,7 +1,7 @@
 <template>
   <h1 class="tac">Bienvenid@ a mi Portfolio!!</h1>
 
-  <h2>Skills</h2>
+  <h2 id="skills-content">Skills</h2>
   <ul class="skills">
     <li
       v-for="skill in getSkills"
@@ -11,7 +11,7 @@
     </li>
   </ul>
 
-  <h2 class="mt75">Experiencia</h2>
+  <h2 id="experience-content" class="mt75">Experiencia</h2>
   <div class="experience">
     <span class="experience-left-content">
       <img src="/logos/logo_housfy.jpg" class="experience__logo" />
@@ -113,7 +113,7 @@
     </span>
   </div>
 
-  <h2 class="mt75">Proyectos</h2>
+  <h2 id="projects-content" class="mt75">Proyectos</h2>
   <ul class="projects">
     <li>
       <a
@@ -125,7 +125,7 @@
     </li>
   </ul>
 
-  <h2 class="mt75">Repositorios en Github</h2>
+  <h2 id="repos-content" class="mt75">Repositorios en Github</h2>
   <div class="row repos m-negative-row">
     <div
       v-for="repo in getRepos"

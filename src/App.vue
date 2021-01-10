@@ -5,27 +5,42 @@
       class="logo" />
     <ul>
       <li>
-        <a href="#skills">
-          Repositorios
-        </a>
-      </li>
-      <li>
-        <a href="#skills">
+        <a
+          href="#skills"
+          id="skills"
+          @click.prevent="toSection('skills')">
           Skills
         </a>
       </li>
       <li>
-        <a href="#experience">
+        <a
+          href="#experience"
+          id="experience"
+          @click.prevent="toSection('experience')">
           Experiencia
         </a>
       </li>
       <li>
-        <a href="#projects">
+        <a
+          href="#projects"
+          id="projects"
+          @click.prevent="toSection('projects')">
           Proyectos
         </a>
       </li>
       <li>
-        <a href="#projects">
+        <a
+          href="#repos"
+          id="repos"
+          @click.prevent="toSection('repos')">
+          Repositorios
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          id="contact"
+          @click.prevent="toSection('contact')">
           Contacto
         </a>
       </li>
@@ -55,7 +70,25 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  setup () {
+    // Methods
+    // ------------------------------
+    const toSection = id => {
+      const offsetTop = document.querySelector(`#${id}-content`).offsetTop
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth'
+      })
+    }
+
+    // Return
+    // ------------------------------
+    return {
+      toSection
+    }
+  }
 }
 </script>
 
