@@ -177,7 +177,7 @@
 </template>
 
 <script>
-import { onBeforeMount, onMounted, computed, reactive } from 'vue'
+import { onBeforeMount, computed, reactive } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -201,9 +201,6 @@ export default {
     onBeforeMount(() => {
       initRepos('Mathiew82')
     })
-    onMounted(() => {
-      applyAnimationToLetter()
-    })
 
     // Computed
     // ------------------------------
@@ -215,24 +212,6 @@ export default {
     // ------------------------------
     const initRepos = (username) => {
       store.dispatch('initRepos', username)
-    }
-    const applyAnimationToLetter = () => {
-      const letters = document.querySelectorAll('h1 > span')
-
-      let counter = 0
-      const limit = letters.length - 1
-
-      setInterval(() => {
-        setTimeout(() => {
-          letters[counter].style.animation = 'none'
-        }, 100)
-        letters[counter].style.animation = 'black-to-violet 1.8s'
-
-        if (counter < limit) counter++
-        else {
-          counter = 0
-        }
-      }, 100)
     }
 
     // Return

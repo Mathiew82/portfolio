@@ -251,14 +251,17 @@ ul {
       font-weight: 700;
       > span {
         color: var(--violet-color);
+        display: block;
         font-size: 22px;
         font-weight: 600;
-        margin-left: var(--half-space);
+        position: relative;
+        bottom: 4px;
       }
     }
 
     > .experience__date {
       color: var(--grey-color);
+      margin-top: -5px;
     }
 
     @media (max-width: 768px) {

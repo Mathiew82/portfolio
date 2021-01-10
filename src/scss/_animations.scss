@@ -33,15 +33,3 @@
     left: 100%;
   }
 }
-
-@keyframes black-to-violet {
-  0% {
-    color: var(--black-color);
-  }
-  5% {
-    color: var(--violet-color);
-  }
-  100% {
-    color: var(--black-color);
-  }
-}
