@@ -105,18 +105,19 @@ export const store = createStore({
   actions: {
     async initRepos ({ commit }, username) {
       return new Promise((resolve, reject) => {
-        commit('SET_REPOS', dataFaker)
-        resolve()
-        // fetch(`https://api.github.com/users/${username}/repos?sort=updated&direction=asc`)
-        //   .then(response => {
-        //     response.json().then(res => {
-        //       commit('SET_REPOS', res)
-        //       resolve()
-        //     })
-        //   })
-        //   .catch(error => {
-        //     reject(error)
-        //   })
+        fetch(`https://api.github.com/users/${username}/repos?sort=updated&direction=asc`)
+          .then(response => {
+            response.json().then(res => {
+              commit('SET_REPOS', res)
+              resolve()
+            })
+          })
+          .catch(error => {
+            console.log(error)
+
+            commit('SET_REPOS', dataFaker)
+            resolve()
+          })
       })
     }
   },

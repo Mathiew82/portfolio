@@ -1,30 +1,10 @@
 <template>
   <h1 class="tac">
-    <span>B</span>
-    <span>i</span>
-    <span>e</span>
-    <span>n</span>
-    <span>v</span>
-    <span>e</span>
-    <span>n</span>
-    <span>i</span>
-    <span>d</span>
-    <span>@</span>
-    <span class="mr15 ml15">a</span>
-    <span>m</span>
-    <span>i</span>
-    <span class="ml15">P</span>
-    <span>o</span>
-    <span>r</span>
-    <span>t</span>
-    <span>f</span>
-    <span>o</span>
-    <span>l</span>
-    <span>i</span>
-    <span>o</span>
-    <span>!</span>
-    <span>!</span>
+    BIENVENID@ A MI PORTFOLIO!!
   </h1>
+  <div class="tac fz22 mb75">
+    Mi nombre es Alberto Mateo, desarrollador Front-End de aplicaciones web.
+  </div>
 
   <h2 id="skills-content">Skills</h2>
   <ul class="skills">
@@ -165,15 +145,29 @@
         </a>
         <div class="repos-description">{{ repo.description }}</div>
         <div class="repos-language">
-          <span class="repos-language__circle" :style="`background: var(${technologyColors[repo.language]})`"></span> {{ repo.language }}
-          <i class="icon icon-star-empty" />{{ repo.stargazers_count }}
-          <span v-if="repo.forks">
+          <span
+            class="repos-language__circle"
+            :style="`background: var(${technologyColors[repo.language]})`"></span>
+            {{ repo.language }}
+          <a
+            :href="`${repo.html_url}/stargazers`"
+            target="_blank">
+            <i class="icon icon-star-empty" />{{ repo.stargazers_count }}
+          </a>
+          <a
+            v-if="repo.forks"
+            class="ml4"
+            :href="`${repo.html_url}/network/members`"
+            target="_blank">
             <i class="icon icon-fork" />{{ repo.forks }}
-          </span>
+          </a>
         </div>
       </div>
     </div>
   </div>
+
+  <h2 id="contact-content" class="mt75">Contacta conmigo</h2>
+  ¿Quieres contactar conmigo? este es mi correo electrónico es <b>amateo1982[<i>arroba</i>]yahoo.es</b>
 </template>
 
 <script>

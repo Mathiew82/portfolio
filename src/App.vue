@@ -49,7 +49,6 @@
   <router-view />
   <footer>
     <span>
-      Mi nombre es Alberto Mateo y soy desarrollador Front-End de aplicaciones web.
       <br>Gracias por visitar mi sitio! :)
     </span>
     <span>
@@ -70,13 +69,32 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
+
 export default {
   name: 'App',
   setup () {
+    // Life Cycle
+    // ------------------------------
+    onMounted(() => {
+      stickyMenu()
+    })
+
     // Methods
     // ------------------------------
+    const stickyMenu = () => {
+      window.onscroll = () => {
+        const scrollPosition = window.pageYOffset
+        const navMenu = document.querySelector('.nav-menu')
+        if (scrollPosition > 70) {
+          navMenu.style.boxShadow = '0 5px 30px -15px rgba(0, 0, 0, .4)'
+        } else {
+          navMenu.style.boxShadow = 'none'
+        }
+      }
+    }
     const toSection = id => {
-      const offsetTop = document.querySelector(`#${id}-content`).offsetTop
+      const offsetTop = document.querySelector(`#${id}-content`).offsetTop - 80
 
       scroll({
         top: offsetTop,
