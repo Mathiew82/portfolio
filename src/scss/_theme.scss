@@ -2,7 +2,7 @@
   box-sizing: border-box;
   cursor: default;
   line-height: 1.5;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans';
 }
 
 ::-webkit-scrollbar {
@@ -37,12 +37,14 @@ h2,
 h3,
 h4 {
   color: var(--black-color);
+  font-family: 'Gill Sans Bold';
   letter-spacing: -2px;
   margin-bottom: var(--default-space);
 }
 
 h1 {
   color: var(--black-color);
+  font-family: 'Gill Sans BoldItalic';
   font-size: 52px;
   margin: 75px 0 var(--half-space);
   font-style: italic;
@@ -65,7 +67,6 @@ h2 {
   &:before {
     color: var(--violet-color);
     content: '< ';
-    font-weight: 400;
   }
 
   @media (max-width: 768px) {
@@ -123,10 +124,10 @@ ul {
 
     li {
       > a {
+        font-family: 'Gill Sans Bold';
         font-size: 18px;
-        font-weight: 600;
         margin-right: var(--default-space);
-        padding: 10px 24px 12px;
+        padding: 12px 24px 10px;
         position: relative;
 
         &:last-of-type {
@@ -176,44 +177,6 @@ ul {
   }
 }
 
-.repos {
-  .repos__item {
-    width: 100%;
-    min-height: 110px;
-    border: 2px solid var(--black-color);
-    border-radius: 8px;
-    padding: var(--default-space);
-
-    > .repos-title {
-      display: block;
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    > .repos-description {
-      margin-bottom: var(--default-space);
-    }
-
-    > .repos-title,
-    > .repos-description {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
-    > .repos-language {
-      > .repos-language__circle {
-        width: 14px;
-        height: 14px;
-        border-radius: 7px;
-        display: inline-block;
-        position: relative;
-        top: 1px;
-      }
-    }
-  }
-}
-
 .skills {
   margin-top: 7px;
 
@@ -222,10 +185,10 @@ ul {
     border-radius: var(--border-radius-default);
     color: var(--white-color);
     display: inline-block;
+    font-family: 'Gill Sans Bold';
     font-size: 20px;
-    font-weight: 600;
     margin: 0 var(--half-space) var(--half-space) 0;
-    padding: 10px 24px 12px;
+    padding: 12px 24px 10px;
     text-shadow: 2px 2px 0 rgba(black, .6);
   }
 }
@@ -255,13 +218,12 @@ ul {
     padding: var(--mid-half-space) 0 0 var(--double-space);
 
     > .experience__name {
+      font-family: 'Gill Sans Bold';
       font-size: 26px;
-      font-weight: 700;
       > span {
         color: var(--violet-color);
         display: block;
         font-size: 22px;
-        font-weight: 600;
         position: relative;
         bottom: 4px;
       }
@@ -278,11 +240,9 @@ ul {
       > .experience__name {
         display: block;
         font-size: 20px;
-        font-weight: 600;
         > span {
           display: block;
           font-size: 16px;
-          font-weight: 400;
           margin-left: 0;
         }
       }
@@ -295,8 +255,46 @@ ul {
 
   > li {
     > a {
+      font-family: 'Gill Sans Bold';
       font-size: 28px;
-      font-weight: 600;
+    }
+  }
+}
+
+.repos {
+  .repos__item {
+    width: 100%;
+    min-height: 110px;
+    border: 2px solid var(--black-color);
+    border-radius: 8px;
+    padding: var(--default-space);
+
+    > .repos-title {
+      display: block;
+      font-family: 'Gill Sans Bold';
+      font-size: 22px;
+    }
+
+    > .repos-description {
+      margin-bottom: var(--default-space);
+    }
+
+    > .repos-title,
+    > .repos-description {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    > .repos-language {
+      > .repos-language__circle {
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+      }
     }
   }
 }

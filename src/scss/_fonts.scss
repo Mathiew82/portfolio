@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('/fonts/GillSans.eot');
+  src: url('/fonts/GillSans.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/GillSans.woff2') format('woff2'),
+    url('/fonts/GillSans.woff') format('woff'),
+    url('/fonts/GillSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans BoldItalic';
+  src: url('/fonts/GillSans-BoldItalic.eot');
+  src: url('/fonts/GillSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/GillSans-BoldItalic.woff2') format('woff2'),
+    url('/fonts/GillSans-BoldItalic.woff') format('woff'),
+    url('/fonts/GillSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gill Sans Bold';
+  src: url('/fonts/GillSans-Bold.eot');
+  src: url('/fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/GillSans-Bold.woff2') format('woff2'),
+    url('/fonts/GillSans-Bold.woff') format('woff'),
+    url('/fonts/GillSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

@@ -167,7 +167,7 @@
   </div>
 
   <h2 id="contact-content" class="mt75">Contacta conmigo</h2>
-  ¿Quieres contactar conmigo? este es mi correo electrónico es <b>amateo1982[<i>arroba</i>]yahoo.es</b>
+  ¿Quieres contactar conmigo? este es mi correo electrónico es <span class="bold">amateo1982[arroba]yahoo.es</span>
 </template>
 
 <script>
