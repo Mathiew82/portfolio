@@ -49,7 +49,8 @@
   <router-view />
   <footer>
     <span>
-      Mi nombre es Alberto Mateo y soy desarrollador Front-End de aplicaciones web. Gracias por visitar mi sitio! :)
+      Mi nombre es Alberto Mateo y soy desarrollador Front-End de aplicaciones web.
+      <br>Gracias por visitar mi sitio! :)
     </span>
     <span>
       <a

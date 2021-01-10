@@ -1,5 +1,30 @@
 <template>
-  <h1 class="tac">Bienvenid@ a mi Portfolio!!</h1>
+  <h1 class="tac">
+    <span>B</span>
+    <span>i</span>
+    <span>e</span>
+    <span>n</span>
+    <span>v</span>
+    <span>e</span>
+    <span>n</span>
+    <span>i</span>
+    <span>d</span>
+    <span>@</span>
+    <span class="mr15 ml15">a</span>
+    <span>m</span>
+    <span>i</span>
+    <span class="ml15">P</span>
+    <span>o</span>
+    <span>r</span>
+    <span>t</span>
+    <span>f</span>
+    <span>o</span>
+    <span>l</span>
+    <span>i</span>
+    <span>o</span>
+    <span>!</span>
+    <span>!</span>
+  </h1>
 
   <h2 id="skills-content">Skills</h2>
   <ul class="skills">
@@ -152,7 +177,7 @@
 </template>
 
 <script>
-import { onBeforeMount, computed, reactive } from 'vue'
+import { onBeforeMount, onMounted, computed, reactive } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -176,6 +201,9 @@ export default {
     onBeforeMount(() => {
       initRepos('Mathiew82')
     })
+    onMounted(() => {
+      applyAnimationToLetter()
+    })
 
     // Computed
     // ------------------------------
@@ -187,6 +215,24 @@ export default {
     // ------------------------------
     const initRepos = (username) => {
       store.dispatch('initRepos', username)
+    }
+    const applyAnimationToLetter = () => {
+      const letters = document.querySelectorAll('h1 > span')
+
+      let counter = 0
+      const limit = letters.length - 1
+
+      setInterval(() => {
+        setTimeout(() => {
+          letters[counter].style.animation = 'none'
+        }, 100)
+        letters[counter].style.animation = 'black-to-violet 1.8s'
+
+        if (counter < limit) counter++
+        else {
+          counter = 0
+        }
+      }, 100)
     }
 
     // Return
