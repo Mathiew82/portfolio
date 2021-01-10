@@ -53,13 +53,13 @@
     </span>
     <span>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/amateo82/"
         data-title="Linkedin"
         target="_blank">
         <i class="icon icon-linkedin-squared" />
       </a>
       <a
-        href="#"
+        href="https://github.com/Mathiew82/"
         data-title="Github"
         target="_blank">
         <i class="icon icon-github-squared" />
