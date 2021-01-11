@@ -8,7 +8,7 @@
         <a
           href="#skills"
           id="skills"
-          @click.prevent="toSection('skills')">
+          @click.prevent="toSection('skills', false)">
           Skills
         </a>
       </li>
@@ -16,7 +16,7 @@
         <a
           href="#experience"
           id="experience"
-          @click.prevent="toSection('experience')">
+          @click.prevent="toSection('experience', false)">
           Experiencia
         </a>
       </li>
@@ -24,7 +24,7 @@
         <a
           href="#projects"
           id="projects"
-          @click.prevent="toSection('projects')">
+          @click.prevent="toSection('projects', false)">
           Proyectos
         </a>
       </li>
@@ -32,7 +32,7 @@
         <a
           href="#repos"
           id="repos"
-          @click.prevent="toSection('repos')">
+          @click.prevent="toSection('repos', false)">
           Repositorios
         </a>
       </li>
@@ -40,7 +40,7 @@
         <a
           href="#contact"
           id="contact"
-          @click.prevent="toSection('contact')">
+          @click.prevent="toSection('contact', false)">
           Contacto
         </a>
       </li>
@@ -53,7 +53,7 @@
           <a
             href="#skills"
             id="skills"
-            @click.prevent="toSection('skills')">
+            @click.prevent="toSection('skills', true)">
             Skills
           </a>
         </li>
@@ -61,7 +61,7 @@
           <a
             href="#experience"
             id="experience"
-            @click.prevent="toSection('experience')">
+            @click.prevent="toSection('experience', true)">
             Experiencia
           </a>
         </li>
@@ -69,7 +69,7 @@
           <a
             href="#projects"
             id="projects"
-            @click.prevent="toSection('projects')">
+            @click.prevent="toSection('projects', true)">
             Proyectos
           </a>
         </li>
@@ -77,7 +77,7 @@
           <a
             href="#repos"
             id="repos"
-            @click.prevent="toSection('repos')">
+            @click.prevent="toSection('repos', true)">
             Repositorios
           </a>
         </li>
@@ -85,7 +85,7 @@
           <a
             href="#contact"
             id="contact"
-            @click.prevent="toSection('contact')">
+            @click.prevent="toSection('contact', true)">
             Contacto
           </a>
         </li>
@@ -153,13 +153,17 @@ export default {
         }
       }
     }
-    const toSection = id => {
+    const toSection = (id, isMobile) => {
       const offsetTop = document.querySelector(`#${id}-content`).offsetTop - 80
 
       scroll({
         top: offsetTop,
         behavior: 'smooth'
       })
+
+      if (isMobile) {
+        toggleMenuMobile()
+      }
     }
     const toggleMenuMobile = () => {
       navBurgerIcon.value.classList.toggle('open')
