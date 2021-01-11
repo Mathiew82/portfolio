@@ -19,7 +19,7 @@
   <h2 id="experience-content" class="mt75">Experiencia</h2>
   <div class="experience">
     <span class="experience-left-content">
-      <img src="/logos/logo_housfy.jpg" class="experience__logo" />
+      <img src="/logos/logo_housfy-min.jpg" class="experience__logo" />
     </span>
     <span class="experience-right-content">
       <div class="experience__name">
@@ -36,7 +36,7 @@
   </div>
   <div class="experience">
     <span class="experience-left-content">
-      <img src="/logos/logo_crealogix.png" class="experience__logo" />
+      <img src="/logos/logo_crealogix-min.png" class="experience__logo" />
     </span>
     <span class="experience-right-content">
       <div class="experience__name">
@@ -53,7 +53,7 @@
   </div>
   <div class="experience">
     <span class="experience-left-content">
-      <img src="/logos/logo_ohmybrand.png" class="experience__logo" />
+      <img src="/logos/logo_ohmybrand-min.png" class="experience__logo" />
     </span>
     <span class="experience-right-content">
       <div class="experience__name">

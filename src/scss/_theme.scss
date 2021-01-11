@@ -171,6 +171,16 @@ ul {
           }
         }
       }
+
+      @media (max-width: 992px) {
+        > a {
+          padding: 14px 10px 8px;
+        }
+
+        &:last-of-type > a {
+          padding: 14px 20px 8px;
+        }
+      }
     }
 
     @media (max-width: 768px) {
