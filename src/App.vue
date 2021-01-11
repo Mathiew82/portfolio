@@ -133,6 +133,7 @@ export default {
     // ------------------------------
     const navBurgerIcon = ref(null)
     const menuMobile = ref(null)
+    let activeStickyMenu = false
 
     // Life Cycle
     // ------------------------------
@@ -146,10 +147,13 @@ export default {
       window.onscroll = () => {
         const scrollPosition = window.pageYOffset
         const navMenu = document.querySelector('.nav-menu')
-        if (scrollPosition > 70) {
+        if (!activeStickyMenu && scrollPosition > 70) {
           navMenu.style.boxShadow = '0 5px 30px -15px rgba(0, 0, 0, .4)'
-        } else {
+          activeStickyMenu = true
+        }
+        if (activeStickyMenu && scrollPosition <= 70) {
           navMenu.style.boxShadow = 'none'
+          activeStickyMenu = false
         }
       }
     }
