@@ -28,7 +28,7 @@ body {
   padding: 70px var(--default-space) var(--default-space) var(--default-space);
 
   @media (max-width: 768px) {
-    padding: var(--half-space);
+    padding: 70px var(--half-space) var(--default-space) var(--half-space);
   }
 }
 
@@ -43,6 +43,7 @@ h4 {
 }
 
 h1 {
+  line-height: 1.2;
   color: var(--black-color);
   font-family: 'Gill Sans BoldItalic';
   font-size: 52px;
@@ -58,6 +59,7 @@ h1 {
 
   @media (max-width: 768px) {
     font-size: 38px;
+    margin: 85px 0 var(--half-space);
   }
 }
 
@@ -174,6 +176,115 @@ ul {
     @media (max-width: 768px) {
       display: none;
     }
+  }
+
+  > .nav-burguer-icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: none;
+    margin-top: 7px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    z-index: 3;
+
+    > span {
+      width: 100%;
+      height: 5px;
+      background: var(--black-color);
+      border-radius: 3px;
+      display: block;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 14px;
+      }
+
+      &:nth-child(4) {
+        top: 28px;
+      }
+    }
+
+    &.open {
+      > span {
+        &:nth-child(1) {
+          top: 16px;
+          width: 0%;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+          top: 16px;
+          width: 0%;
+          left: 50%;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 var(--half-space);
+  }
+}
+
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left var(--mid-time-transition);
+  z-index: 2;
+
+  > ul {
+    margin-top: 85px;
+
+    > li {
+      > a {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid var(--grey-color);
+        display: flex;
+        font-family: 'Gill Sans Bold';
+        font-size: 22px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 var(--default-space);
+      }
+
+      &:last-of-type {
+        > a {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &.open {
+    left: 0;
   }
 }
 
@@ -303,10 +414,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: var(--double-space);
 
+  > span:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: var(--mid-half-space);
     overflow: visible;
     position: relative;
 

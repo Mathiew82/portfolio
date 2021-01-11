@@ -45,6 +45,61 @@
         </a>
       </li>
     </ul>
+    <div
+      ref="menuMobile"
+      class="menu-mobile">
+      <ul>
+        <li>
+          <a
+            href="#skills"
+            id="skills"
+            @click.prevent="toSection('skills')">
+            Skills
+          </a>
+        </li>
+        <li>
+          <a
+            href="#experience"
+            id="experience"
+            @click.prevent="toSection('experience')">
+            Experiencia
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            id="projects"
+            @click.prevent="toSection('projects')">
+            Proyectos
+          </a>
+        </li>
+        <li>
+          <a
+            href="#repos"
+            id="repos"
+            @click.prevent="toSection('repos')">
+            Repositorios
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            id="contact"
+            @click.prevent="toSection('contact')">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      ref="navBurgerIcon"
+      class="nav-burguer-icon"
+      @click="toggleMenuMobile">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
   <router-view />
   <footer>
@@ -69,11 +124,16 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 export default {
   name: 'App',
   setup () {
+    // Refs
+    // ------------------------------
+    const navBurgerIcon = ref(null)
+    const menuMobile = ref(null)
+
     // Life Cycle
     // ------------------------------
     onMounted(() => {
@@ -101,10 +161,17 @@ export default {
         behavior: 'smooth'
       })
     }
+    const toggleMenuMobile = () => {
+      navBurgerIcon.value.classList.toggle('open')
+      menuMobile.value.classList.toggle('open')
+    }
 
     // Return
     // ------------------------------
     return {
+      navBurgerIcon,
+      menuMobile,
+      toggleMenuMobile,
       toSection
     }
   }
