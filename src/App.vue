@@ -104,6 +104,7 @@
   <router-view />
   <footer>
     <span>
+      Sitio desarrollado con Vue 3.
       <br>Gracias por visitar mi sitio! :)
     </span>
     <span>

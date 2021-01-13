@@ -97,6 +97,61 @@ export const store = createStore({
           name: 'Git',
           color: '--red-color'
         }
+      ],
+      experience: [
+        {
+          image: 'logo_housfy-min.jpg',
+          companyName: 'Housfy',
+          position: 'Front-End Developer',
+          dates: 'dic. 2020 - actualidad',
+          description: `Desarrollo Front-End con VUE.js.
+          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Vue.js, GIT.`
+        },
+        {
+          image: 'logo_crealogix-min.png',
+          companyName: 'CREALOGIX Group',
+          position: 'Front-End Developer',
+          dates: 'jul. 2020 - jul. 2020',
+          description: `Desarrollo Front-End con Angular.
+          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Angular, GIT.`
+        },
+        {
+          image: 'logo_ohmybrand-min.png',
+          companyName: 'Oh! my brand',
+          position: 'Front-End Developer',
+          dates: 'oct. 2018 - jul. 2020',
+          description: `Desarrollo Front-End con VUE.js.
+          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Vue.js, GIT.`
+        },
+        {
+          image: 'logo_pasiona-min.jpg',
+          companyName: 'Pasiona',
+          position: 'JavaScript Developer',
+          dates: 'nov. 2017 - jun. 2018',
+          description: `Desarrollo de minijuegos virtuales para máquinas tragaperras de una importante empresa del sector.
+          Tecnologías: JS (ECMAScript 6), Phaser, Karma, Metodología Scrum, GIT.`
+        },
+        {
+          image: 'logo_proogresa-min.png',
+          companyName: 'Proogresa',
+          position: 'Full-Stack Developer',
+          dates: 'oct. 2016 - nov. 2017',
+          description: 'Tecnologías utilizadas: HTML5, CSS3, SASS, Bootstrap, Foundation, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, CodeIgniter, MySQL, y GIT.'
+        },
+        {
+          image: 'logo_codiwho-min.png',
+          companyName: 'Freelance',
+          position: 'Full-Stack Developer',
+          dates: 'dic. 2013 - mar. 2015',
+          description: 'Llevar a cabo el desarrollo de aplicaciones web para pequeños clientes. Trabajando en todas las fases de desarrollo del proyecto, análisis, diseño, implementación, pruebas, y mantenimiento.'
+        }
+      ],
+      projects: [
+        {
+          url: 'https://compress-images-js.com/',
+          name: 'Compress Images JS',
+          description: 'Comprime imágenes y está desarrollado con Vue 2.'
+        }
       ]
     }
   },
@@ -139,6 +194,12 @@ export const store = createStore({
     },
     getSkills (state) {
       return state.skills
+    },
+    getExperience (state) {
+      return state.experience
+    },
+    getProjects (state) {
+      return state.projects
     }
   },
   // Plugins
