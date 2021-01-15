@@ -1,9 +1,9 @@
 <template>
   <li>
     <a
-      href="#skills"
-      id="skills"
-      @click.prevent="toSection('skills', isMobile)">
+      :href="href"
+      :id="id"
+      @click.prevent="toSection(id, isMobile)">
       <slot />
     </a>
   </li>
@@ -27,10 +27,14 @@ export default {
     }
   },
   setup (props, { emit }) {
+    // Methods
+    // ------------------------------
     const toSection = (id, isMobile) => {
       emit('toSection', id, isMobile)
     }
 
+    // Return
+    // ------------------------------
     return {
       toSection
     }

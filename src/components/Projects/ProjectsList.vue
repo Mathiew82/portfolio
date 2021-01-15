@@ -1,21 +1,22 @@
 <template>
   <ul class="projects">
-    <li
+    <project-item
       v-for="project in projects"
-      :key="project">
-      <a
-        :href="project.url"
-        target="_blank">
-        {{ project.name }}
-      </a>
-      <br>{{ project.description }}
-    </li>
+      :key="project"
+      :url="project.url"
+      :name="project.name"
+      :description="project.description" />
   </ul>
 </template>
 
 <script>
+import ProjectItem from './ProjectItem.vue'
+
 export default {
   name: 'ProjectsList',
+  components: {
+    ProjectItem
+  },
   props: {
     projects: {
       type: Array,

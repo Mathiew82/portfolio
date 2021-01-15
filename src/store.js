@@ -6,6 +6,28 @@ export const store = createStore({
   // ------------------------------
   state () {
     return {
+      navbar: [
+        {
+          id: 'skills',
+          name: 'Skills'
+        },
+        {
+          id: 'experience',
+          name: 'Experiencia'
+        },
+        {
+          id: 'projects',
+          name: 'Proyectos'
+        },
+        {
+          id: 'repos',
+          name: 'Repositorios'
+        },
+        {
+          id: 'contact',
+          name: 'Contacto'
+        }
+      ],
       repos: [],
       colors: [
         '--green-color',
@@ -186,6 +208,9 @@ export const store = createStore({
   // Getters
   // ------------------------------
   getters: {
+    getNavbar (state) {
+      return state.navbar
+    },
     getRepos (state) {
       return state.repos.filter(i => !i.fork && i.id !== 237088223)
     },

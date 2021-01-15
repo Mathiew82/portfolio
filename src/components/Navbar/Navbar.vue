@@ -5,39 +5,13 @@
       class="logo" />
     <ul>
       <navbar-item
-        href="#skills"
-        id="skills"
+        v-for="item in getNavbar"
+        :key="item.id"
+        :href="`#${item.id}`"
+        :id="item.id"
         :isMobile="false"
         @to-section="toSection">
-        Skills
-      </navbar-item>
-      <navbar-item
-        href="#experience"
-        id="experience"
-        :isMobile="false"
-        @to-section="toSection">
-        Experiencia
-      </navbar-item>
-      <navbar-item
-        href="#projects"
-        id="projects"
-        :isMobile="false"
-        @to-section="toSection">
-        Proyectos
-      </navbar-item>
-      <navbar-item
-        href="#repos"
-        id="repos"
-        :isMobile="false"
-        @to-section="toSection">
-        Repositorios
-      </navbar-item>
-      <navbar-item
-        href="#contact"
-        id="contact"
-        :isMobile="false"
-        @to-section="toSection">
-        Contacto
+        {{ item.name }}
       </navbar-item>
     </ul>
     <div
@@ -45,39 +19,13 @@
       class="menu-mobile">
       <ul>
         <navbar-item
-          href="#skills"
-          id="skills"
+          v-for="item in getNavbar"
+          :key="item.id"
+          :href="`#${item.id}`"
+          :id="item.id"
           :isMobile="true"
           @to-section="toSection">
-          Skills
-        </navbar-item>
-        <navbar-item
-          href="#experience"
-          id="experience"
-          :isMobile="true"
-          @to-section="toSection">
-          Experiencia
-        </navbar-item>
-        <navbar-item
-          href="#projects"
-          id="projects"
-          :isMobile="true"
-          @to-section="toSection">
-          Proyectos
-        </navbar-item>
-        <navbar-item
-          href="#repos"
-          id="repos"
-          :isMobile="true"
-          @to-section="toSection">
-          Repositorios
-        </navbar-item>
-        <navbar-item
-          href="#contact"
-          id="contact"
-          :isMobile="true"
-          @to-section="toSection">
-          Contacto
+          {{ item.name }}
         </navbar-item>
       </ul>
     </div>
@@ -94,7 +42,8 @@
 </template>
 
 <script>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
+import { useStore } from 'vuex'
 import NavbarItem from './NavbarItem.vue'
 
 export default {
@@ -103,6 +52,10 @@ export default {
     NavbarItem
   },
   setup () {
+    // Store
+    // ------------------------------
+    const store = useStore()
+
     // Refs
     // ------------------------------
     const navBurgerIcon = ref(null)
@@ -114,6 +67,10 @@ export default {
     onMounted(() => {
       stickyMenu()
     })
+
+    // Computed
+    // ------------------------------
+    const getNavbar = computed(() => store.getters.getNavbar)
 
     // Methods
     // ------------------------------
@@ -151,6 +108,7 @@ export default {
     // Return
     // ------------------------------
     return {
+      getNavbar,
       navBurgerIcon,
       menuMobile,
       toggleMenuMobile,

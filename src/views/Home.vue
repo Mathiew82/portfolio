@@ -29,10 +29,10 @@
 import { onBeforeMount, computed } from 'vue'
 import { useStore } from 'vuex'
 import Welcome from '@components/Welcome.vue'
-import SkillsList from '@components/SkillsList.vue'
-import ExperienceList from '@components/ExperienceList.vue'
-import ProjectsList from '@components/ProjectsList.vue'
-import ReposList from '@components/ReposList.vue'
+import SkillsList from '@components/Skills/SkillsList.vue'
+import ExperienceList from '@components/Experience/ExperienceList.vue'
+import ProjectsList from '@components/Projects/ProjectsList.vue'
+import ReposList from '@components/Repos/ReposList.vue'
 import Contact from '@components/Contact.vue'
 
 export default {
