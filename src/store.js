@@ -138,32 +138,28 @@ export const store = createStore({
           companyName: "Housfy",
           position: "Front-End Developer",
           dates: "dic. 2020 - actualidad",
-          description: `Desarrollo Front-End con VUE.js.
-          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Vue.js, GIT.`,
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Nuxt.js, Jest, GIT.`,
         },
         {
           image: "logo_crealogix-min.png",
           companyName: "CREALOGIX Group",
           position: "Front-End Developer",
           dates: "jul. 2020 - dic. 2020",
-          description: `Desarrollo Front-End con Angular.
-          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Angular, GIT.`,
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Angular, Ionic, GIT.`,
         },
         {
           image: "logo_ohmybrand-min.png",
           companyName: "Oh! my brand",
           position: "Front-End Developer",
           dates: "oct. 2018 - jul. 2020",
-          description: `Desarrollo Front-End con VUE.js.
-          Tecnologías: HTML5, CSS3, SASS, JS (ECMAScript 6), Vue.js, GIT.`,
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Vue StoreFront, Laravel, Elasticsearch, Riot.js, GIT.`,
         },
         {
           image: "logo_pasiona-min.jpg",
           companyName: "Pasiona",
           position: "JavaScript Developer",
           dates: "nov. 2017 - jun. 2018",
-          description: `Desarrollo de minijuegos virtuales para máquinas tragaperras de una importante empresa del sector.
-          Tecnologías: JS (ECMAScript 6), Phaser, Karma, Metodología Scrum, GIT.`,
+          description: `Tecnologías: JavaScript, Phaser, Karma, Scrum, GIT.`,
         },
         {
           image: "logo_proogresa-min.png",
@@ -171,15 +167,15 @@ export const store = createStore({
           position: "Full-Stack Developer",
           dates: "oct. 2016 - nov. 2017",
           description:
-            "Tecnologías utilizadas: HTML5, CSS3, SASS, Bootstrap, Foundation, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, CodeIgniter, MySQL, y GIT.",
+            "Tecnologías: HTML5, CSS3, SASS, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, Twig, CodeIgniter, MySQL, GIT.",
         },
         {
           image: "logo_codiwho-min.png",
           companyName: "Freelance",
           position: "Full-Stack Developer",
           dates: "dic. 2013 - mar. 2015",
-          description:
-            "Llevar a cabo el desarrollo de aplicaciones web para pequeños clientes. Trabajando en todas las fases de desarrollo del proyecto, análisis, diseño, implementación, pruebas, y mantenimiento.",
+          description: `Llevar a cabo el desarrollo de aplicaciones web para pequeños clientes. Trabajando en todas las fases de desarrollo del proyecto, análisis, diseño, implementación, pruebas, y mantenimiento.
+            Tecnologías: HTML5, CSS3, SASS, JavaScript, jQuery, AJAX, PHP, CodeIgniter, MySQL, GIT.`,
         },
       ],
       projects: [
