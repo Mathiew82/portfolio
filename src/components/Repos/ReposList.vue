@@ -1,6 +1,6 @@
 <template>
   <div class="row repos m-negative-row">
-    <repo-item
+    <RepoItem
       v-for="repo in repos"
       :key="repo.id"
       :url="repo.html_url"
@@ -9,40 +9,41 @@
       :color="technologyColors[repo.language]"
       :language="repo.language"
       :stargazers-count="repo.stargazers_count"
-      :forks="repo.forks" />
+      :forks="repo.forks"
+    />
   </div>
 </template>
 
 <script>
-import { reactive } from 'vue'
-import RepoItem from './RepoItem.vue'
+import { reactive } from "vue";
+import RepoItem from "./RepoItem.vue";
 
 export default {
-  name: 'ReposList',
+  name: "ReposList",
   components: {
-    RepoItem
+    RepoItem,
   },
   props: {
     repos: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
-  setup () {
+  setup() {
     // Properties
     // ------------------------------
     const technologyColors = reactive({
-      CSS: '--violet-color',
-      HTML: '--red-color',
-      JavaScript: '--yellow-color',
-      Vue: '--green-color'
-    })
+      CSS: "--violet-color",
+      HTML: "--red-color",
+      JavaScript: "--yellow-color",
+      Vue: "--green-color",
+    });
 
     // Return
     // ------------------------------
     return {
-      technologyColors
-    }
-  }
-}
+      technologyColors,
+    };
+  },
+};
 </script>

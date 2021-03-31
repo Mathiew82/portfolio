@@ -64,16 +64,24 @@ export const store = createStore({
           color: "--violet-color",
         },
         {
+          name: "React",
+          color: "--blue-color",
+        },
+        {
           name: "Vue.js",
           color: "--green-color",
         },
         {
-          name: "Node.js",
+          name: "Nuxt.js",
           color: "--green-color",
         },
         {
           name: "Element.io",
           color: "--blue-color",
+        },
+        {
+          name: "Node.js",
+          color: "--green-color",
         },
         {
           name: "Quasar",
@@ -180,9 +188,28 @@ export const store = createStore({
       ],
       projects: [
         {
+          image: "logo_multiplication-tables-desktop-min.png",
+          url: "https://mathiew82.github.io/multiplication-tables-desktop/",
+          name: "Tablas de Multiplicar - Desktop App",
+          stack: "JavaScript, Electron, SASS",
+          description:
+            "Un sencillo juego con el que los niños podrán aprender de una forma más divertida y práctica las tablas de multiplicar.",
+        },
+        {
+          image: "logo_search-movies-min.png",
+          url: "http://buscamovies.surge.sh/",
+          name: "Search Movies App",
+          stack: "React, Redux, Jest, TMDb API",
+          description:
+            "Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre cualquiera de ellas.",
+        },
+        {
+          image: "logo_cijs-min.png",
           url: "https://compress-images-js.com/",
           name: "Compress Images JS",
-          description: "Comprime imágenes y está desarrollado con Vue 2.",
+          stack: "Vue.js 2, Vuex, SASS",
+          description:
+            "Aplicación para la compresión de imágenes. Puede comprimir imágenes de cualquier formato generando procesos consecutivos por cada una de las imágenes. Una vez comprimidas, pueden descargarse individualmente o en un archivo comprimido.",
         },
       ],
     };

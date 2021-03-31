@@ -1,19 +1,17 @@
 <template>
-  <div class="experience">
-    <span class="experience-left-content">
-      <img
-        :src="`/logos/${image}`"
-        class="experience__logo" />
+  <div class="item-list">
+    <span class="item-list-left-content">
+      <img :src="`/logos/${item.image}`" class="item-list__logo" />
     </span>
-    <span class="experience-right-content">
-      <div class="experience__name">
-        {{ companyName }} <span>{{ position }}</span>
+    <span class="item-list-right-content">
+      <div class="item-list__name">
+        {{ item.companyName }} <span>{{ item.position }}</span>
       </div>
-      <div class="experience__date">
-        {{ dates }}
+      <div class="item-list__info">
+        {{ item.dates }}
       </div>
-      <div class="experience__description">
-        {{ description }}
+      <div class="item-list__description">
+        {{ item.description }}
       </div>
     </span>
   </div>
@@ -21,28 +19,12 @@
 
 <script>
 export default {
-  name: 'ExperienceItem',
+  name: "ExperienceItem",
   props: {
-    image: {
-      type: String,
-      required: true
+    item: {
+      type: Object,
+      required: true,
     },
-    companyName: {
-      type: String,
-      required: true
-    },
-    position: {
-      type: String,
-      required: true
-    },
-    dates: {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    }
-  }
-}
+  },
+};
 </script>

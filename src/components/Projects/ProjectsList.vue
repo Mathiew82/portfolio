@@ -1,27 +1,24 @@
 <template>
-  <ul class="projects">
-    <project-item
-      v-for="project in projects"
-      :key="project"
-      :url="project.url"
-      :name="project.name"
-      :description="project.description" />
-  </ul>
+  <ProjectItem
+    v-for="project in projects"
+    :key="project.name"
+    :item="project"
+  />
 </template>
 
 <script>
-import ProjectItem from './ProjectItem.vue'
+import ProjectItem from "./ProjectItem.vue";
 
 export default {
-  name: 'ProjectsList',
+  name: "ProjectsList",
   components: {
-    ProjectItem
+    ProjectItem,
   },
   props: {
     projects: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

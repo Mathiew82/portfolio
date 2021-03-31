@@ -1,26 +1,27 @@
 <template>
   <ul class="skills">
-    <skill-item
+    <SkillItem
       v-for="skill in skills"
       :key="skill"
       :color="skill.color"
-      :name="skill.name" />
+      :name="skill.name"
+    />
   </ul>
 </template>
 
 <script>
-import SkillItem from './SkillItem.vue'
+import SkillItem from "./SkillItem.vue";
 
 export default {
-  name: 'SkillsList',
+  name: "SkillsList",
   components: {
-    SkillItem
+    SkillItem,
   },
   props: {
     skills: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

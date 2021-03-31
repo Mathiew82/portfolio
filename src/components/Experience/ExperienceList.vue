@@ -1,27 +1,24 @@
 <template>
-  <experience-item
+  <ExperienceItem
     v-for="item in experience"
-    :key="item"
-    :image="item.image"
-    :companyName="item.companyName"
-    :position="item.position"
-    :dates="item.dates"
-    :description="item.description" />
+    :key="item.companyName"
+    :item="item"
+  />
 </template>
 
 <script>
-import ExperienceItem from './ExperienceItem.vue'
+import ExperienceItem from "./ExperienceItem.vue";
 
 export default {
-  name: 'ExperienceList',
+  name: "ExperienceList",
   components: {
-    ExperienceItem
+    ExperienceItem,
   },
   props: {
     experience: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
