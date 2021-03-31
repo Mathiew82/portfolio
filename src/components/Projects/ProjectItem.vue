@@ -8,9 +8,7 @@
         {{ item.name }} <span>{{ item.stack }}</span>
       </div>
       <div class="item-list__info">
-        <a :href="item.url" target="_blank">
-          {{ item.url }}
-        </a>
+        <a :href="item.url" target="_blank"> Ver proyecto </a>
       </div>
       <div class="item-list__description">
         {{ item.description }}
