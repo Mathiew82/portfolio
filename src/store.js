@@ -196,9 +196,9 @@ export const store = createStore({
             "Un sencillo juego con el que los niños podrán aprender de una forma más divertida y práctica las tablas de multiplicar.",
         },
         {
-          image: "logo_search-movies-min.png",
+          image: "logo_buscamovies-min.png",
           url: "http://buscamovies.surge.sh/",
-          name: "Search Movies App",
+          name: "BuscaMovies",
           stack: "React, Redux, Jest, TMDb API",
           description:
             "Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre cualquiera de ellas.",
