@@ -1,5 +1,5 @@
 .bold {
-  font-family: 'Gill Sans Bold';
+  font-family: "Gill Sans Bold";
 }
 
 .m-negative-row {
@@ -8,6 +8,10 @@
   @media (max-width: 768px) {
     margin: 0 -10px !important;
   }
+}
+
+.mt15 {
+  margin-top: 15px !important;
 }
 
 .mt75 {

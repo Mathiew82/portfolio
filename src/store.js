@@ -100,6 +100,10 @@ export const store = createStore({
           color: "--green-color",
         },
         {
+          name: "Tailwind",
+          color: "--violet-color",
+        },
+        {
           name: "POO",
           color: "--red-color",
         },
@@ -138,6 +142,28 @@ export const store = createStore({
         {
           name: "Ionic",
           color: "--blue-color",
+        },
+      ],
+      futureSkills: [
+        {
+          name: "React Native",
+          color: "--blue-color",
+        },
+        {
+          name: "Jest",
+          color: "--green-color",
+        },
+        {
+          name: "Testing Library",
+          color: "--red-color",
+        },
+        {
+          name: "Enzyme",
+          color: "--yellow-color",
+        },
+        {
+          name: "Software Architecture",
+          color: "--violet-color",
         },
       ],
       experience: [
@@ -258,6 +284,9 @@ export const store = createStore({
     },
     getSkills(state) {
       return state.skills;
+    },
+    getFutureSkills(state) {
+      return state.futureSkills;
     },
     getExperience(state) {
       return state.experience;

@@ -1,11 +1,11 @@
 <template>
   <Welcome
     title="BIENVENID@ A MI PORTFOLIO!!"
-    description="Mi nombre es Alberto Mateo, desarrollador Front-End de aplicaciones web."
+    description="Mi nombre es Alberto Mateo, desarrollador Front-End de aplicaciones."
   />
 
   <h2 id="skills-content">Skills</h2>
-  <SkillsList :skills="getSkills" />
+  <SkillsList :skills="getSkills" :futureSkills="getFutureSkills" />
 
   <h2 id="experience-content" class="mt75">Experiencia</h2>
   <ExperienceList :experience="getExperience" />
@@ -55,6 +55,7 @@ export default {
     // ------------------------------
     const getColors = computed(() => store.getters.getColors);
     const getSkills = computed(() => store.getters.getSkills);
+    const getFutureSkills = computed(() => store.getters.getFutureSkills);
     const getExperience = computed(() => store.getters.getExperience);
     const getProjects = computed(() => store.getters.getProjects);
     const getRepos = computed(() => store.getters.getRepos);
@@ -71,6 +72,7 @@ export default {
       getRepos,
       getColors,
       getSkills,
+      getFutureSkills,
       getExperience,
       getProjects,
     };
