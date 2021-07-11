@@ -64,10 +64,6 @@ export const store = createStore({
           color: "--violet-color",
         },
         {
-          name: "React",
-          color: "--blue-color",
-        },
-        {
           name: "Vue.js",
           color: "--green-color",
         },
@@ -76,8 +72,24 @@ export const store = createStore({
           color: "--green-color",
         },
         {
+          name: "Vuex",
+          color: "--green-color",
+        },
+        {
+          name: "Jest",
+          color: "--green-color",
+        },
+        {
           name: "Element.io",
           color: "--blue-color",
+        },
+        {
+          name: "React",
+          color: "--blue-color",
+        },
+        {
+          name: "Redux",
+          color: "--light-violet-color",
         },
         {
           name: "Node.js",
@@ -100,6 +112,10 @@ export const store = createStore({
           color: "--green-color",
         },
         {
+          name: "Buefy",
+          color: "--light-violet-color",
+        },
+        {
           name: "Tailwind",
           color: "--violet-color",
         },
@@ -113,7 +129,7 @@ export const store = createStore({
         },
         {
           name: "PHP",
-          color: "--violet-color",
+          color: "--light-violet-color",
         },
         {
           name: "MongoDB",
@@ -122,14 +138,6 @@ export const store = createStore({
         {
           name: "MySQL",
           color: "--blue-color",
-        },
-        {
-          name: "Redux",
-          color: "--light-violet-color",
-        },
-        {
-          name: "Vuex",
-          color: "--green-color",
         },
         {
           name: "Git",
@@ -144,49 +152,34 @@ export const store = createStore({
           color: "--blue-color",
         },
       ],
-      futureSkills: [
-        {
-          name: "React Native",
-          color: "--blue-color",
-        },
-        {
-          name: "Jest",
-          color: "--green-color",
-        },
-        {
-          name: "Testing Library",
-          color: "--red-color",
-        },
-        {
-          name: "Enzyme",
-          color: "--yellow-color",
-        },
-        {
-          name: "Software Architecture",
-          color: "--violet-color",
-        },
-      ],
       experience: [
+        {
+          image: "logo_promofarma-min.jpeg",
+          companyName: "Promofarma",
+          position: "Frontend Engineer",
+          dates: "jun. 2021 - actualidad",
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Typescript, Vue.js, Vuex, GraphQL, Jest, GIT.`,
+        },
         {
           image: "logo_housfy-min.jpg",
           companyName: "Housfy",
           position: "Front-End Developer",
-          dates: "dic. 2020 - actualidad",
-          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Nuxt.js, Jest, GIT.`,
+          dates: "dic. 2020 - abr. 2021",
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Nuxt.js, Vuex, Jest, GIT.`,
         },
         {
           image: "logo_crealogix-min.png",
           companyName: "CREALOGIX Group",
           position: "Front-End Developer",
           dates: "jul. 2020 - dic. 2020",
-          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Angular, Ionic, GIT.`,
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, GIT.`,
         },
         {
           image: "logo_ohmybrand-min.png",
           companyName: "Oh! my brand",
           position: "Front-End Developer",
           dates: "oct. 2018 - jul. 2020",
-          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Vue StoreFront, Laravel, Elasticsearch, Riot.js, GIT.`,
+          description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, Vue.js, Vuex, Vue StoreFront, Riot.js, GIT.`,
         },
         {
           image: "logo_pasiona-min.jpg",
@@ -201,7 +194,7 @@ export const store = createStore({
           position: "Full-Stack Developer",
           dates: "oct. 2016 - nov. 2017",
           description:
-            "Tecnologías: HTML5, CSS3, SASS, JavaScript, TypeScript, jQuery, AJAX, Angular, PHP, Twig, CodeIgniter, MySQL, GIT.",
+            "Tecnologías: HTML5, CSS3, SASS, JavaScript, jQuery, AJAX, PHP, Twig, CodeIgniter, MySQL, GIT.",
         },
         {
           image: "logo_codiwho-min.png",
@@ -284,9 +277,6 @@ export const store = createStore({
     },
     getSkills(state) {
       return state.skills;
-    },
-    getFutureSkills(state) {
-      return state.futureSkills;
     },
     getExperience(state) {
       return state.experience;

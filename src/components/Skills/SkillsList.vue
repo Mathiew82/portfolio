@@ -6,13 +6,6 @@
       :color="skill.color"
       :name="skill.name"
     />
-    <h3 class="mt15">Aprendiendo también...</h3>
-    <SkillItem
-      v-for="skill in futureSkills"
-      :key="skill"
-      :color="skill.color"
-      :name="skill.name"
-    />
   </ul>
 </template>
 
@@ -26,10 +19,6 @@ export default {
   },
   props: {
     skills: {
-      type: Array,
-      required: true,
-    },
-    futureSkills: {
       type: Array,
       required: true,
     },
