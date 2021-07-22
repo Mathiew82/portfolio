@@ -1,7 +1,8 @@
 <template>
   <Welcome
+    image="mi-foto-min.png"
     title="BIENVENID@ A MI PORTFOLIO!!"
-    description="Mi nombre es Alberto Mateo, desarrollador Front-End de aplicaciones."
+    description="Soy Alberto Mateo y me dedico al desarrollo de aplicaciones como Frontend"
   />
 
   <h2 id="skills-content">Skills</h2>

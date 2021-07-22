@@ -51,7 +51,7 @@ h1 {
   font-style: italic;
   text-shadow: 3px 3px 0 rgba(black, 0.2);
   text-transform: uppercase;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
 
   > span {
     transition: background-color var(--extra-time-transition);
@@ -310,6 +310,12 @@ ul {
     margin: 0 var(--half-space) var(--half-space) 0;
     padding: 13px 24px 9px;
   }
+}
+
+.photo {
+  width: 200px;
+  border: 10px solid var(--light-grey-color);
+  border-radius: 100px;
 }
 
 .item-list {

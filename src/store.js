@@ -208,6 +208,14 @@ export const store = createStore({
       projects: [
         {
           image: "logo_multiplication-tables-desktop-min.png",
+          url: "https://play.google.com/store/apps/details?id=com.multiplicationtablesmobileapp",
+          name: "Tablas de Multiplicar - Mobile App",
+          stack: "React Native",
+          description:
+            "Versión mobile de la app de tablas de multiplicar creada con React Native. Por ahora solo disponible para android en la Play Store.",
+        },
+        {
+          image: "logo_multiplication-tables-desktop-min.png",
           url: "https://mathiew82.github.io/multiplication-tables-desktop/",
           name: "Tablas de Multiplicar - Desktop App",
           stack: "JavaScript, Electron, SASS",
