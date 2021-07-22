@@ -33,9 +33,10 @@ export default {
     // Properties
     // ------------------------------
     const technologyColors = reactive({
-      CSS: "--violet-color",
+      CSS: "--blue-color",
       HTML: "--red-color",
       JavaScript: "--yellow-color",
+      TypeScript: "--violet-color",
       Vue: "--green-color",
     });
 
