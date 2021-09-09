@@ -6,7 +6,7 @@
       :url="repo.html_url"
       :name="repo.name"
       :description="repo.description"
-      :color="technologyColors[repo.language]"
+      :color="technologyColors[(repo.language).split(' ')[0]]"
       :language="repo.language"
       :stargazers-count="repo.stargazers_count"
       :forks="repo.forks"
@@ -38,6 +38,7 @@ export default {
       JavaScript: "--yellow-color",
       TypeScript: "--violet-color",
       Vue: "--green-color",
+      Vim: "--green-color"
     });
 
     // Return
