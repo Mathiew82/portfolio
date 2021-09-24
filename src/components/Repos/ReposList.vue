@@ -38,7 +38,8 @@ export default {
       JavaScript: "--yellow-color",
       TypeScript: "--violet-color",
       Vue: "--green-color",
-      Vim: "--green-color"
+      Vim: "--green-color",
+      Rust: "--brown-color"
     });
 
     // Return

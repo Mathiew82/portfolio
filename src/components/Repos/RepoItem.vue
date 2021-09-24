@@ -44,7 +44,8 @@ export default {
     },
     description: {
       type: String,
-      required: true
+      required: false,
+      default: ''
     },
     color: {
       type: String,
