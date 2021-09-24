@@ -251,12 +251,14 @@ export const store = createStore({
         )
           .then((response) => {
             response.json().then((res) => {
-              commit("SET_REPOS", res);
+              const results = res.filter((item) => item.name !== "Mathiew82");
+
+              commit("SET_REPOS", results);
               resolve();
             });
           })
           .catch((error) => {
-            console.log(error);
+            console.error(error);
 
             commit("SET_REPOS", dataFaker);
             resolve();
