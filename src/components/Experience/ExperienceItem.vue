@@ -19,12 +19,12 @@
 
 <script>
 export default {
-  name: "ExperienceItem",
+  name: 'ExperienceItem',
   props: {
     item: {
       type: Object,
       required: true,
     },
   },
-};
+}
 </script>

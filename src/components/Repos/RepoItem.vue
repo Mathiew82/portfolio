@@ -1,28 +1,25 @@
 <template>
   <div class="col xs-12 sm-6 md-4 lg-4">
     <div class="repos__item">
-      <a
-        :href="url"
-        target="_blank"
-        class="repos-title">
+      <a :href="url" target="_blank" class="repos-title">
         <i class="icon icon-folder-open-empty" /> {{ name }}
       </a>
       <div class="repos-description">{{ description }}</div>
       <div class="repos-language">
         <span
           class="repos-language__circle"
-          :style="`background: var(${color})`"></span>
-          {{ language }}
-        <a
-          :href="`${url}/stargazers`"
-          target="_blank">
+          :style="`background: var(${color})`"
+        ></span>
+        {{ language }}
+        <a :href="`${url}/stargazers`" target="_blank">
           <i class="icon icon-star-empty" />{{ stargazersCount }}
         </a>
         <a
           v-if="forks"
           class="ml4"
           :href="`${url}/network/members`"
-          target="_blank">
+          target="_blank"
+        >
           <i class="icon icon-fork" />{{ forks }}
         </a>
       </div>
@@ -36,32 +33,32 @@ export default {
   props: {
     url: {
       type: String,
-      required: true
+      required: true,
     },
     name: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     color: {
       type: String,
-      required: true
+      required: true,
     },
     language: {
       type: String,
-      required: true
+      required: true,
     },
     stargazersCount: {
       type: Number,
-      required: true
+      required: true,
     },
     forks: {
-      required: false
-    }
-  }
+      required: false,
+    },
+  },
 }
 </script>

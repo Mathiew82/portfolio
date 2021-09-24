@@ -7,18 +7,25 @@
 </template>
 
 <script>
-import ExperienceItem from "./ExperienceItem.vue";
+import { ref, onBeforeMount } from 'vue'
+import { experienceData } from '@/constants/experience.ts'
+import ExperienceItem from './ExperienceItem.vue'
 
 export default {
-  name: "ExperienceList",
+  name: 'ExperienceList',
   components: {
     ExperienceItem,
   },
-  props: {
-    experience: {
-      type: Array,
-      required: true,
-    },
+  setup() {
+    const experience = ref(null)
+
+    onBeforeMount(() => {
+      experience.value = experienceData
+    })
+
+    return {
+      experience,
+    }
   },
-};
+}
 </script>

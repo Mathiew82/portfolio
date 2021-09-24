@@ -6,33 +6,31 @@
   />
 
   <h2 id="skills-content">Skills</h2>
-  <SkillsList :skills="getSkills" />
+  <SkillsList />
 
   <h2 id="experience-content" class="mt75">Experiencia</h2>
-  <ExperienceList :experience="getExperience" />
+  <ExperienceList />
 
   <h2 id="projects-content" class="mt75">Proyectos</h2>
-  <ProjectsList :projects="getProjects" />
+  <ProjectsList />
 
   <h2 id="repos-content" class="mt75">Repositorios en Github</h2>
-  <ReposList :repos="getRepos" />
+  <ReposList />
 
   <h2 id="contact-content" class="mt75">Contacta conmigo</h2>
   <Contact />
 </template>
 
 <script>
-import { onBeforeMount, computed } from "vue";
-import { useStore } from "vuex";
-import Welcome from "@components/Welcome.vue";
-import SkillsList from "@components/Skills/SkillsList.vue";
-import ExperienceList from "@components/Experience/ExperienceList.vue";
-import ProjectsList from "@components/Projects/ProjectsList.vue";
-import ReposList from "@components/Repos/ReposList.vue";
-import Contact from "@components/Contact.vue";
+import Welcome from '@components/Welcome.vue'
+import SkillsList from '@components/Skills/SkillsList.vue'
+import ExperienceList from '@components/Experience/ExperienceList.vue'
+import ProjectsList from '@components/Projects/ProjectsList.vue'
+import ReposList from '@components/Repos/ReposList.vue'
+import Contact from '@components/Contact.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Welcome,
     SkillsList,
@@ -41,40 +39,5 @@ export default {
     ReposList,
     Contact,
   },
-  setup() {
-    // Store
-    // ------------------------------
-    const store = useStore();
-
-    // Life Cycle
-    // ------------------------------
-    onBeforeMount(() => {
-      initRepos("Mathiew82");
-    });
-
-    // Computed
-    // ------------------------------
-    const getColors = computed(() => store.getters.getColors);
-    const getSkills = computed(() => store.getters.getSkills);
-    const getExperience = computed(() => store.getters.getExperience);
-    const getProjects = computed(() => store.getters.getProjects);
-    const getRepos = computed(() => store.getters.getRepos);
-
-    // Methods
-    // ------------------------------
-    const initRepos = (username) => {
-      store.dispatch("initRepos", username);
-    };
-
-    // Return
-    // ------------------------------
-    return {
-      getRepos,
-      getColors,
-      getSkills,
-      getExperience,
-      getProjects,
-    };
-  },
-};
+}
 </script>

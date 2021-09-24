@@ -7,18 +7,25 @@
 </template>
 
 <script>
-import ProjectItem from "./ProjectItem.vue";
+import { ref, onBeforeMount } from 'vue'
+import { projectsData } from '@/constants/projects.ts'
+import ProjectItem from './ProjectItem.vue'
 
 export default {
-  name: "ProjectsList",
+  name: 'ProjectsList',
   components: {
     ProjectItem,
   },
-  props: {
-    projects: {
-      type: Array,
-      required: true,
-    },
+  setup() {
+    const projects = ref(null)
+
+    onBeforeMount(() => {
+      projects.value = projectsData
+    })
+
+    return {
+      projects,
+    }
   },
-};
+}
 </script>

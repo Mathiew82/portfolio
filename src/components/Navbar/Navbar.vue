@@ -3,7 +3,7 @@
     <img src="/mi-logo.png" class="logo" />
     <ul>
       <NavbarItem
-        v-for="item in getNavbar"
+        v-for="item in navbar"
         :key="item.id"
         :href="`#${item.id}`"
         :id="item.id"
@@ -16,7 +16,7 @@
     <div ref="menuMobile" class="menu-mobile">
       <ul>
         <NavbarItem
-          v-for="item in getNavbar"
+          v-for="item in navbar"
           :key="item.id"
           :href="`#${item.id}`"
           :id="item.id"
@@ -37,78 +37,69 @@
 </template>
 
 <script>
-import { onMounted, ref, computed } from "vue";
-import { useStore } from "vuex";
-import NavbarItem from "./NavbarItem.vue";
+import { onBeforeMount, onMounted, ref } from 'vue'
+import { navbarData } from '@/constants/navbar.ts'
+import NavbarItem from './NavbarItem.vue'
 
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   components: {
     NavbarItem,
   },
   setup() {
-    // Store
-    // ------------------------------
-    const store = useStore();
+    const navBurgerIcon = ref(null)
+    const menuMobile = ref(null)
+    const navbar = ref(null)
+    let activeStickyMenu = false
 
-    // Refs
-    // ------------------------------
-    const navBurgerIcon = ref(null);
-    const menuMobile = ref(null);
-    let activeStickyMenu = false;
+    onBeforeMount(() => {
+      navbar.value = navbarData
+    })
 
-    // Life Cycle
-    // ------------------------------
     onMounted(() => {
-      stickyMenu();
-    });
+      stickyMenu()
+    })
 
-    // Computed
-    // ------------------------------
-    const getNavbar = computed(() => store.getters.getNavbar);
-
-    // Methods
-    // ------------------------------
     const stickyMenu = () => {
       window.onscroll = () => {
-        const scrollPosition = window.pageYOffset;
-        const navMenu = document.querySelector(".nav-menu");
+        const scrollPosition = window.pageYOffset
+        const navMenu = document.querySelector('.nav-menu')
         if (!activeStickyMenu && scrollPosition > 70) {
-          navMenu.style.boxShadow = "0 5px 30px -15px rgba(0, 0, 0, .4)";
-          activeStickyMenu = true;
+          navMenu.style.boxShadow = '0 5px 30px -15px rgba(0, 0, 0, .4)'
+          activeStickyMenu = true
         }
         if (activeStickyMenu && scrollPosition <= 70) {
-          navMenu.style.boxShadow = "none";
-          activeStickyMenu = false;
+          navMenu.style.boxShadow = 'none'
+          activeStickyMenu = false
         }
-      };
-    };
+      }
+    }
+
     const toSection = (id, isMobile) => {
-      const offsetTop = document.querySelector(`#${id}-content`).offsetTop - 80;
+      const offsetTop = document.querySelector(`#${id}-content`).offsetTop - 80
 
       scroll({
         top: offsetTop,
-        behavior: "smooth",
-      });
+        behavior: 'smooth',
+      })
 
       if (isMobile) {
-        toggleMenuMobile();
+        toggleMenuMobile()
       }
-    };
-    const toggleMenuMobile = () => {
-      navBurgerIcon.value.classList.toggle("open");
-      menuMobile.value.classList.toggle("open");
-    };
+    }
 
-    // Return
-    // ------------------------------
+    const toggleMenuMobile = () => {
+      navBurgerIcon.value.classList.toggle('open')
+      menuMobile.value.classList.toggle('open')
+    }
+
     return {
-      getNavbar,
+      navbar,
       navBurgerIcon,
       menuMobile,
       toggleMenuMobile,
       toSection,
-    };
+    }
   },
-};
+}
 </script>

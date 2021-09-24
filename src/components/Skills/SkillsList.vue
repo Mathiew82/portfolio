@@ -10,18 +10,25 @@
 </template>
 
 <script>
-import SkillItem from "./SkillItem.vue";
+import { ref, onBeforeMount } from 'vue'
+import { skillsData } from '@/constants/skills.ts'
+import SkillItem from './SkillItem.vue'
 
 export default {
-  name: "SkillsList",
+  name: 'SkillsList',
   components: {
     SkillItem,
   },
-  props: {
-    skills: {
-      type: Array,
-      required: true,
-    },
+  setup() {
+    const skills = ref(null)
+
+    onBeforeMount(() => {
+      skills.value = skillsData
+    })
+
+    return {
+      skills,
+    }
   },
-};
+}
 </script>

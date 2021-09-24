@@ -19,12 +19,12 @@
 
 <script>
 export default {
-  name: "ProjectItem",
+  name: 'ProjectItem',
   props: {
     item: {
       type: Object,
       required: true,
     },
   },
-};
+}
 </script>

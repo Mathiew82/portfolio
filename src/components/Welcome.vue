@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "Welcome",
+  name: 'Welcome',
   props: {
     image: {
       type: String,
@@ -27,5 +27,5 @@ export default {
       required: true,
     },
   },
-};
+}
 </script>

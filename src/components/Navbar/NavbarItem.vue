@@ -1,9 +1,6 @@
 <template>
   <li>
-    <a
-      :href="href"
-      :id="id"
-      @click.prevent="toSection(id, isMobile)">
+    <a :href="href" :id="id" @click.prevent="toSection(id, isMobile)">
       <slot />
     </a>
   </li>
@@ -15,29 +12,25 @@ export default {
   props: {
     href: {
       type: String,
-      required: true
+      required: true,
     },
     id: {
       type: String,
-      required: true
+      required: true,
     },
     isMobile: {
       type: Boolean,
-      required: true
-    }
+      required: true,
+    },
   },
-  setup (props, { emit }) {
-    // Methods
-    // ------------------------------
+  setup(props, { emit }) {
     const toSection = (id, isMobile) => {
       emit('toSection', id, isMobile)
     }
 
-    // Return
-    // ------------------------------
     return {
-      toSection
+      toSection,
     }
-  }
+  },
 }
 </script>
