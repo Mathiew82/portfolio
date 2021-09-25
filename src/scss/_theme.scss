@@ -379,6 +379,12 @@ ul {
       display: block;
       font-family: 'Gill Sans Bold';
       font-size: 22px;
+      > svg {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px;
+      }
     }
 
     > .repos-description {
@@ -400,6 +406,13 @@ ul {
         display: inline-block;
         position: relative;
         top: 1px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px;
+        left: 3px;
       }
     }
   }
@@ -427,18 +440,19 @@ footer {
     overflow: visible;
     position: relative;
 
-    > i {
-      font-size: 40px;
+    > svg {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
       transition: color var(--extra-time-transition);
+      > path {
+        cursor: pointer;
+      }
     }
 
     &:hover {
-      &:after {
-        width: 0;
-      }
-
-      > i {
-        color: var(--violet-color);
+      > svg {
+        fill: var(--violet-color);
         transition: color ease 0.01s;
       }
     }
