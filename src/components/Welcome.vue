@@ -1,6 +1,6 @@
 <template>
   <div class="tac mt75">
-    <img :src="`/images/${image}`" class="photo" />
+    <img :src="`/images/${image}`" class="photo" width="200" height="200" />
   </div>
   <h1 class="tac mt15">
     {{ title }}

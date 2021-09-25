@@ -1,7 +1,12 @@
 <template>
   <div class="item-list">
     <span class="item-list-left-content">
-      <img :src="`/logos/${item.image}`" class="item-list__logo" />
+      <img
+        :src="`/logos/${item.image}`"
+        class="item-list__logo"
+        width="80"
+        height="80"
+      />
     </span>
     <span class="item-list-right-content">
       <div class="item-list__name">
