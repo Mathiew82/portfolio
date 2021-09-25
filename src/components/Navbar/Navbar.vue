@@ -1,6 +1,6 @@
 <template>
   <nav class="nav-menu">
-    <img src="/mi-logo.png" class="logo" />
+    <img src="/mi-logo.png" class="logo" width="96" height="40" />
     <ul>
       <NavbarItem
         v-for="item in navbar"
