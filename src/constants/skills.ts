@@ -1,19 +1,7 @@
 export const skillsData = [
   {
-    name: 'HTML',
-    color: '--red-color',
-  },
-  {
-    name: 'CSS',
-    color: '--blue-color',
-  },
-  {
     name: 'SASS',
     color: '--light-violet-color',
-  },
-  {
-    name: 'Responsive Design',
-    color: '--red-color',
   },
   {
     name: 'JavaScript',
@@ -40,10 +28,6 @@ export const skillsData = [
     color: '--green-color',
   },
   {
-    name: 'Element.io',
-    color: '--blue-color',
-  },
-  {
     name: 'React',
     color: '--blue-color',
   },
@@ -54,38 +38,6 @@ export const skillsData = [
   {
     name: 'Node.js',
     color: '--green-color',
-  },
-  {
-    name: 'Quasar',
-    color: '--violet-color',
-  },
-  {
-    name: 'Vuetify',
-    color: '--blue-color',
-  },
-  {
-    name: 'Bootstrap',
-    color: '--violet-color',
-  },
-  {
-    name: 'Bulma',
-    color: '--green-color',
-  },
-  {
-    name: 'Buefy',
-    color: '--light-violet-color',
-  },
-  {
-    name: 'Tailwind',
-    color: '--violet-color',
-  },
-  {
-    name: 'POO',
-    color: '--red-color',
-  },
-  {
-    name: 'Ajax',
-    color: '--yellow-color',
   },
   {
     name: 'PHP',
