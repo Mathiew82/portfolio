@@ -24,6 +24,10 @@ export const skillsData = [
     color: '--green-color',
   },
   {
+    name: 'Pinia',
+    color: '--yellow-color',
+  },
+  {
     name: 'Jest',
     color: '--green-color',
   },
