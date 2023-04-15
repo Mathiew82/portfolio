@@ -1,38 +1,42 @@
 <template>
   <nav class="nav-menu">
-    <img src="/mi-logo.png" class="logo" width="96" height="40" />
-    <ul>
-      <NavbarItem
-        v-for="item in navbar"
-        :key="item.id"
-        :href="`#${item.id}`"
-        :id="item.id"
-        :isMobile="false"
-        @to-section="toSection"
-      >
-        {{ item.name }}
-      </NavbarItem>
-    </ul>
-    <div ref="menuMobile" class="menu-mobile">
-      <ul>
-        <NavbarItem
-          v-for="item in navbar"
-          :key="item.id"
-          :href="`#${item.id}`"
-          :id="item.id"
-          :isMobile="true"
-          @to-section="toSection"
-        >
-          {{ item.name }}
-        </NavbarItem>
-      </ul>
-    </div>
-    <div ref="navBurgerIcon" class="nav-burguer-icon" @click="toggleMenuMobile">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <section class="nav-menu__content">
+      <img src="/mi-logo.png" class="logo" width="96" height="40" />
+      <div class="menu-desktop">
+        <ul>
+          <NavbarItem
+            v-for="item in navbar"
+            :key="item.id"
+            :href="`#${item.id}`"
+            :id="item.id"
+            :isMobile="false"
+            @to-section="toSection"
+          >
+            {{ item.name }}
+          </NavbarItem>
+        </ul>
+      </div>
+      <div ref="menuMobile" class="menu-mobile">
+        <ul>
+          <NavbarItem
+            v-for="item in navbar"
+            :key="item.id"
+            :href="`#${item.id}`"
+            :id="item.id"
+            :isMobile="true"
+            @to-section="toSection"
+          >
+            {{ item.name }}
+          </NavbarItem>
+        </ul>
+      </div>
+      <div ref="navBurgerIcon" class="nav-burguer-icon" @click="toggleMenuMobile">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
   </nav>
 </template>
 
