@@ -100,22 +100,34 @@ ul {
 
 .nav-menu {
   width: 100%;
-  height: 70px;
   background-color: var(--bg-color);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--double-space);
-  padding: 0 var(--default-space);
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
 
-  > ul {
+  &__content {
+    width: 100%;
+    max-width: 1200px;
+    height: 70px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 var(--default-space);
+  }
+
+  .menu-desktop {
+    height: 70px;
+    display: block;
+    padding-top: 4px;
+
+    > ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
     li {
       > a {
@@ -160,7 +172,46 @@ ul {
     }
   }
 
-  > .nav-burguer-icon {
+  .menu-mobile {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left var(--mid-time-transition);
+    z-index: 2;
+  
+    > ul {
+      margin-top: 85px;
+  
+      > li {
+        > a {
+          width: 100%;
+          height: 60px;
+          border-bottom: 1px solid var(--grey-color);
+          display: flex;
+          font-family: 'Gill Sans Bold';
+          font-size: 22px;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 var(--default-space);
+        }
+  
+        &:last-of-type {
+          > a {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  
+    &.open {
+      left: 0;
+    }
+  }
+
+  .nav-burguer-icon {
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -228,45 +279,6 @@ ul {
 
   @media (max-width: 768px) {
     padding: 0 var(--half-space);
-  }
-}
-
-.menu-mobile {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--bg-color);
-  position: absolute;
-  top: 0;
-  left: 100%;
-  transition: left var(--mid-time-transition);
-  z-index: 2;
-
-  > ul {
-    margin-top: 85px;
-
-    > li {
-      > a {
-        width: 100%;
-        height: 60px;
-        border-bottom: 1px solid var(--grey-color);
-        display: flex;
-        font-family: 'Gill Sans Bold';
-        font-size: 22px;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0 var(--default-space);
-      }
-
-      &:last-of-type {
-        > a {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-
-  &.open {
-    left: 0;
   }
 }
 
