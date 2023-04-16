@@ -60,11 +60,6 @@ h1 {
 
 h2 {
   font-size: 34px;
-
-  &:before {
-    color: var(--violet-color);
-    content: '< ';
-  }
 }
 
 a {
@@ -187,14 +182,11 @@ ul {
       > li {
         > a {
           width: 100%;
-          height: 60px;
           border-bottom: 1px solid var(--grey-color);
-          display: flex;
           font-family: 'Gill Sans Bold';
           font-size: 22px;
           justify-content: flex-start;
-          align-items: center;
-          padding: 0 var(--default-space);
+          padding: var(--default-space);
         }
   
         &:last-of-type {
@@ -296,7 +288,7 @@ ul {
 }
 
 .photo {
-  border: 10px solid var(--light-grey-color);
+  border: 10px solid var(--extra-light-violet-color);
   border-radius: 100px;
 }
 
