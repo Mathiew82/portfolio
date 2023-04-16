@@ -5,11 +5,6 @@
   font-family: 'Gill Sans';
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -27,7 +22,6 @@ html {
 }
 
 body {
-  max-width: 1200px;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 20px;
@@ -98,6 +92,11 @@ ul {
   padding: 0;
 }
 
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .nav-menu {
   width: 100%;
   background-color: var(--bg-color);
@@ -115,7 +114,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--default-space);
+    padding: 0;
   }
 
   .menu-desktop {
@@ -320,6 +319,7 @@ ul {
       line-height: 20px;
       font-family: 'Gill Sans Bold';
       font-size: 24px;
+
       > span {
         color: var(--violet-color);
         display: block;
@@ -339,6 +339,7 @@ ul {
       color: var(--white-color);
       margin: 0.3rem 0 0.5rem 0;
       padding: 6px 1.5rem;
+
       &:hover {
         background-color: var(--black-color);
       }
@@ -350,6 +351,7 @@ ul {
       > .item-list__name {
         display: block;
         font-size: 20px;
+
         > span {
           display: block;
           font-size: 16px;
@@ -372,6 +374,7 @@ ul {
       display: block;
       font-family: 'Gill Sans Bold';
       font-size: 22px;
+
       > svg {
         width: 20px;
         height: 20px;
@@ -400,6 +403,7 @@ ul {
         position: relative;
         top: 1px;
       }
+
       svg {
         width: 20px;
         height: 20px;
@@ -438,6 +442,7 @@ footer {
       height: 30px;
       cursor: pointer;
       transition: color var(--extra-time-transition);
+
       > path {
         cursor: pointer;
       }
