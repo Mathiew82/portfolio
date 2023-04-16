@@ -1,7 +1,7 @@
 <template>
   <Welcome
     image="mi-foto-min.jpeg"
-    title="BIENVENID@ A MI PORTFOLIO!"
+    title="ESTE ES MI PORTFOLIO"
     description="Soy Alberto Mateo y me dedico al desarrollo de aplicaciones como Frontend"
   />
 
