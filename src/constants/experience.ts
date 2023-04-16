@@ -47,7 +47,6 @@ export const experienceData = [
     companyName: 'Freelance',
     position: 'Full-Stack Developer',
     dates: 'dic. 2013 - mar. 2015',
-    description: `Llevar a cabo el desarrollo de aplicaciones web para pequeños clientes. Trabajando en todas las fases de desarrollo del proyecto, análisis, diseño, implementación, pruebas, y mantenimiento.
-            Tecnologías: HTML5, CSS3, SASS, JavaScript, jQuery, AJAX, PHP, CodeIgniter, MySQL, GIT.`,
+    description: `Tecnologías: HTML5, CSS3, SASS, JavaScript, jQuery, AJAX, PHP, CodeIgniter, MySQL, GIT.`,
   },
 ]
