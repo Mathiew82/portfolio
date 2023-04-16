@@ -60,38 +60,35 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'RepoItem',
-  props: {
-    url: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    color: {
-      type: String,
-      required: true,
-    },
-    language: {
-      type: String,
-      required: true,
-    },
-    stargazersCount: {
-      type: Number,
-      required: true,
-    },
-    forks: {
-      required: false,
-    },
+<script setup>
+defineProps({
+  url: {
+    type: String,
+    required: true
   },
-}
+  name: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  color: {
+    type: String,
+    required: true
+  },
+  language: {
+    type: String,
+    required: true
+  },
+  stargazersCount: {
+    type: Number,
+    required: true
+  },
+  forks: {
+    required: false
+  }
+});
 </script>

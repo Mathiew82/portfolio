@@ -4,18 +4,15 @@
   </li>
 </template>
 
-<script>
-export default {
-  name: 'SkillItem',
-  props: {
-    color: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
+<script setup>
+defineProps({
+  color: {
+    type: String,
+    required: true
   },
-}
+  name: {
+    type: String,
+    required: true
+  }
+});
 </script>

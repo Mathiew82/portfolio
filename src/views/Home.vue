@@ -21,23 +21,11 @@
   <Contact />
 </template>
 
-<script>
-import Welcome from '@components/Welcome.vue'
-import SkillsList from '@components/Skills/SkillsList.vue'
-import ExperienceList from '@components/Experience/ExperienceList.vue'
-import ProjectsList from '@components/Projects/ProjectsList.vue'
-import ReposList from '@components/Repos/ReposList.vue'
-import Contact from '@components/Contact.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    Welcome,
-    SkillsList,
-    ExperienceList,
-    ProjectsList,
-    ReposList,
-    Contact,
-  },
-}
+<script setup>
+import Welcome from '@/components/Welcome.vue';
+import SkillsList from '@/components/Skills/SkillsList.vue';
+import ExperienceList from '@/components/Experience/ExperienceList.vue';
+import ProjectsList from '@/components/Projects/ProjectsList.vue';
+import ReposList from '@/components/Repos/ReposList.vue';
+import Contact from '@/components/Contact.vue';
 </script>

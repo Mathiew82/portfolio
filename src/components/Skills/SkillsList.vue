@@ -9,26 +9,14 @@
   </ul>
 </template>
 
-<script>
-import { ref, onBeforeMount } from 'vue'
-import { skillsData } from '@/constants/skills.ts'
-import SkillItem from './SkillItem.vue'
+<script setup>
+import { ref, onBeforeMount } from 'vue';
+import { skillsData } from '@/constants/skills.ts';
+import SkillItem from './SkillItem.vue';
 
-export default {
-  name: 'SkillsList',
-  components: {
-    SkillItem,
-  },
-  setup() {
-    const skills = ref(null)
+const skills = ref(null);
 
-    onBeforeMount(() => {
-      skills.value = skillsData
-    })
-
-    return {
-      skills,
-    }
-  },
-}
+onBeforeMount(() => {
+  skills.value = skillsData;
+});
 </script>

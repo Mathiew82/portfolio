@@ -44,9 +44,3 @@
     </span>
   </footer>
 </template>
-
-<script>
-export default {
-  name: 'FooterCmp',
-}
-</script>

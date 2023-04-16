@@ -6,31 +6,27 @@
   </li>
 </template>
 
-<script>
-export default {
-  name: 'NavbarItem',
-  props: {
-    href: {
-      type: String,
-      required: true,
-    },
-    id: {
-      type: String,
-      required: true,
-    },
-    isMobile: {
-      type: Boolean,
-      required: true,
-    },
-  },
-  setup(props, { emit }) {
-    const toSection = (id, isMobile) => {
-      emit('toSection', id, isMobile)
-    }
+<script setup>
+import { defineEmit } from 'vue';
 
-    return {
-      toSection,
-    }
+defineProps({
+  href: {
+    type: String,
+    required: true
   },
-}
+  id: {
+    type: String,
+    required: true
+  },
+  isMobile: {
+    type: Boolean,
+    required: true
+  }
+});
+
+const emit = defineEmit(['toSection']);
+
+const toSection = (id, isMobile) => {
+  emit('toSection', id, isMobile);
+};
 </script>

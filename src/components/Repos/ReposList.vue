@@ -14,46 +14,33 @@
   </div>
 </template>
 
-<script>
-import { ref, onBeforeMount } from 'vue'
-import RepoItem from './RepoItem.vue'
+<script setup>
+import { ref, onBeforeMount } from 'vue';
+import RepoItem from './RepoItem.vue';
 
-export default {
-  name: 'ReposList',
-  components: {
-    RepoItem,
-  },
-  setup() {
-    const repos = ref(null)
-    const technologyColors = ref({
-      CSS: '--blue-color',
-      HTML: '--red-color',
-      JavaScript: '--yellow-color',
-      TypeScript: '--violet-color',
-      Vue: '--green-color',
-      Vim: '--green-color',
-      Rust: '--brown-color',
-    })
+const repos = ref(null);
+const technologyColors = ref({
+  CSS: '--blue-color',
+  HTML: '--red-color',
+  JavaScript: '--yellow-color',
+  TypeScript: '--violet-color',
+  Vue: '--green-color',
+  Vim: '--green-color',
+  Rust: '--brown-color'
+});
 
-    const fetchRepos = async () => {
-      const response = await fetch(
-        `https://api.github.com/users/Mathiew82/repos?sort=updated&direction=desc`
-      )
-      const repos = await response.json()
-      return repos.splice(0, 10)
-    }
+const fetchRepos = async () => {
+  const response = await fetch(
+    `https://api.github.com/users/Mathiew82/repos?sort=updated&direction=desc`
+  );
+  const repos = await response.json();
+  return repos.splice(0, 10);
+};
 
-    onBeforeMount(async () => {
-      const response = await fetchRepos()
-      repos.value = response.filter(
-        (item) => item.name !== 'Mathiew82' && !item.fork
-      )
-    })
-
-    return {
-      repos,
-      technologyColors,
-    }
-  },
-}
+onBeforeMount(async () => {
+  const response = await fetchRepos();
+  repos.value = response.filter(
+    (item) => item.name !== 'Mathiew82' && !item.fork
+  );
+});
 </script>

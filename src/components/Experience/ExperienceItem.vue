@@ -23,23 +23,17 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { computed } from 'vue';
 
-export default {
-  name: 'ExperienceItem',
-  props: {
-    item: {
-      type: Object,
-      required: true,
-    },
-  },
-  setup(props) {
-    const altImage = computed(() => props.item.image.replace(/\-[^-]*$/, '').replace('_', ' '));
+const { item } = defineProps({
+  item: {
+    type: Object,
+    required: true
+  }
+});
 
-    return {
-      altImage
-    };
-  },
-}
+const altImage = computed(() =>
+  item.image.replace(/\-[^-]*$/, '').replace('_', ' ')
+);
 </script>
