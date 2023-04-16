@@ -8,6 +8,7 @@
       <a
         href="https://www.linkedin.com/in/amateo82/"
         data-title="Linkedin"
+        aria-label="Sígueme en Linkedin"
         target="_blank"
       >
         <svg
@@ -26,6 +27,7 @@
       <a
         href="https://github.com/Mathiew82/"
         data-title="Github"
+        aria-label="Sígueme en Github"
         target="_blank"
       >
         <svg
