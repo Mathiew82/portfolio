@@ -3,11 +3,7 @@
 }
 
 .m-negative-row {
-  margin: 0 -5px !important;
-
-  @media (max-width: 768px) {
-    margin: 0 -10px !important;
-  }
+  margin: 0 -10px !important;
 }
 
 .mt15 {
@@ -16,6 +12,10 @@
 
 .mt75 {
   margin-top: 75px !important;
+}
+
+.mt50 {
+  margin-top: 50px !important;
 }
 
 .mb75 {
