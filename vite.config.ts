@@ -1,8 +1,6 @@
 const pathAliasMap = {
-  '@/': '/src/',
-  '@components/': '/src/components/',
-  '@views/': '/src/views/'
-}
+  '@/': '/src/'
+};
 
 export default {
   resolvers: [
@@ -10,10 +8,10 @@ export default {
       alias(path: string) {
         for (const [slug, res] of Object.entries(pathAliasMap)) {
           if (path.startsWith(slug)) {
-            return path.replace(slug, res)
+            return path.replace(slug, res);
           }
         }
       }
     }
   ]
-}
+};
