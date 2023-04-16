@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a :href="href" :id="id" @click.prevent="toSection(id, isMobile)">
+    <a :href="href" @click.prevent="toSection(id, isMobile)">
       <slot />
     </a>
   </li>
