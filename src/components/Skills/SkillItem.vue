@@ -1,5 +1,5 @@
 <template>
-  <li :style="`background: var(${color})`">
+  <li :style="`border: 2px solid var(${color}); color: var(${color})`">
     {{ name }}
   </li>
 </template>
