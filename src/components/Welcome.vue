@@ -1,5 +1,5 @@
 <template>
-  <div class="tac mt75">
+  <div class="tac mt50">
     <img :src="`/images/${image}`" class="photo" width="200" height="200" />
   </div>
   <h1 class="tac mt15">
