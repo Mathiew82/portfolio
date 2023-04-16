@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-menu">
     <section class="nav-menu__content">
-      <img src="/mi-logo.png" class="logo" width="96" height="40" />
+      <img src="/mi-logo.png" class="logo" width="96" height="40" alt="Mi logo" />
       <div class="menu-desktop">
         <ul>
           <NavbarItem

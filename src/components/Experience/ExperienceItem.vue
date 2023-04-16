@@ -6,6 +6,7 @@
         class="item-list__logo"
         width="80"
         height="80"
+        :alt="altImage"
       />
     </span>
     <span class="item-list-right-content">
@@ -23,6 +24,8 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+
 export default {
   name: 'ExperienceItem',
   props: {
@@ -30,6 +33,13 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  setup(props) {
+    const altImage = computed(() => props.item.image.replace(/\-[^-]*$/, '').replace('_', ' '));
+
+    return {
+      altImage
+    };
   },
 }
 </script>
