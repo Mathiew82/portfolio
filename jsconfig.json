@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
-    "allowJs": true
+    "allowJs": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
