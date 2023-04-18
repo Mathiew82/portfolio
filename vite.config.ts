@@ -1,17 +1,14 @@
-const pathAliasMap = {
-  '@/': '/src/'
-};
+import { fileURLToPath, URL } from 'url';
+import vue from '@vitejs/plugin-vue';
 
 export default {
-  resolvers: [
-    {
-      alias(path: string) {
-        for (const [slug, res] of Object.entries(pathAliasMap)) {
-          if (path.startsWith(slug)) {
-            return path.replace(slug, res);
-          }
-        }
+  plugins: [vue()],
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: fileURLToPath(new URL('./src', import.meta.url))
       }
-    }
-  ]
+    ]
+  }
 };
