@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { defineEmit } from 'vue';
+import { defineEmits } from 'vue';
 
 defineProps({
   href: {
@@ -24,7 +24,7 @@ defineProps({
   }
 });
 
-const emit = defineEmit(['toSection']);
+const emit = defineEmits(['toSection']);
 
 const toSection = (id, isMobile) => {
   emit('toSection', id, isMobile);
