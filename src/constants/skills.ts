@@ -1,4 +1,6 @@
-export const skillsData = [
+import { Skill } from '@/types/Skill';
+
+export const skillsData: Skill[] = [
   {
     name: 'SASS',
     color: '--light-violet-color'
