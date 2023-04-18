@@ -1,70 +1,70 @@
 export const skillsData = [
   {
     name: 'SASS',
-    color: '--light-violet-color',
+    color: '--light-violet-color'
   },
   {
     name: 'JavaScript',
-    color: '--yellow-color',
+    color: '--yellow-color'
   },
   {
     name: 'TypeScript',
-    color: '--violet-color',
+    color: '--violet-color'
   },
   {
     name: 'Vue.js',
-    color: '--green-color',
+    color: '--green-color'
   },
   {
     name: 'Nuxt.js',
-    color: '--green-color',
+    color: '--green-color'
+  },
+  {
+    name: 'GraphQL',
+    color: '--pink-color'
   },
   {
     name: 'Vuex',
-    color: '--green-color',
+    color: '--green-color'
   },
   {
     name: 'Pinia',
-    color: '--yellow-color',
+    color: '--yellow-color'
   },
   {
     name: 'Jest',
-    color: '--green-color',
+    color: '--green-color'
   },
   {
     name: 'React',
-    color: '--blue-color',
+    color: '--blue-color'
   },
   {
     name: 'Redux',
-    color: '--light-violet-color',
+    color: '--light-violet-color'
   },
   {
     name: 'Node.js',
-    color: '--green-color',
+    color: '--green-color'
   },
   {
     name: 'PHP',
-    color: '--light-violet-color',
+    color: '--light-violet-color'
   },
   {
     name: 'MongoDB',
-    color: '--green-color',
+    color: '--green-color'
   },
   {
     name: 'MySQL',
-    color: '--blue-color',
+    color: '--blue-color'
   },
   {
     name: 'Git',
-    color: '--red-color',
+    color: '--red-color'
   },
   {
     name: 'Electron',
-    color: '--light-violet-color',
-  },
-  {
-    name: 'Ionic',
-    color: '--blue-color',
-  },
-]
+    color: '--light-violet-color'
+  }
+];
