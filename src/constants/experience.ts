@@ -1,4 +1,6 @@
-export const experienceData = [
+import { ExperienceItem } from '@/types/ExperienceItem';
+
+export const experienceData: ExperienceItem[] = [
   {
     image: 'logo_promofarma-min.jpeg',
     companyName: 'Promofarma',
