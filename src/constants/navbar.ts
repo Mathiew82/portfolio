@@ -1,22 +1,24 @@
-export const navbarData = [
+import { NavbarItem } from '@/types/NavbarItem';
+
+export const navbarData: NavbarItem[] = [
   {
     id: 'skills',
-    name: 'Skills',
+    name: 'Skills'
   },
   {
     id: 'experience',
-    name: 'Experiencia',
+    name: 'Experiencia'
   },
   {
     id: 'projects',
-    name: 'Proyectos',
+    name: 'Proyectos'
   },
   {
     id: 'repos',
-    name: 'Repositorios',
+    name: 'Repositorios'
   },
   {
     id: 'contact',
-    name: 'Contacto',
-  },
-]
+    name: 'Contacto'
+  }
+];
