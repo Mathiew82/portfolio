@@ -4,15 +4,11 @@
   </li>
 </template>
 
-<script setup>
-defineProps({
-  color: {
-    type: String,
-    required: true
-  },
-  name: {
-    type: String,
-    required: true
-  }
-});
+<script setup lang="ts">
+interface props {
+  color: string;
+  name: string;
+}
+
+defineProps<props>();
 </script>
