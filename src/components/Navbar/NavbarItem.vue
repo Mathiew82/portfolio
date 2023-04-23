@@ -7,8 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineEmits } from 'vue';
-
 interface Props {
   href: string;
   id: string;
