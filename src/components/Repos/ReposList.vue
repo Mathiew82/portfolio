@@ -14,12 +14,21 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onBeforeMount } from 'vue';
 import RepoItem from './RepoItem.vue';
 
-const repos = ref(null);
-const technologyColors = ref({
+interface TechnologyColors {
+  CSS: string;
+  HTML: string;
+  JavaScript: string;
+  TypeScript: string;
+  Vue: string;
+  Vim: string;
+  Rust: string;
+}
+
+const technologyColors: TechnologyColors = {
   CSS: '--blue-color',
   HTML: '--red-color',
   JavaScript: '--yellow-color',
@@ -27,17 +36,19 @@ const technologyColors = ref({
   Vue: '--green-color',
   Vim: '--green-color',
   Rust: '--brown-color'
-});
+};
 
-const fetchRepos = async () => {
+const repos = ref<any[]>(null);
+
+const fetchRepos = async (): Promise<any[]> => {
   const response = await fetch(
     `https://api.github.com/users/Mathiew82/repos?sort=updated&direction=desc`
   );
-  const repos = await response.json();
-  return repos.splice(0, 10);
+  const reposResponse = await response.json();
+  return reposResponse.splice(0, 10);
 };
 
-onBeforeMount(async () => {
+onBeforeMount(async (): Promise<void> => {
   const response = await fetchRepos();
   repos.value = response.filter(
     (item) => item.name !== 'Mathiew82' && !item.fork
