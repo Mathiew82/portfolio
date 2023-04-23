@@ -23,17 +23,17 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue';
+import { ProjectItem as ProjectItemT } from '@/types/ProjectItem';
 
-const { item } = defineProps({
-  item: {
-    type: Object,
-    required: true
-  }
-});
+interface props {
+  item: ProjectItemT;
+}
 
-const altImage = computed(() =>
+const { item } = defineProps<props>();
+
+const altImage = computed<string>(() =>
   item.image.replace(/\-[^-]*$/, '').replace('_', ' ')
 );
 </script>
