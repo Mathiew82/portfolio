@@ -27,11 +27,11 @@
 import { computed } from 'vue';
 import { ExperienceItem as ExperienceItemT } from '@/types/ExperienceItem';
 
-interface props {
+interface Props {
   item: ExperienceItemT;
 }
 
-const { item } = defineProps<props>();
+const { item } = defineProps<Props>();
 
 const altImage = computed<string>(() =>
   item.image.replace(/\-[^-]*$/, '').replace('_', ' ')

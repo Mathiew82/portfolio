@@ -9,13 +9,13 @@
 <script setup lang="ts">
 import { defineEmits } from 'vue';
 
-interface props {
+interface Props {
   href: string;
   id: string;
   isMobile: boolean;
 }
 
-defineProps<props>();
+defineProps<Props>();
 
 const emit = defineEmits(['toSection']);
 

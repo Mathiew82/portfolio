@@ -17,11 +17,11 @@
 </template>
 
 <script setup lang="ts">
-interface props {
+interface Props {
   image: string;
   title: string;
   description: string;
 }
 
-defineProps<props>();
+defineProps<Props>();
 </script>

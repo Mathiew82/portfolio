@@ -5,10 +5,10 @@
 </template>
 
 <script setup lang="ts">
-interface props {
+interface Props {
   color: string;
   name: string;
 }
 
-defineProps<props>();
+defineProps<Props>();
 </script>

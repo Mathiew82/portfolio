@@ -27,11 +27,11 @@
 import { computed } from 'vue';
 import { ProjectItem as ProjectItemT } from '@/types/ProjectItem';
 
-interface props {
+interface Props {
   item: ProjectItemT;
 }
 
-const { item } = defineProps<props>();
+const { item } = defineProps<Props>();
 
 const altImage = computed<string>(() =>
   item.image.replace(/\-[^-]*$/, '').replace('_', ' ')
