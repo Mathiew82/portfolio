@@ -6,27 +6,20 @@
   </li>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { defineEmits } from 'vue';
 
-defineProps({
-  href: {
-    type: String,
-    required: true
-  },
-  id: {
-    type: String,
-    required: true
-  },
-  isMobile: {
-    type: Boolean,
-    required: true
-  }
-});
+interface props {
+  href: string;
+  id: string;
+  isMobile: boolean;
+}
+
+defineProps<props>();
 
 const emit = defineEmits(['toSection']);
 
-const toSection = (id, isMobile) => {
+const toSection = (id: string, isMobile: boolean) => {
   emit('toSection', id, isMobile);
 };
 </script>
