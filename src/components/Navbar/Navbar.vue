@@ -11,7 +11,7 @@
       <div class="menu-desktop">
         <ul>
           <NavbarItem
-            v-for="item in navbar"
+            v-for="item in navbarData"
             :key="item.id"
             :href="`#${item.id}`"
             :id="item.id"
@@ -25,11 +25,11 @@
       <div ref="menuMobile" class="menu-mobile">
         <ul>
           <NavbarItem
-            v-for="item in navbar"
+            v-for="item in navbarData"
             :key="item.id"
             :href="`#${item.id}`"
             :id="item.id"
-            :isMobile="true"
+            isMobile
             @to-section="toSection"
           >
             {{ item.name }}
@@ -50,45 +50,43 @@
   </nav>
 </template>
 
-<script setup>
-import { onBeforeMount, onMounted, ref } from 'vue';
-import { navbarData } from '@/constants/navbar.ts';
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import { navbarData } from '@/constants/navbar';
 import NavbarItem from './NavbarItem.vue';
 
-const navBurgerIcon = ref(null);
-const menuMobile = ref(null);
-const navbar = ref(null);
-let activeStickyMenu = false;
+const navBurgerIcon = ref<HTMLDivElement>(null);
+const menuMobile = ref<HTMLDivElement>(null);
+const activeStickyMenu = ref<boolean>(false);
 
-onBeforeMount(() => {
-  navbar.value = navbarData;
-});
-
-onMounted(() => {
+onMounted((): void => {
   stickyMenu();
 });
 
-const stickyMenu = () => {
+const stickyMenu = (): void => {
   window.onscroll = () => {
-    const scrollPosition = window.pageYOffset;
-    const navMenu = document.querySelector('.nav-menu');
-    if (!activeStickyMenu && scrollPosition > 70) {
+    const scrollPosition: number = window.pageYOffset;
+    const navMenu: HTMLElement = document.querySelector('.nav-menu');
+
+    if (!activeStickyMenu.value && scrollPosition > 70) {
       navMenu.style.boxShadow = '0 5px 30px -15px rgba(0, 0, 0, .4)';
-      activeStickyMenu = true;
+      activeStickyMenu.value = true;
     }
-    if (activeStickyMenu && scrollPosition <= 70) {
+
+    if (activeStickyMenu.value && scrollPosition <= 70) {
       navMenu.style.boxShadow = 'none';
-      activeStickyMenu = false;
+      activeStickyMenu.value = false;
     }
   };
 };
 
-const toSection = (id, isMobile) => {
-  const offsetTop = document.querySelector(`#${id}-content`).offsetTop - 80;
+const toSection = (id: string, isMobile: boolean): void => {
+  const offsetTop =
+    (document.querySelector(`#${id}-content`) as HTMLElement).offsetTop - 80;
 
   scroll({
     top: offsetTop,
-    behavior: 'smooth',
+    behavior: 'smooth'
   });
 
   if (isMobile) {
@@ -96,7 +94,7 @@ const toSection = (id, isMobile) => {
   }
 };
 
-const toggleMenuMobile = () => {
+const toggleMenuMobile = (): void => {
   navBurgerIcon.value.classList.toggle('open');
   menuMobile.value.classList.toggle('open');
 };
