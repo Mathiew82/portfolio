@@ -1,19 +1,12 @@
 <template>
   <ExperienceItem
-    v-for="item in experience"
+    v-for="item in experienceData"
     :key="item.companyName"
     :item="item"
   />
 </template>
 
-<script setup>
-import { ref, onBeforeMount } from 'vue';
-import { experienceData } from '@/constants/experience.ts';
+<script setup lang="ts">
+import { experienceData } from '@/constants/experience';
 import ExperienceItem from './ExperienceItem.vue';
-
-const experience = ref(null);
-
-onBeforeMount(() => {
-  experience.value = experienceData;
-});
 </script>
