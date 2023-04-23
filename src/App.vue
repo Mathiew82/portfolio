@@ -4,7 +4,7 @@
   <FooterCmp />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Navbar from '@/components/Navbar/Navbar.vue';
 import FooterCmp from '@/components/FooterCmp.vue';
 </script>
