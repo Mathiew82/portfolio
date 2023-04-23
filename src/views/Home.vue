@@ -23,9 +23,9 @@
 
 <script setup lang="ts">
 import Welcome from '@/components/Welcome.vue';
-import SkillsList from '@/components/Skills/SkillsList.vue';
+import SkillsList from '@/components/Skills/SkillList.vue';
 import ExperienceList from '@/components/Experience/ExperienceList.vue';
-import ProjectsList from '@/components/Projects/ProjectsList.vue';
-import ReposList from '@/components/Repos/ReposList.vue';
+import ProjectsList from '@/components/Projects/ProjectList.vue';
+import ReposList from '@/components/Repos/RepoList.vue';
 import Contact from '@/components/Contact.vue';
 </script>
