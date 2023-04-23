@@ -6,28 +6,28 @@ export const experienceData: ExperienceItem[] = [
     companyName: 'Promofarma',
     position: 'Frontend Engineer',
     dates: 'jun. 2021 - actualidad',
-    description: `Tecnologías: HTML, CSS, SASS, JavaScript, Typescript, Vue.js, Vuex, GraphQL, Jest, GIT`
+    description: `Tecnologías: CSS, SASS, JavaScript, Typescript, Vue.js, Vuex, GraphQL, Jest, GIT`
   },
   {
     image: 'logo_housfy-min.jpg',
     companyName: 'Housfy',
     position: 'Front-End Developer',
     dates: 'dic. 2020 - abr. 2021',
-    description: `Tecnologías: HTML, CSS, SASS, JavaScript, Vue.js, Nuxt.js, Vuex, Jest, GIT`
+    description: `Tecnologías: CSS, SASS, JavaScript, Vue.js, Nuxt.js, Vuex, Jest, GIT`
   },
   {
     image: 'logo_crealogix-min.png',
     companyName: 'CREALOGIX Group',
     position: 'Front-End Developer',
     dates: 'jul. 2020 - dic. 2020',
-    description: `Tecnologías: HTML, CSS, SASS, JavaScript, GIT`
+    description: `Tecnologías: CSS, SASS, JavaScript, GIT`
   },
   {
     image: 'logo_ohmybrand-min.png',
     companyName: 'Oh! my brand',
     position: 'Front-End Developer',
     dates: 'oct. 2018 - jul. 2020',
-    description: `Tecnologías: HTML, CSS, SASS, JavaScript, Vue.js, Vuex, Vue StoreFront, Riot.js, GIT`
+    description: `Tecnologías: CSS, SASS, JavaScript, Vue.js, Vuex, Vue StoreFront, Riot.js, GIT`
   },
   {
     image: 'logo_pasiona-min.jpg',
@@ -42,13 +42,13 @@ export const experienceData: ExperienceItem[] = [
     position: 'Full-Stack Developer',
     dates: 'oct. 2016 - nov. 2017',
     description:
-      'Tecnologías: HTML, CSS, SASS, JavaScript, jQuery, AJAX, PHP, Twig, CodeIgniter, MySQL, GIT'
+      'Tecnologías: CSS, SASS, JavaScript, jQuery, AJAX, PHP, Twig, CodeIgniter, MySQL, GIT'
   },
   {
     image: 'logo_codiwho-min.png',
     companyName: 'Freelance',
     position: 'Full-Stack Developer',
     dates: 'dic. 2013 - mar. 2015',
-    description: `Tecnologías: HTML, CSS, SASS, JavaScript, jQuery, AJAX, PHP, CodeIgniter, MySQL, GIT`
+    description: `Tecnologías: CSS, SASS, JavaScript, jQuery, AJAX, PHP, CodeIgniter, MySQL, GIT`
   }
 ];
