@@ -16,19 +16,12 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  image: {
-    type: String,
-    required: true
-  },
-  title: {
-    type: String,
-    required: true
-  },
-  description: {
-    type: String,
-    required: true
-  }
-});
+<script setup lang="ts">
+interface props {
+  image: string;
+  title: string;
+  description: string;
+}
+
+defineProps<props>();
 </script>
