@@ -21,7 +21,7 @@
   <Contact />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Welcome from '@/components/Welcome.vue';
 import SkillsList from '@/components/Skills/SkillsList.vue';
 import ExperienceList from '@/components/Experience/ExperienceList.vue';
