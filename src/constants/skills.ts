@@ -50,10 +50,6 @@ export const skillsData: Skill[] = [
     color: '--green-color'
   },
   {
-    name: 'PHP',
-    color: '--light-violet-color'
-  },
-  {
     name: 'MongoDB',
     color: '--green-color'
   },
@@ -68,5 +64,13 @@ export const skillsData: Skill[] = [
   {
     name: 'Electron',
     color: '--light-violet-color'
+  },
+  {
+    name: 'Astro',
+    color: '--light-violet-color'
+  },
+  {
+    name: 'Svelte',
+    color: '--yellow-color'
   }
 ];
