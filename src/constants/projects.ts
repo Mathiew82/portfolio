@@ -11,7 +11,7 @@ export const projectsData: ProjectItem[] = [
   },
   {
     image: 'logo_cijs-min.png',
-    url: 'https://compress-images-app.vercel.app/',
+    url: 'https://compress-images-js.vercel.app/',
     name: 'Compress Images JS',
     stack: 'Vue 2, Vuex, SASS',
     description:
