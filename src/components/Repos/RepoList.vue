@@ -26,6 +26,8 @@ interface TechnologyColors {
   Vue: string;
   Vim: string;
   Rust: string;
+  Python: string;
+  Lua: string;
 }
 
 const technologyColors: TechnologyColors = {
@@ -35,7 +37,9 @@ const technologyColors: TechnologyColors = {
   TypeScript: '--violet-color',
   Vue: '--green-color',
   Vim: '--green-color',
-  Rust: '--brown-color'
+  Rust: '--brown-color',
+  Python: '--green-color',
+  Lua: '--violet-color'
 };
 
 const repos = ref<any[]>(null);
