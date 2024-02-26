@@ -6,7 +6,8 @@ export const projectsData: ProjectItem[] = [
     url: 'https://dailup.vercel.app/',
     name: 'Dailup',
     stack: 'Vue 3, Pinia, SASS',
-    description: 'Sencilla aplicación para controlar el tiempo de las dailys.'
+    description:
+      'Una sencilla aplicación para poder controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
   },
   {
     image: 'logo_cijs-min.png',
@@ -14,7 +15,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Compress Images JS',
     stack: 'Vue 2, Vuex, SASS',
     description:
-      'Aplicación para la compresión de imágenes. Una vez comprimidas, pueden descargarse individualmente o en un archivo comprimido.'
+      'Aplicación para la compresión de imágenes. Pueden descargarse individualmente o en un archivo comprimido.'
   },
   {
     image: 'logo_buscamovies-min.png',
@@ -22,7 +23,7 @@ export const projectsData: ProjectItem[] = [
     name: 'BuscaMovies',
     stack: 'React, Redux, Jest, TMDb API',
     description:
-      'Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre cualquiera de ellas.'
+      'Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre ellas.'
   },
   {
     image: 'logo_multiplication-tables-desktop-min.png',
@@ -30,6 +31,6 @@ export const projectsData: ProjectItem[] = [
     name: 'Tablas de Multiplicar - Desktop App',
     stack: 'JavaScript, Electron, SASS',
     description:
-      'Un sencillo juego con el que los niños podrán aprender de una forma más divertida y práctica las tablas de multiplicar.'
+      'Un sencillo juego para que los niños puedan aprender de forma más divertida las tablas de multiplicar.'
   }
 ];
