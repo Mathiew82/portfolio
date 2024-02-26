@@ -49,7 +49,7 @@ const fetchRepos = async (): Promise<any[]> => {
     `https://api.github.com/users/Mathiew82/repos?sort=updated&direction=desc`
   );
   const reposResponse = await response.json();
-  return reposResponse.splice(0, 10);
+  return reposResponse.splice(0, 9);
 };
 
 onBeforeMount(async (): Promise<void> => {
