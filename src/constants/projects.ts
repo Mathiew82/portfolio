@@ -3,14 +3,14 @@ import { ProjectItem } from '@/types/ProjectItem';
 export const projectsData: ProjectItem[] = [
   {
     image: 'logo_dailup-min.jpeg',
-    url: 'https://dailup.es/',
+    url: 'https://dailup.vercel.app/',
     name: 'Dailup',
     stack: 'Vue 3, Pinia, SASS',
     description: 'Sencilla aplicación para controlar el tiempo de las dailys.'
   },
   {
     image: 'logo_cijs-min.png',
-    url: 'https://compress-images-js.com/',
+    url: 'https://compress-images-app.vercel.app/',
     name: 'Compress Images JS',
     stack: 'Vue 2, Vuex, SASS',
     description:
