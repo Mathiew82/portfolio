@@ -2,7 +2,7 @@ import { ProjectItem } from '@/types/ProjectItem';
 
 export const projectsData: ProjectItem[] = [
   {
-    image: 'logo_dailup-min.jpeg',
+    image: 'logo_dailup-min.webp',
     url: 'https://dailup.vercel.app/',
     name: 'Dailup',
     stack: 'Vue 3, Pinia, SASS',
@@ -10,7 +10,7 @@ export const projectsData: ProjectItem[] = [
       'Una sencilla aplicación para poder controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
   },
   {
-    image: 'logo_cijs-min.png',
+    image: 'logo_cijs-min.webp',
     url: 'https://compress-images-js.vercel.app/',
     name: 'Compress Images JS',
     stack: 'Vue 2, Vuex, SASS',
@@ -18,7 +18,7 @@ export const projectsData: ProjectItem[] = [
       'Aplicación para la compresión de imágenes. Pueden descargarse individualmente o en un archivo comprimido.'
   },
   {
-    image: 'logo_buscamovies-min.png',
+    image: 'logo_buscamovies-min.webp',
     url: 'http://buscamovies.surge.sh/',
     name: 'BuscaMovies',
     stack: 'React, Redux, Jest, TMDb API',
@@ -26,7 +26,7 @@ export const projectsData: ProjectItem[] = [
       'Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre ellas.'
   },
   {
-    image: 'logo_multiplication-tables-desktop-min.png',
+    image: 'logo_multiplication-tables-desktop-min.webp',
     url: 'https://mathiew82.github.io/multiplication-tables-desktop/',
     name: 'Tablas de Multiplicar - Desktop App',
     stack: 'JavaScript, Electron, SASS',
