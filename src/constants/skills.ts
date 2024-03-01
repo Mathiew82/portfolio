@@ -38,6 +38,10 @@ export const skillsData: Skill[] = [
     color: '--green-color'
   },
   {
+    name: 'Vitest',
+    color: '--green-color'
+  },
+  {
     name: 'React',
     color: '--blue-color'
   },
