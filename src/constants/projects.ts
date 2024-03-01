@@ -2,6 +2,14 @@ import { ProjectItem } from '@/types/ProjectItem';
 
 export const projectsData: ProjectItem[] = [
   {
+    image: 'logo_curripulum-min.webp',
+    url: 'https://curripulum.vercel.app/',
+    name: 'Curripulum',
+    stack: 'React',
+    description:
+      'Aplicación para crear de forma sencilla y práctica un currículum para imprimir.'
+  },
+  {
     image: 'logo_dailup-min.webp',
     url: 'https://dailup.vercel.app/',
     name: 'Dailup',
