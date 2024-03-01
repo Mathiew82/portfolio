@@ -14,11 +14,11 @@ export const skillsData: Skill[] = [
     color: '--violet-color'
   },
   {
-    name: 'Vue.js',
+    name: 'Vue',
     color: '--green-color'
   },
   {
-    name: 'Nuxt.js',
+    name: 'Nuxt',
     color: '--green-color'
   },
   {
@@ -50,7 +50,7 @@ export const skillsData: Skill[] = [
     color: '--light-violet-color'
   },
   {
-    name: 'Node.js',
+    name: 'Node',
     color: '--green-color'
   },
   {
