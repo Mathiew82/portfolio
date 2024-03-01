@@ -13,7 +13,7 @@ export const projectsData: ProjectItem[] = [
     image: 'logo_dailup-min.webp',
     url: 'https://dailup.vercel.app/',
     name: 'Dailup',
-    stack: 'Vue 3, Pinia, SASS',
+    stack: 'Vue 3, Pinia',
     description:
       'Una sencilla aplicación para poder controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
   },
@@ -21,7 +21,7 @@ export const projectsData: ProjectItem[] = [
     image: 'logo_cijs-min.webp',
     url: 'https://compress-images-js.vercel.app/',
     name: 'Compress Images JS',
-    stack: 'Vue 2, Vuex, SASS',
+    stack: 'Vue 2, Vuex',
     description:
       'Aplicación para la compresión de imágenes. Pueden descargarse individualmente o en un archivo comprimido.'
   },
@@ -37,7 +37,7 @@ export const projectsData: ProjectItem[] = [
     image: 'logo_multiplication-tables-desktop-min.webp',
     url: 'https://mathiew82.github.io/multiplication-tables-desktop/',
     name: 'Tablas de Multiplicar - Desktop App',
-    stack: 'JavaScript, Electron, SASS',
+    stack: 'Electron',
     description:
       'Un sencillo juego para que los niños puedan aprender de forma más divertida las tablas de multiplicar.'
   }
