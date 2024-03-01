@@ -2,7 +2,11 @@ import { Skill } from '@/types/Skill';
 
 export const skillsData: Skill[] = [
   {
-    name: 'SASS',
+    name: 'CSS',
+    color: '--blue-color'
+  },
+  {
+    name: 'SCSS',
     color: '--light-violet-color'
   },
   {
@@ -64,10 +68,6 @@ export const skillsData: Skill[] = [
   {
     name: 'Git',
     color: '--red-color'
-  },
-  {
-    name: 'Electron',
-    color: '--light-violet-color'
   },
   {
     name: 'Astro',
