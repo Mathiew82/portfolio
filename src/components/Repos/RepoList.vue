@@ -61,24 +61,24 @@ const fetchRepos = async (): Promise<void> => {
 };
 
 const setGithubItems = (): void => {
-  localStorage.setItem('github-request', Date.now().toString());
+  localStorage.setItem('github-cached', Date.now().toString());
   localStorage.setItem('github-response', JSON.stringify(repos.value));
   return;
 };
 
 const requestCache = async (): void => {
-  if (!localStorage.getItem('github-request')) {
+  if (!localStorage.getItem('github-cached')) {
     await fetchRepos();
     setGithubItems();
   }
 
   const dateDiffHours = dateDiff(
-    Number(localStorage.getItem('github-request')),
+    Number(localStorage.getItem('github-cached')),
     Date.now()
   );
 
   if (dateDiffHours > 23) {
-    localStorage.removeItem('github-request');
+    localStorage.removeItem('github-cached');
     await fetchRepos();
     setGithubItems();
   }
