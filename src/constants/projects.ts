@@ -7,7 +7,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Curripulum',
     stack: 'React',
     description:
-      'Aplicación para crear de forma sencilla y práctica un currículum para imprimir.'
+      'Aplicación para generar, de forma sencilla y práctica, un currículum para imprimir con información básica.'
   },
   {
     image: 'logo_dailup-min.webp',
@@ -15,7 +15,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Dailup',
     stack: 'Vue 3, Pinia',
     description:
-      'Una sencilla aplicación para poder controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
+      'Aplicación para controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
   },
   {
     image: 'logo_cijs-min.webp',
