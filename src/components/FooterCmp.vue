@@ -1,9 +1,6 @@
 <template>
   <footer>
-    <span>
-      Sitio desarrollado con Vue 3.
-      <br />Gracias por visitar mi sitio! :)
-    </span>
+    <span>Gracias por visitar mi sitio! :)</span>
     <span>
       <a
         href="https://www.linkedin.com/in/amateo82/"
