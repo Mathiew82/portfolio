@@ -27,7 +27,7 @@ export const projectsData: ProjectItem[] = [
   },
   {
     image: 'logo_buscamovies-min.webp',
-    url: 'http://buscamovies.surge.sh/',
+    url: 'https://buscamovies.vercel.app/',
     name: 'BuscaMovies',
     stack: 'React, Redux, Jest, TMDb API',
     description:
