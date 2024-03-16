@@ -28,6 +28,7 @@ interface TechnologyColors {
   Rust: string;
   Python: string;
   Lua: string;
+  Shell: string;
 }
 
 const technologyColors: TechnologyColors = {
@@ -39,7 +40,8 @@ const technologyColors: TechnologyColors = {
   Vim: '--green-color',
   Rust: '--brown-color',
   Python: '--green-color',
-  Lua: '--violet-color'
+  Lua: '--violet-color',
+  Shell: '--green-color'
 };
 
 const repos = ref<any[]>([]);
