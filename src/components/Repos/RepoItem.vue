@@ -16,11 +16,13 @@
       </a>
       <div class="repos-description">{{ description }}</div>
       <div class="repos-language">
-        <span
-          class="repos-language__circle"
-          :style="`background: var(${color})`"
-        ></span>
-        {{ language }}
+        <span v-if="language">
+          <span
+            class="repos-language-circle"
+            :style="`background: var(${color})`"
+          ></span>
+          <span class="repos-language-label">{{ language }}</span>
+        </span>
         <a :href="`${url}/stargazers`" target="_blank">
           <svg
             height="712pt"

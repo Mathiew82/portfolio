@@ -369,14 +369,14 @@ ul {
   .repos__item {
     width: 100%;
     min-height: 110px;
-    background-color: var(--light-grey-color);
+    border: 1px solid var(--grey-color);
     border-radius: var(--border-radius-default);
     padding: var(--default-space);
 
     > .repos-title {
       display: block;
       font-family: 'Gill Sans Bold';
-      font-size: 22px;
+      font-size: 20px;
 
       > svg {
         width: 20px;
@@ -398,15 +398,6 @@ ul {
     }
 
     > .repos-language {
-      > .repos-language__circle {
-        width: 14px;
-        height: 14px;
-        border-radius: 7px;
-        display: inline-block;
-        position: relative;
-        top: 1px;
-      }
-
       svg {
         width: 20px;
         height: 20px;
@@ -414,6 +405,20 @@ ul {
         top: 3px;
         left: 3px;
       }
+    }
+
+    .repos-language-circle {
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      display: inline-block;
+      margin-right: 5px;
+      position: relative;
+      top: 1px;
+    }
+
+    .repos-language-label {
+      margin-right: 8px;
     }
   }
 }

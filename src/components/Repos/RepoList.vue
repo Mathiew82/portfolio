@@ -6,7 +6,7 @@
       :url="repo.html_url"
       :name="repo.name"
       :description="repo.description"
-      :color="technologyColors[repo.language.split(' ')[0]]"
+      :color="technologyColors[repo.language?.split(' ')[0]]"
       :language="repo.language"
       :stargazers-count="repo.stargazers_count"
       :forks="repo.forks"
@@ -54,6 +54,7 @@ const fetchRepos = async (): Promise<void> => {
 
   const response = await fetch(`${path}Mathiew82/repos${options}`);
   const reposResponse = await response.json();
+  console.log(reposResponse);
 
   repos.value = reposResponse
     .filter((item) => item.name !== 'Mathiew82' && !item.fork)
@@ -66,7 +67,7 @@ const setGithubItems = (): void => {
   return;
 };
 
-const requestCache = async (): void => {
+const requestCache = async (): Promise<void> => {
   if (!localStorage.getItem('github-cached')) {
     await fetchRepos();
     setGithubItems();
