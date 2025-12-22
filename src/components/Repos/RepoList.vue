@@ -12,6 +12,9 @@
       :forks="repo.forks"
     />
   </div>
+  <div class="loader-wrapper">
+    <div class="loader" />
+  </div>
 </template>
 
 <script setup lang="ts">
