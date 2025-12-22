@@ -1,5 +1,5 @@
 <template>
-  <Welcome
+  <!-- <Welcome
     image="mi-foto-min.jpeg"
     title="ESTE ES MI PORTFOLIO"
     description="Soy Alberto Mateo y me dedico al desarrollo de aplicaciones como Frontend"
@@ -12,7 +12,7 @@
   <ExperienceList />
 
   <h2 id="projects-content" class="mt75">Proyectos</h2>
-  <ProjectsList />
+  <ProjectsList /> -->
 
   <h2 id="repos-content" class="mt75">Repositorios en Github</h2>
   <ReposList />

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="repos.length" class="row repos m-negative-row">
+  <div v-if="repos?.length" class="row repos m-negative-row">
     <RepoItem
       v-for="repo in repos"
       :key="repo.id"
@@ -12,7 +12,11 @@
       :forks="repo.forks"
     />
   </div>
-  <div class="loader-wrapper">
+  <div v-if="!repos" class="no-results-wrapper">
+    <div class="gg-smile-sad" />
+    Ha ocurrido algún error y no se pueden mostrar los repositorios
+  </div>
+  <div v-if="isLoading" class="loader-wrapper">
     <div class="loader" />
   </div>
 </template>
@@ -47,6 +51,7 @@ const technologyColors: TechnologyColors = {
   Shell: '--green-color'
 };
 
+const isLoading = ref<boolean>(false);
 const repos = ref<any[]>([]);
 
 const dateDiff = (first: number, second: number): number => {
@@ -54,16 +59,24 @@ const dateDiff = (first: number, second: number): number => {
 };
 
 const fetchRepos = async (): Promise<void> => {
+  isLoading.value = true;
+
   const path = 'https://api.github.com/users/';
   const options = '?sort=updated&direction=desc';
 
-  const response = await fetch(`${path}Mathiew82/repos${options}`);
-  const reposResponse = await response.json();
-  console.log(reposResponse);
+  try {
+    const response = await fetch(`${path}Mathiew82/repos${options}`);
+    const reposResponse = await response.json();
 
-  repos.value = reposResponse
-    .filter((item) => item.name !== 'Mathiew82' && !item.fork)
-    .splice(0, 9);
+    repos.value = reposResponse
+      .filter((item) => item.name !== 'Mathiew82' && !item.fork)
+      .splice(0, 9);
+  } catch (err) {
+    repos.value = null;
+    console.error(err);
+  } finally {
+    isLoading.value = false;
+  }
 };
 
 const setGithubItems = (): void => {
