@@ -1,23 +1,23 @@
 <template>
   <Welcome
     image="mi-foto-min.jpeg"
-    title="ESTE ES MI PORTFOLIO"
-    description="Soy Alberto Mateo y me dedico al desarrollo de aplicaciones como Frontend"
+    title="THIS IS MY PORTFOLIO"
+    description="My name is Alberto Mateo and I work in application development as a Frontend developer"
   />
 
   <h2 id="skills-content">Skills</h2>
   <SkillsList />
 
-  <h2 id="experience-content" class="mt75">Experiencia</h2>
+  <h2 id="experience-content" class="mt75">Experience</h2>
   <ExperienceList />
 
-  <h2 id="projects-content" class="mt75">Proyectos</h2>
+  <h2 id="projects-content" class="mt75">Projects</h2>
   <ProjectsList />
 
-  <h2 id="repos-content" class="mt75">Repositorios en Github</h2>
+  <h2 id="repos-content" class="mt75">Repositories on Github</h2>
   <ReposList />
 
-  <h2 id="contact-content" class="mt75">Contacta conmigo</h2>
+  <h2 id="contact-content" class="mt75">Contact me</h2>
   <Contact />
 </template>
 

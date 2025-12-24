@@ -14,7 +14,7 @@
   </div>
   <div v-if="!repos" class="no-results-wrapper">
     <div class="gg-smile-sad" />
-    Ha ocurrido algún error y no se pueden mostrar los repositorios
+    An error has occurred and the repositories cannot be displayed.
   </div>
   <div v-if="isLoading" class="loader-wrapper">
     <div class="loader" />

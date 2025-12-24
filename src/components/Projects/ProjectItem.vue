@@ -14,7 +14,7 @@
         {{ item.name }} <span>{{ item.stack }}</span>
       </div>
       <div class="item-list__info">
-        <a :href="item.url" target="_blank"> ver proyecto </a>
+        <a :href="item.url" target="_blank"> view project </a>
       </div>
       <div class="item-list__description">
         {{ item.description }}

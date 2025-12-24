@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <span>Gracias por visitar mi sitio! :)</span>
+    <span>Thank you for visiting my site! :)</span>
     <span>
       <a
         href="https://www.linkedin.com/in/amateo82/"

@@ -7,18 +7,18 @@ export const navbarData: NavbarItem[] = [
   },
   {
     id: 'experience',
-    name: 'Experiencia'
+    name: 'Experience'
   },
   {
     id: 'projects',
-    name: 'Proyectos'
+    name: 'Projects'
   },
   {
     id: 'repos',
-    name: 'Repositorios'
+    name: 'Repositories'
   },
   {
     id: 'contact',
-    name: 'Contacto'
+    name: 'Contact'
   }
 ];

@@ -7,7 +7,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Curripulum',
     stack: 'React',
     description:
-      'Aplicación para generar, de forma sencilla y práctica, un currículum para imprimir con información básica.'
+      'Application to easily and practically generate a printable resume with basic information.'
   },
   {
     image: 'logo_dailup-min.webp',
@@ -15,7 +15,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Dailup',
     stack: 'Vue 3, Pinia',
     description:
-      'Aplicación para controlar el tiempo de las dailys. Contabiliza el tiempo por turnos.'
+      'Application for tracking daily work time. Tracks time by shift.'
   },
   {
     image: 'logo_cijs-min.webp',
@@ -23,7 +23,7 @@ export const projectsData: ProjectItem[] = [
     name: 'Compress Images JS',
     stack: 'Vue 2, Vuex',
     description:
-      'Aplicación para la compresión de imágenes. Pueden descargarse individualmente o en un archivo comprimido.'
+      'Image compression application. Images can be downloaded individually or in a compressed file.'
   },
   {
     image: 'logo_buscamovies-min.webp',
@@ -31,7 +31,7 @@ export const projectsData: ProjectItem[] = [
     name: 'BuscaMovies',
     stack: 'React, Redux, Jest, TMDb API',
     description:
-      'Proyecto de búsqueda de películas alimentado por la api de TMDb. Puedes buscar películas y obtener la información sobre ellas.'
+      'Movie search project powered by the TMDb API. You can search for movies and get information about them.'
   },
   {
     image: 'logo_multiplication-tables-desktop-min.webp',
@@ -39,6 +39,6 @@ export const projectsData: ProjectItem[] = [
     name: 'Tablas de Multiplicar - Desktop App',
     stack: 'Electron',
     description:
-      'Un sencillo juego para que los niños puedan aprender de forma más divertida las tablas de multiplicar.'
+      'A simple game so that children can learn the multiplication tables in a more fun way.'
   }
 ];
