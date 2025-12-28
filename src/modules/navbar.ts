@@ -4,11 +4,19 @@ const menuMobile = document.querySelector<HTMLDivElement>("#menuMobile");
 const burgerIcon = document.querySelector<HTMLDivElement>("#burgerIcon");
 
 // Link elements mobile
-const skiLinkM = document.querySelector<HTMLAnchorElement>("#skiCntM");
-const expLinkM = document.querySelector<HTMLAnchorElement>("#expCntM");
-const proLinkM = document.querySelector<HTMLAnchorElement>("#proCntM");
-const repLinkM = document.querySelector<HTMLAnchorElement>("#repCntM");
-const conLinkM = document.querySelector<HTMLAnchorElement>("#conCntM");
+const skillsLinkMobile =
+  document.querySelector<HTMLAnchorElement>("#skillsLinkMobile");
+const experienceLinkMobile = document.querySelector<HTMLAnchorElement>(
+  "#experienceLinkMobile",
+);
+const projectsLinkMobile = document.querySelector<HTMLAnchorElement>(
+  "#projectsLinkMobile",
+);
+const repositoriesLinkMobile = document.querySelector<HTMLAnchorElement>(
+  "#repositoriesLinkMobile",
+);
+const contactLinkMobile =
+  document.querySelector<HTMLAnchorElement>("#contactLinkMobile");
 
 // Variables and functions
 let activeStickyMenu: boolean = false;
@@ -41,23 +49,23 @@ burgerIcon?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
-skiLinkM?.addEventListener("click", () => {
+skillsLinkMobile?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
-expLinkM?.addEventListener("click", () => {
+experienceLinkMobile?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
-proLinkM?.addEventListener("click", () => {
+projectsLinkMobile?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
-repLinkM?.addEventListener("click", () => {
+repositoriesLinkMobile?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
-conLinkM?.addEventListener("click", () => {
+contactLinkMobile?.addEventListener("click", () => {
   toggleMenuMobile();
 });
 
