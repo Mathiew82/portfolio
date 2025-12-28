@@ -17,11 +17,11 @@ The goal of this project is to keep things **clear, fast, and maintainable**, av
 
 ## Project structure
 
-src/main.ts // application entry point
-src/modules/ // isolated feature logic
-src/data/ // static data feeding the HTML
-src/types/ // TypeScript types
-src/scss/ // styles
+- src/main.ts // application entry point
+- src/modules/ // isolated feature logic
+- src/data/ // static data feeding the HTML
+- src/types/ // TypeScript types
+- src/scss/ // styles
 
 ---
 
