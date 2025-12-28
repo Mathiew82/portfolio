@@ -1,4 +1,4 @@
-import type { TechnologyColors } from "./types/TechnologyColors";
+import type { TechnologyColors } from "../types/TechnologyColors";
 
 // Repo elements
 const reposWrapper = document.querySelector<HTMLDivElement>(".repos");
