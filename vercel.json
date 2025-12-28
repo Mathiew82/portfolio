@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.amateo82.es" }],
+      "destination": "https://amateo82.es/$1",
+      "permanent": true
+    }
+  ]
+}
