@@ -9,16 +9,16 @@ const loaderWrapper = document.querySelector<HTMLDivElement>(".loader-wrapper");
 
 // Variables and functions
 const TECHNOLOGY_COLORS: TechnologyColors = {
-  CSS: "--blue-color",
-  HTML: "--red-color",
-  JavaScript: "--yellow-color",
-  TypeScript: "--blue-color",
-  Vue: "--green-color",
-  Vim: "--green-color",
-  Rust: "--brown-color",
-  Python: "--green-color",
-  Lua: "--violet-color",
-  Shell: "--green-color",
+  CSS: "technology-blue",
+  HTML: "technology-red",
+  JavaScript: "technology-yellow",
+  TypeScript: "technology-blue",
+  Vue: "technology-green",
+  Vim: "technology-green",
+  Rust: "technology-brown",
+  Python: "technology-green",
+  Lua: "technology-violet",
+  Shell: "technology-green",
 };
 
 let repos: any[] = [];
@@ -33,8 +33,7 @@ const displayRepos = (): void => {
       ? `
         <span>
           <span
-            class="repos-language-circle"
-            style="background: var(${TECHNOLOGY_COLORS[item.language?.split(" ")[0] as keyof TechnologyColors]})"
+            class="repos-language-circle ${TECHNOLOGY_COLORS[item.language?.split(" ")[0] as keyof TechnologyColors]}"
           ></span>
           <span class="repos-language-label">${item.language}</span>
         </span>

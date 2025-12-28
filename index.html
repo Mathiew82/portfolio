@@ -106,11 +106,7 @@
                 <h2>Skills</h2>
                 <ul class="skills">
                     {{#each skills}}
-                    <li
-                        style="border: 2px solid var({{color}}); color: var({{color}})"
-                    >
-                        {{ name }}
-                    </li>
+                    <li class="{{color}}">{{ name }}</li>
                     {{/each}}
                 </ul>
             </section>

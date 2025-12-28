@@ -3,94 +3,94 @@ import type { Skill } from "../types/Skill";
 export const skills: Skill[] = [
   {
     name: "CSS",
-    color: "--blue-color",
+    color: "skill-blue",
   },
   {
     name: "SCSS",
-    color: "--light-violet-color",
+    color: "skill-light-violet",
   },
   {
     name: "JavaScript",
-    color: "--yellow-color",
+    color: "skill-yellow",
   },
   {
     name: "TypeScript",
-    color: "--violet-color",
+    color: "skill-violet",
   },
   {
     name: "Vue",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "Nuxt",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "Docker",
-    color: "--violet-color",
+    color: "skill-violet",
   },
   {
     name: "GraphQL",
-    color: "--pink-color",
+    color: "skill-pink",
   },
   {
     name: "Vuex",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "Pinia",
-    color: "--yellow-color",
+    color: "skill-yellow",
   },
   {
     name: "Jest",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "Vitest",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "React",
-    color: "--blue-color",
+    color: "skill-blue",
   },
   {
     name: "Redux",
-    color: "--light-violet-color",
+    color: "skill-light-violet",
   },
   {
     name: "Node",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "MongoDB",
-    color: "--green-color",
+    color: "skill-green",
   },
   {
     name: "MySQL",
-    color: "--blue-color",
+    color: "skill-blue",
   },
   {
     name: "Git",
-    color: "--red-color",
+    color: "skill-red",
   },
   {
     name: "Astro",
-    color: "--light-violet-color",
+    color: "skill-light-violet",
   },
   {
     name: "Svelte",
-    color: "--yellow-color",
+    color: "skill-yellow",
   },
   {
     name: "Tailwind",
-    color: "--violet-color",
+    color: "skill-violet",
   },
   {
     name: "UX/UI",
-    color: "--red-color",
+    color: "skill-red",
   },
   {
     name: "CI/CD",
-    color: "--yellow-color",
+    color: "skill-yellow",
   },
 ];
