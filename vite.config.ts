@@ -1,14 +1,19 @@
-import { fileURLToPath, URL } from 'url';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from "vite";
+import handlebars from "vite-plugin-handlebars";
+import { navbar } from "./src/data/navbar";
+import { skills } from "./src/data/skills";
+import { experience } from "./src/data/experience";
+import { projects } from "./src/data/projects";
 
-export default {
-  plugins: [vue()],
-  resolve: {
-    alias: [
-      {
-        find: '@',
-        replacement: fileURLToPath(new URL('./src', import.meta.url))
-      }
-    ]
-  }
-};
+export default defineConfig({
+  plugins: [
+    handlebars({
+      context: {
+        navbar,
+        skills,
+        experience,
+        projects,
+      },
+    }),
+  ],
+});
