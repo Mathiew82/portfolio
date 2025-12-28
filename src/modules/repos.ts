@@ -43,7 +43,7 @@ const displayRepos = (): void => {
     const repoElement = document.createElement("div");
     repoElement.className = "col xs-12 sm-6 md-4 lg-4";
     repoElement.innerHTML = `<div class="repos__item">
-          <a href="${item.url}" target="_blank" class="repos-title">
+          <a href="${item.html_url}" target="_blank" class="repos-title">
             <svg
               height="512pt"
               viewBox="0 -57 512 512"
