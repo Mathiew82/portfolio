@@ -566,8 +566,8 @@ footer {
   font-size: 0;
   padding-top: 4px;
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 15px;
+  right: 15px;
   transition: background-color var(--extra-time-transition);
   &.show {
     display: flex;
@@ -590,11 +590,6 @@ footer {
     margin: auto;
     transform: rotate(45deg);
   }
-}
-
-.go-up-button:focus-visible {
-  outline: 3px solid #00f;
-  outline-offset: 3px;
 }
 
 .skill-green {
