@@ -324,21 +324,22 @@ header {
     padding: var(--mid-half-space) 0 0 var(--default-space);
 
     > .item-list__name {
-      line-height: 20px;
+      line-height: 18px;
       font-family: "Gill Sans Bold";
       font-size: 20px;
 
       > span {
         color: var(--violet-color);
         display: block;
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 0.2rem;
       }
     }
 
     > .item-list__info,
     > .item-list__info > a {
-      color: var(--grey-color);
+      color: #678;
+      font-size: 18px;
     }
 
     > .item-list__info > a {
