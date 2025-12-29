@@ -197,12 +197,16 @@
                     class="row repos m-negative-row"
                     aria-live="polite"
                 ></div>
-                <div class="no-results-wrapper">
+                <div class="no-results-wrapper" role="alert">
                     <div class="gg-smile-sad"></div>
                     An error has occurred and the repositories cannot be
                     displayed.
                 </div>
-                <div class="loader-wrapper">
+                <div
+                    class="loader-wrapper"
+                    role="status"
+                    aria-label="Loading repositories"
+                >
                     <div class="loader"></div>
                 </div>
             </section>
