@@ -87,6 +87,23 @@ ul {
   margin: 0 auto;
 }
 
+.skip-link {
+  background: var(--black-color);
+  border-radius: 8px;
+  color: var(--white-color);
+  padding: 10px 14px;
+  position: fixed;
+  top: -100px;
+  left: 12px;
+  text-decoration: none;
+  z-index: 2;
+  &:focus {
+    outline: 3px solid var(--blue-color);
+    outline-offset: 3px;
+    top: 12px;
+  }
+}
+
 header {
   width: 100%;
   background-color: var(--bg-color);
