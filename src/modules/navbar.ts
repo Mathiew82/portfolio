@@ -47,6 +47,8 @@ const stickyMenu = (): void => {
 
 // Events
 burgerIcon?.addEventListener("click", () => {
+  const expanded = burgerIcon.ariaExpanded === "true";
+  burgerIcon.ariaExpanded = String(!expanded);
   toggleMenuMobile();
 });
 

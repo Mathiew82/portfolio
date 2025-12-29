@@ -175,7 +175,7 @@ header {
     position: absolute;
     top: 0;
     left: 100%;
-    transition: left var(--mid-time-transition);
+    transition: left var(--min-time-transition);
     z-index: 2;
 
     > ul {
@@ -207,6 +207,8 @@ header {
   .burguer-icon {
     width: 45px;
     height: 45px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     display: none;
     margin-top: 7px;

@@ -87,12 +87,19 @@
                         {{/each}}
                     </ul>
                 </nav>
-                <div id="burgerIcon" class="burguer-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <button
+                    id="burgerIcon"
+                    class="burguer-icon"
+                    aria-controls="menuMobile"
+                    aria-expanded="false"
+                    aria-label="Open menu"
+                    type="button"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
             </div>
         </header>
         <main id="app">
