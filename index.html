@@ -69,7 +69,7 @@
         <header>
             <div class="header__content">
                 <img src="/logo.png" class="logo" alt="Mi logo" />
-                <nav class="menu-desktop">
+                <nav class="menu-desktop" aria-label="Desktop navigation">
                     <ul>
                         {{#each navbar}}
                         <li>
@@ -78,7 +78,11 @@
                         {{/each}}
                     </ul>
                 </nav>
-                <nav class="menu-mobile" id="menuMobile">
+                <nav
+                    id="menuMobile"
+                    class="menu-mobile"
+                    aria-label="Mobile navigation"
+                >
                     <ul>
                         {{#each navbar}}
                         <li>
