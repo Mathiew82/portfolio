@@ -126,7 +126,7 @@ header {
 
     li {
       > a {
-        color: var(--grey-color);
+        color: var(--black-color);
         font-family: "Gill Sans Bold";
         font-size: 18px;
         margin-right: var(--default-space);
@@ -378,7 +378,7 @@ header {
   .repos__item {
     width: 100%;
     min-height: 110px;
-    border: 1px solid var(--grey-color);
+    border: 1px solid #abc;
     border-radius: var(--border-radius-default);
     padding: var(--default-space);
 
