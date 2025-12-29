@@ -553,6 +553,47 @@ footer {
   }
 }
 
+.go-up-button {
+  width: 44px;
+  height: 44px;
+  background-color: var(--black-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  padding-top: 4px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  transition: background-color var(--extra-time-transition);
+  &:hover {
+    background-color: var(--violet-color);
+    transition: background-color ease 0.01s;
+  }
+  &:focus-visible {
+    outline: 3px solid var(--blue-color);
+    outline-offset: 3px;
+  }
+  &::before {
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    content: "";
+    display: block;
+    margin: auto;
+    transform: rotate(45deg);
+  }
+}
+
+.go-up-button:focus-visible {
+  outline: 3px solid #00f;
+  outline-offset: 3px;
+}
+
 .skill-green {
   border: 2px solid var(--green-color);
   color: var(--green-color);
