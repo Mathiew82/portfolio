@@ -33,7 +33,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--black-color);
+  color: var(--grey-color);
   font-family: "Gill Sans Bold";
   letter-spacing: -2px;
   margin-bottom: var(--default-space);
@@ -41,12 +41,11 @@ h4 {
 
 h1 {
   line-height: 1.2;
-  color: var(--black-color);
+  color: var(--grey-color);
   font-family: "Gill Sans BoldItalic";
   font-size: 34px;
-  margin: 75px 0 var(--half-space);
   font-style: italic;
-  text-shadow: 3px 3px 0 rgba(black, 0.2);
+  margin: 10px 0 var(--half-space);
   text-transform: uppercase;
   transform: rotate(-1deg);
 
@@ -56,7 +55,7 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 28px;
 }
 
 a {
@@ -102,11 +101,16 @@ header {
   .header__content {
     width: 100%;
     max-width: 1200px;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    .logo {
+      width: 80px;
+      position: relative;
+      bottom: 2px;
+    }
   }
 
   .menu-desktop {
@@ -122,6 +126,7 @@ header {
 
     li {
       > a {
+        color: var(--grey-color);
         font-family: "Gill Sans Bold";
         font-size: 18px;
         margin-right: var(--default-space);
@@ -145,6 +150,7 @@ header {
         }
 
         &:hover {
+          color: var(--violet-color);
           &:after {
             width: 100%;
           }
@@ -275,7 +281,7 @@ header {
 #projects,
 #repositories,
 #contact {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 
 .skills {
@@ -321,7 +327,7 @@ header {
     > .item-list__name {
       line-height: 20px;
       font-family: "Gill Sans Bold";
-      font-size: 24px;
+      font-size: 20px;
 
       > span {
         color: var(--violet-color);

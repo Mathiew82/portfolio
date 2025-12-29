@@ -30,14 +30,15 @@ const stickyMenu = (): void => {
   if (!header) return;
 
   window.onscroll = () => {
+    const pixelsToActivate: number = 40;
     const scrollPosition: number = window.pageYOffset;
 
-    if (!activeStickyMenu && scrollPosition > 70) {
-      header.style.boxShadow = "0 5px 30px -15px rgba(0, 0, 0, .4)";
+    if (!activeStickyMenu && scrollPosition > pixelsToActivate) {
+      header.style.boxShadow = "0 5px 30px -15px rgba(0, 10, 40, .2)";
       activeStickyMenu = true;
     }
 
-    if (activeStickyMenu && scrollPosition <= 70) {
+    if (activeStickyMenu && scrollPosition <= pixelsToActivate) {
       header.style.boxShadow = "none";
       activeStickyMenu = false;
     }
