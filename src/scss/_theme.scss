@@ -560,7 +560,7 @@ footer {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 0;
@@ -569,6 +569,9 @@ footer {
   bottom: 24px;
   right: 24px;
   transition: background-color var(--extra-time-transition);
+  &.show {
+    display: flex;
+  }
   &:hover {
     background-color: var(--violet-color);
     transition: background-color ease 0.01s;

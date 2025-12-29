@@ -29,20 +29,22 @@ const toggleMenuMobile = (): void => {
 const stickyMenu = (): void => {
   if (!header) return;
 
-  window.onscroll = () => {
-    const pixelsToActivate: number = 40;
-    const scrollPosition: number = window.pageYOffset;
+  const pixelsToActivate: number = 40;
+
+  const onScroll = () => {
+    const scrollPosition = window.pageYOffset;
 
     if (!activeStickyMenu && scrollPosition > pixelsToActivate) {
       header.style.boxShadow = "0 5px 30px -15px rgba(0, 10, 40, .2)";
       activeStickyMenu = true;
-    }
-
-    if (activeStickyMenu && scrollPosition <= pixelsToActivate) {
+    } else if (activeStickyMenu && scrollPosition <= pixelsToActivate) {
       header.style.boxShadow = "none";
       activeStickyMenu = false;
     }
   };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 };
 
 // Events
