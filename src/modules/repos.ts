@@ -85,6 +85,7 @@ const displayRepos = (): void => {
 
 const fetchRepos = async (): Promise<void> => {
   loaderWrapper?.classList.add("show");
+  loaderWrapper?.setAttribute("aria-hidden", "false");
 
   const path = "https://api.github.com/users/";
   const options = "?sort=updated&direction=desc";
@@ -100,9 +101,11 @@ const fetchRepos = async (): Promise<void> => {
     displayRepos();
   } catch (err) {
     noResultsWrapper?.classList.add("show");
+    noResultsWrapper?.setAttribute("aria-hidden", "false");
     console.error(err);
   } finally {
     loaderWrapper?.classList.remove("show");
+    loaderWrapper?.setAttribute("aria-hidden", "true");
   }
 };
 
