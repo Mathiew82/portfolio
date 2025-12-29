@@ -506,40 +506,48 @@ header {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 100px;
   margin-bottom: var(--double-space);
-  > span:last-of-type {
+  .footer__content {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: flex-end;
-  }
-  a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: var(--mid-half-space);
-    overflow: visible;
-    position: relative;
-    > svg {
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      transition: color var(--extra-time-transition);
-      > path {
-        cursor: pointer;
-      }
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    > span:last-of-type {
+      display: flex;
+      justify-content: flex-end;
     }
-    &:focus-visible {
-      outline: 3px solid var(--blue-color);
-      outline-offset: 3px;
-    }
-    &:hover {
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: var(--mid-half-space);
+      overflow: visible;
+      position: relative;
       > svg {
-        fill: var(--violet-color);
-        transition: color ease 0.01s;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: color var(--extra-time-transition);
+        > path {
+          cursor: pointer;
+        }
+      }
+      &:focus-visible {
+        outline: 3px solid var(--blue-color);
+        outline-offset: 3px;
+      }
+      &:hover {
+        > svg {
+          fill: var(--violet-color);
+          transition: color ease 0.01s;
+        }
       }
     }
   }
