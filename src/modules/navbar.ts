@@ -1,7 +1,7 @@
 // Menu elements
 const header = document.querySelector<HTMLElement>("header");
 const menuMobile = document.querySelector<HTMLDivElement>("#menuMobile");
-const burgerIcon = document.querySelector<HTMLDivElement>("#burgerIcon");
+const burgerButton = document.querySelector<HTMLDivElement>("#burgerButton");
 
 // Link elements mobile
 const skillsLinkMobile =
@@ -22,7 +22,7 @@ const contactLinkMobile =
 let activeStickyMenu: boolean = false;
 
 const toggleMenuMobile = (): void => {
-  burgerIcon?.classList.toggle("open");
+  burgerButton?.classList.toggle("open");
   menuMobile?.classList.toggle("open");
 };
 
@@ -46,9 +46,9 @@ const stickyMenu = (): void => {
 };
 
 // Events
-burgerIcon?.addEventListener("click", () => {
-  const expanded = burgerIcon.ariaExpanded === "true";
-  burgerIcon.ariaExpanded = String(!expanded);
+burgerButton?.addEventListener("click", () => {
+  const expanded = burgerButton.ariaExpanded === "true";
+  burgerButton.ariaExpanded = String(!expanded);
   toggleMenuMobile();
 });
 
