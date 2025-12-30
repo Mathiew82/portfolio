@@ -208,8 +208,8 @@ header {
   }
 
   .burguer-button {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -221,7 +221,7 @@ header {
     z-index: 3;
     > span {
       width: 100%;
-      height: 5px;
+      height: 8px;
       background: var(--black-color);
       border-radius: 3px;
       display: block;
@@ -235,10 +235,10 @@ header {
       }
       &:nth-child(2),
       &:nth-child(3) {
-        top: 14px;
+        top: 16px;
       }
       &:nth-child(4) {
-        top: 28px;
+        top: 32px;
       }
     }
     &.open {
