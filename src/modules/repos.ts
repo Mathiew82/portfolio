@@ -61,7 +61,7 @@ const displayRepos = (): void => {
           <div class="repos-description">${item.description}</div>
           <div class="repos-language">
           ${languageHtml}
-            <a href="${item.url}/stargazers" target="_blank">
+            <a href="${item.html_url}/stargazers" target="_blank" tabindex="-1">
               <svg
                 height="712pt"
                 viewBox="0 -57 712 712"
