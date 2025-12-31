@@ -10,20 +10,20 @@ export const projects: ProjectItem[] = [
       "Image compression application. Images can be downloaded individually or in a compressed file.",
   },
   {
-    image: "logo_curripulum-min.webp",
-    url: "https://curripulum.vercel.app/",
-    name: "Curripulum",
-    stack: "React",
-    description:
-      "Application to easily and practically generate a printable resume with basic information.",
-  },
-  {
     image: "logo_buscamovies-min.webp",
     url: "https://buscamovies.vercel.app/",
     name: "BuscaMovies",
     stack: "React, Redux, Jest, TMDb API",
     description:
       "Movie search project powered by the TMDb API. You can search for movies and get information about them.",
+  },
+  {
+    image: "logo_curripulum-min.webp",
+    url: "https://curripulum.vercel.app/",
+    name: "Curripulum",
+    stack: "React",
+    description:
+      "Application to easily and practically generate a printable resume with basic information.",
   },
   {
     image: "logo_dailup-min.webp",
