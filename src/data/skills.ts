@@ -79,7 +79,7 @@ export const skills: Skill[] = [
   },
   {
     name: "Svelte",
-    color: "skill-yellow",
+    color: "skill-red",
   },
   {
     name: "Tailwind",
