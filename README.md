@@ -8,7 +8,7 @@ The goal of this project is to keep things **clear, fast, and maintainable**, av
 
 ## Tech stack & decisions
 
-- **HTML + TypeScript + SCSS**
+- **HTML + Handlebars + SCSS + TypeScript**
 - **Vite** as build tool (fast development and optimized production output)
 - **No frameworks** (no Vue / React / etc.) by design  
   → simpler architecture, smaller bundle, and full control over the codebase
