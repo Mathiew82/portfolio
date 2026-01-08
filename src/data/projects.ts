@@ -2,7 +2,7 @@ import type { ProjectItem } from "../types/ProjectItem";
 
 export const projects: ProjectItem[] = [
   {
-    image: "logo_cijs-min.webp",
+    image: "logo_cijs-min.png",
     url: "https://compress-images-js.vercel.app/",
     name: "Compress Images JS",
     stack: "Vue 2, Vuex",
