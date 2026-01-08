@@ -34,7 +34,7 @@ export const projects: ProjectItem[] = [
       "This is a simple password generator app built in Rust with GTK 4.",
   },
   {
-    image: "logo_dailup-min.webp",
+    image: "logo_dailup-min.png",
     url: "https://dailup.vercel.app/",
     name: "Dailup",
     stack: "Vue 3, Pinia",
