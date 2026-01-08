@@ -34,6 +34,14 @@ export const projects: ProjectItem[] = [
       "Application for tracking daily work time. Tracks time by shift.",
   },
   {
+    image: "logo_pass_generator_app-min.webp",
+    url: "https://github.com/Mathiew82/pass-generator-app",
+    name: "Pass Generator App",
+    stack: "Rust, GTK 4",
+    description:
+      "This is a simple password generator app built in Rust with GTK 4.",
+  },
+  {
     image: "logo_multiplication-tables-desktop-min.webp",
     url: "https://mathiew82.github.io/multiplication-tables-desktop/",
     name: "Tablas de Multiplicar - Desktop App",
