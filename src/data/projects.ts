@@ -26,20 +26,20 @@ export const projects: ProjectItem[] = [
       "Application to easily and practically generate a printable resume with basic information.",
   },
   {
+    image: "logo_pass_generator_app-min.png",
+    url: "https://github.com/Mathiew82/pass-generator-app",
+    name: "Pass Generator App",
+    stack: "Rust, GTK 4",
+    description:
+      "This is a simple password generator app built in Rust with GTK 4.",
+  },
+  {
     image: "logo_dailup-min.webp",
     url: "https://dailup.vercel.app/",
     name: "Dailup",
     stack: "Vue 3, Pinia",
     description:
       "Application for tracking daily work time. Tracks time by shift.",
-  },
-  {
-    image: "logo_pass_generator_app-min.webp",
-    url: "https://github.com/Mathiew82/pass-generator-app",
-    name: "Pass Generator App",
-    stack: "Rust, GTK 4",
-    description:
-      "This is a simple password generator app built in Rust with GTK 4.",
   },
   {
     image: "logo_multiplication-tables-desktop-min.webp",
