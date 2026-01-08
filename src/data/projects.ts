@@ -42,7 +42,7 @@ export const projects: ProjectItem[] = [
       "Application for tracking daily work time. Tracks time by shift.",
   },
   {
-    image: "logo_multiplication-tables-desktop-min.webp",
+    image: "logo_multiplication-tables-desktop-min.png",
     url: "https://mathiew82.github.io/multiplication-tables-desktop/",
     name: "Tablas de Multiplicar - Desktop App",
     stack: "Electron",
