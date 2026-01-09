@@ -32,6 +32,7 @@ const displayGoUpButton = (): void => {
 // Events
 goUpButton?.addEventListener("click", () => {
   window.scrollTo(0, 0);
+  document.querySelector("#app")?.focus();
 });
 
 // Execute code
