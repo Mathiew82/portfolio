@@ -33,7 +33,7 @@ const displayGoUpButton = (): void => {
 goUpButton?.addEventListener("click", () => {
   window.scrollTo(0, 0);
   const app = document.querySelector<HTMLElement>("#app");
-  app?.focus();
+  app?.focus({ preventScroll: true });
 });
 
 // Execute code
