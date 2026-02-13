@@ -34,6 +34,14 @@ export const projects: ProjectItem[] = [
       "This is a simple password generator app built in Rust with GTK 4.",
   },
   {
+    image: "logo_okivim-min.png",
+    url: "https://okivim.org/",
+    name: "Okivim - Neovim Configuration",
+    stack: "Lua",
+    description:
+      "Minimal, elegant and efficient Neovim configuration.",
+  },
+  {
     image: "logo_dailup-min.png",
     url: "https://dailup.vercel.app/",
     name: "Dailup",
