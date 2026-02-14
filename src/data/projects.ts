@@ -5,7 +5,7 @@ export const projects: ProjectItem[] = [
     image: "logo_cijs-min.png",
     url: "https://compress-images-js.vercel.app/",
     name: "Compress Images JS",
-    stack: "Vue 2, Vuex",
+    stack: "Vue, Vuex",
     description:
       "Image compression application. Images can be downloaded individually or in a compressed file.",
   },
@@ -45,7 +45,7 @@ export const projects: ProjectItem[] = [
     image: "logo_dailup-min.png",
     url: "https://dailup.vercel.app/",
     name: "Dailup",
-    stack: "Vue 3, Pinia",
+    stack: "Vue, Pinia",
     description:
       "Application for tracking daily work time. Tracks time by shift.",
   },
