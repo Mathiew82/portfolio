@@ -53,7 +53,7 @@ export const projects: ProjectItem[] = [
     image: "logo_multiplication-tables-desktop-min.png",
     url: "https://mathiew82.github.io/multiplication-tables-desktop/",
     name: "Tablas de Multiplicar - Desktop App",
-    stack: "Electron",
+    stack: "Electron, JavaScript",
     description:
       "A simple game so that children can learn the multiplication tables in a more fun way.",
   },
