@@ -37,7 +37,7 @@ export const projects: ProjectItem[] = [
     image: "logo_okivim-min.png",
     url: "https://okivim.org/",
     name: "Okivim - Neovim Configuration",
-    stack: "Lua",
+    stack: "Lua, React, Docusaurus",
     description:
       "Minimal, elegant and efficient Neovim configuration.",
   },
