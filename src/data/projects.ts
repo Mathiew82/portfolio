@@ -18,6 +18,14 @@ export const projects: ProjectItem[] = [
       "Movie search project powered by the TMDb API. You can search for movies and get information about them.",
   },
   {
+    image: "logo_okivim-min.png",
+    url: "https://okivim.org/",
+    name: "Okivim - Neovim Configuration",
+    stack: "Lua, React, Docusaurus",
+    description:
+      "Minimal, elegant and efficient Neovim configuration.",
+  },
+  {
     image: "logo_curripulum-min.webp",
     url: "https://curripulum.vercel.app/",
     name: "Curripulum",
@@ -32,14 +40,6 @@ export const projects: ProjectItem[] = [
     stack: "Rust, GTK 4",
     description:
       "This is a simple password generator app built in Rust with GTK 4.",
-  },
-  {
-    image: "logo_okivim-min.png",
-    url: "https://okivim.org/",
-    name: "Okivim - Neovim Configuration",
-    stack: "Lua, React, Docusaurus",
-    description:
-      "Minimal, elegant and efficient Neovim configuration.",
   },
   {
     image: "logo_dailup-min.png",
