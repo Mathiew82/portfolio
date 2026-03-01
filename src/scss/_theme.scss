@@ -21,6 +21,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-size: 14px;
   padding: 70px var(--default-space) var(--default-space) var(--default-space);
   @media (max-width: 768px) {
     padding: 70px var(--half-space) var(--default-space) var(--half-space);
@@ -33,6 +34,7 @@ h3,
 h4 {
   color: var(--white-color);
   font-family: "Silkscreen", sans-serif;
+  font-weight: normal;
   letter-spacing: -2px;
   margin-bottom: var(--default-space);
 }
@@ -59,7 +61,6 @@ a {
     color: var(--primary-color);
     cursor: pointer;
     transition: color ease 0.01s;
-
     > i {
       cursor: pointer;
     }
@@ -115,14 +116,23 @@ header {
     padding: 0;
     .logo {
       width: 80px;
-      position: relative;
-      bottom: 2px;
+      height: 60px;
+      color: var(--white-color);
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: "Silkscreen", sans-serif;
+      font-size: 40px;
+      letter-spacing: -4px;
     }
   }
 
   .menu-desktop {
-    height: 70px;
-    display: block;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding-top: 4px;
     > ul {
       display: flex;
@@ -133,8 +143,8 @@ header {
       > a {
         color: var(--white-color);
         font-size: 14px;
-        margin-right: var(--default-space);
-        padding: 14px 24px;
+        margin-left: var(--double-space);
+        padding: 14px 0;
         position: relative;
         &:last-of-type {
           margin-right: 0;
@@ -142,7 +152,7 @@ header {
         &:after {
           width: 0%;
           height: 1px;
-          background-color: var(--primary-color);
+          background-color: var(--white-color);
           content: "";
           position: absolute;
           bottom: 0;
@@ -150,11 +160,8 @@ header {
           transform: translateX(-50%);
           transition: width var(--min-time-transition);
         }
-        &:hover {
-          color: var(--primary-color);
-          &:after {
-            width: 100%;
-          }
+        &:hover:after {
+          width: 100%;
         }
       }
       @media (max-width: 992px) {
@@ -179,19 +186,17 @@ header {
     z-index: 2;
     > ul {
       margin-top: 85px;
-      > li {
+      > li > a {
+        width: 100%;
+        border-bottom: 1px solid var(--grey-color);
+        font-family: "Gill Sans Bold";
+        font-size: 22px;
+        justify-content: flex-start;
+        padding: var(--default-space);
+      }
+      &:last-of-type {
         > a {
-          width: 100%;
-          border-bottom: 1px solid var(--grey-color);
-          font-family: "Gill Sans Bold";
-          font-size: 22px;
-          justify-content: flex-start;
-          padding: var(--default-space);
-        }
-        &:last-of-type {
-          > a {
-            border-bottom: none;
-          }
+          border-bottom: none;
         }
       }
     }
@@ -233,24 +238,22 @@ header {
         top: 28px;
       }
     }
-    &.open {
-      > span {
-        &:nth-child(1) {
-          top: 16px;
-          width: 0%;
-          left: 50%;
-        }
-        &:nth-child(2) {
-          transform: rotate(45deg);
-        }
-        &:nth-child(3) {
-          transform: rotate(-45deg);
-        }
-        &:nth-child(4) {
-          top: 16px;
-          width: 0%;
-          left: 50%;
-        }
+    &.open > span {
+      &:nth-child(1) {
+        top: 16px;
+        width: 0%;
+        left: 50%;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        top: 16px;
+        width: 0%;
+        left: 50%;
       }
     }
     @media (max-width: 768px) {
@@ -274,11 +277,12 @@ header {
   margin-top: 7px;
   > li {
     border: 1px solid var(--dark-grey-color);
+    border-radius: 12px;
     color: var(--white-color);
     display: inline-block;
     font-size: 14px;
-    margin: 0 var(--half-space) var(--half-space) 0;
-    padding: 8px 24px;
+    margin: 0 var(--mid-half-space) var(--half-space) 0;
+    padding: 10px 24px;
     &:hover {
       color: var(--primary-color);
     }
@@ -303,18 +307,18 @@ header {
     padding: 0 0 0 var(--default-space);
     > .item-list__name {
       line-height: 18px;
-      color: var(--primary-color);
-      font-size: 18px;
+      color: var(--white-color);
+      font-size: 16px;
       > span {
-        color: var(--grey-color);
+        color: var(--light-grey-color);
         display: block;
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 0.2rem;
       }
     }
     > .item-list__info,
     > .item-list__info > a {
-      color: var(--light-grey-color);
+      color: var(--grey-color);
       font-size: 12px;
       margin-bottom: 8px;
       &:focus-visible {
@@ -323,19 +327,17 @@ header {
       }
     }
     > .item-list__info > a {
-      border: 1px solid var(--grey-color);
+      border: 1px solid var(--dark-grey-color);
+      border-radius: 8px;
       color: var(--grey-color);
       font-family: arial;
-      font-size: 16px;
+      font-size: 14px;
       margin: 0.3rem 0 0.5rem 0;
-      padding: 6px 1.5rem;
+      padding: 3px 0.8rem;
       &:hover {
         background-color: var(--primary-color);
         color: var(--bg-color);
       }
-    }
-    > .item-list__description {
-      font-size: 16px;
     }
     @media (max-width: 768px) {
       padding: 0;
@@ -360,11 +362,11 @@ header {
     padding: var(--default-space);
 
     > .repos-title {
-      color: var(--primary-color);
+      color: var(--white-color);
       display: block;
       font-size: 16px;
       &:hover {
-        color: var(--white-color);
+        color: var(--primary-color);
       }
       &:focus-visible {
         outline: 3px solid var(--blue-color);
@@ -380,7 +382,7 @@ header {
     }
 
     > .repos-description {
-      font-size: 14px;
+      font-size: 12px;
       margin-top: var(--mid-half-space);
       margin-bottom: var(--default-space);
     }
@@ -518,7 +520,6 @@ footer {
   .footer__content {
     width: 100%;
     max-width: 1200px;
-    color: var(--light-grey-color);
     display: flex;
     font-size: 14px;
     justify-content: space-between;
@@ -541,7 +542,8 @@ footer {
         width: 30px;
         height: 30px;
         cursor: pointer;
-        transition: color var(--extra-time-transition);
+        fill: var(--white-color);
+        transition: fill var(--extra-time-transition);
         > path {
           cursor: pointer;
         }
@@ -552,7 +554,7 @@ footer {
       }
       &:hover {
         > svg {
-          fill: var(--violet-color);
+          fill: var(--primary-color);
           transition: color ease 0.01s;
         }
       }
@@ -563,7 +565,7 @@ footer {
 .go-up-button {
   width: 50px;
   height: 50px;
-  background-color: var(--black-color);
+  background-color: var(--bg-color);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -585,16 +587,14 @@ footer {
     display: block;
     margin: auto;
     transform: rotate(45deg);
-    transition: border-color var(--max-time-transition);
+    transition: border-color var(--mid-time-transition);
   }
   &.show {
     display: flex;
   }
   &:hover {
-    background-color: var(--primary-color);
-    transition: background-color ease 0.01s;
     &::before {
-      border-color: var(--bg-color);
+      border-color: var(--primary-color);
     }
   }
   &:focus-visible {
