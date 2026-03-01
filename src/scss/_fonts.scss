@@ -1,35 +1,72 @@
+/* Ranade Font */
 @font-face {
-  font-family: 'Gill Sans';
-  src: url('/fonts/GillSans.eot');
-  src: url('/fonts/GillSans.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GillSans.woff2') format('woff2'),
-    url('/fonts/GillSans.woff') format('woff'),
-    url('/fonts/GillSans.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "Silkscreen";
+  src:
+    url("/fonts/Silkscreen-Regular.woff2") format("woff2"),
+    url("/fonts/Silkscreen-Regular.woff") format("woff"),
+    url("/fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
+/* RobotoMono Font */
 @font-face {
-  font-family: 'Gill Sans BoldItalic';
-  src: url('/fonts/GillSans-BoldItalic.eot');
-  src: url('/fonts/GillSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GillSans-BoldItalic.woff2') format('woff2'),
-    url('/fonts/GillSans-BoldItalic.woff') format('woff'),
-    url('/fonts/GillSans-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-Regular.woff2") format("woff2"),
+    url("/fonts/RobotoMono-Regular.woff") format("woff"),
+    url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-Italic.woff2") format("woff2"),
+    url("/fonts/RobotoMono-Italic.woff") format("woff"),
+    url("/fonts/RobotoMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-optical-sizing: auto;
   font-style: italic;
-  font-display: swap;
 }
-
 @font-face {
-  font-family: 'Gill Sans Bold';
-  src: url('/fonts/GillSans-Bold.eot');
-  src: url('/fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GillSans-Bold.woff2') format('woff2'),
-    url('/fonts/GillSans-Bold.woff') format('woff'),
-    url('/fonts/GillSans-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-SemiBold.woff2") format("woff2"),
+    url("/fonts/RobotoMono-SemiBold.woff") format("woff"),
+    url("/fonts/RobotoMono-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-optical-sizing: auto;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-SemiBoldItalic.woff2") format("woff2"),
+    url("/fonts/RobotoMono-SemiBoldItalic.woff") format("woff"),
+    url("/fonts/RobotoMono-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-Bold.woff2") format("woff2"),
+    url("/fonts/RobotoMono-Bold.woff") format("woff"),
+    url("/fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src:
+    url("/fonts/RobotoMono-BoldItalic.woff2") format("woff2"),
+    url("/fonts/RobotoMono-BoldItalic.woff") format("woff"),
+    url("/fonts/RobotoMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: italic;
 }

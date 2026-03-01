@@ -2,7 +2,7 @@
   box-sizing: border-box;
   cursor: default;
   line-height: 1.5;
-  font-family: "Gill Sans";
+  font-family: "Roboto Mono", monospace;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +21,6 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-size: 20px;
   padding: 70px var(--default-space) var(--default-space) var(--default-space);
   @media (max-width: 768px) {
     padding: 70px var(--half-space) var(--default-space) var(--half-space);
@@ -32,37 +31,32 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--black-color);
-  font-family: "Gill Sans Bold";
+  color: var(--white-color);
+  font-family: "Silkscreen", sans-serif;
   letter-spacing: -2px;
   margin-bottom: var(--default-space);
 }
 
 h1 {
-  line-height: 1.2;
-  font-family: "Gill Sans BoldItalic";
-  font-size: 34px;
-  font-style: italic;
+  font-size: 40px;
   margin: 10px 0 var(--half-space);
-  text-transform: uppercase;
-  transform: rotate(-1deg);
   > span {
     transition: background-color var(--extra-time-transition);
   }
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 a {
-  color: var(--black-color);
+  color: var(--white-color);
   display: inline-block;
   position: relative;
   text-decoration: none;
   transition: all var(--mid-time-transition);
   &:hover {
-    color: var(--violet-color);
+    color: var(--primary-color);
     cursor: pointer;
     transition: color ease 0.01s;
 
@@ -137,9 +131,8 @@ header {
     }
     li {
       > a {
-        color: var(--black-color);
-        font-family: "Gill Sans Bold";
-        font-size: 18px;
+        color: var(--white-color);
+        font-size: 14px;
         margin-right: var(--default-space);
         padding: 14px 24px;
         position: relative;
@@ -148,8 +141,8 @@ header {
         }
         &:after {
           width: 0%;
-          height: 3px;
-          background-color: var(--violet-color);
+          height: 1px;
+          background-color: var(--primary-color);
           content: "";
           position: absolute;
           bottom: 0;
@@ -158,7 +151,7 @@ header {
           transition: width var(--min-time-transition);
         }
         &:hover {
-          color: var(--violet-color);
+          color: var(--primary-color);
           &:after {
             width: 100%;
           }
@@ -280,19 +273,16 @@ header {
 .skills {
   margin-top: 7px;
   > li {
-    border-radius: var(--border-radius-default);
+    border: 1px solid var(--dark-grey-color);
+    color: var(--white-color);
     display: inline-block;
-    font-family: arial;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
     margin: 0 var(--half-space) var(--half-space) 0;
     padding: 8px 24px;
+    &:hover {
+      color: var(--primary-color);
+    }
   }
-}
-
-.photo {
-  border: 10px solid var(--light-grey-color);
-  border-radius: 100px;
 }
 
 .item-list {
@@ -302,9 +292,6 @@ header {
   margin-bottom: var(--double-space);
 
   > .item-list-left-content {
-    > .item-list__logo {
-      border-radius: 100px;
-    }
     @media (max-width: 768px) {
       > .item-list__logo {
         display: none;
@@ -313,39 +300,42 @@ header {
   }
 
   > .item-list-right-content {
-    padding: var(--mid-half-space) 0 0 var(--default-space);
+    padding: 0 0 0 var(--default-space);
     > .item-list__name {
       line-height: 18px;
-      font-family: "Gill Sans Bold";
-      font-size: 20px;
+      color: var(--primary-color);
+      font-size: 18px;
       > span {
-        color: var(--violet-color);
+        color: var(--grey-color);
         display: block;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 0.2rem;
       }
     }
     > .item-list__info,
     > .item-list__info > a {
-      color: #678;
-      font-size: 18px;
+      color: var(--light-grey-color);
+      font-size: 12px;
+      margin-bottom: 8px;
       &:focus-visible {
         outline: 3px solid var(--blue-color);
         outline-offset: 3px;
       }
     }
     > .item-list__info > a {
-      border: 2px solid var(--violet-color);
-      border-radius: var(--border-radius-default);
-      color: var(--violet-color);
+      border: 1px solid var(--grey-color);
+      color: var(--grey-color);
       font-family: arial;
       font-size: 16px;
       margin: 0.3rem 0 0.5rem 0;
       padding: 6px 1.5rem;
       &:hover {
-        background-color: var(--violet-color);
-        color: var(--white-color);
+        background-color: var(--primary-color);
+        color: var(--bg-color);
       }
+    }
+    > .item-list__description {
+      font-size: 16px;
     }
     @media (max-width: 768px) {
       padding: 0;
@@ -366,14 +356,16 @@ header {
   .repos__item {
     width: 100%;
     min-height: 110px;
-    border: 1px solid #abc;
-    border-radius: var(--border-radius-default);
+    border: 1px solid var(--dark-grey-color);
     padding: var(--default-space);
 
     > .repos-title {
+      color: var(--primary-color);
       display: block;
-      font-family: "Gill Sans Bold";
-      font-size: 20px;
+      font-size: 16px;
+      &:hover {
+        color: var(--white-color);
+      }
       &:focus-visible {
         outline: 3px solid var(--blue-color);
         outline-offset: 3px;
@@ -388,6 +380,8 @@ header {
     }
 
     > .repos-description {
+      font-size: 14px;
+      margin-top: var(--mid-half-space);
       margin-bottom: var(--default-space);
     }
 
@@ -399,17 +393,25 @@ header {
     }
 
     > .repos-language {
-      font-size: 16px;
+      color: var(--grey-color);
+      font-size: 14px;
       svg {
         width: 16px;
         height: 16px;
         fill: var(--grey-color);
         position: relative;
         top: 2px;
+        left: 4px;
       }
-      a:focus-visible {
-        outline: 3px solid var(--blue-color);
-        outline-offset: 3px;
+      a {
+        color: var(--grey-color);
+        &:hover {
+          color: var(--white-color);
+        }
+        &:focus-visible {
+          outline: 3px solid var(--blue-color);
+          outline-offset: 3px;
+        }
       }
     }
 
@@ -487,14 +489,18 @@ header {
     font-weight: bold;
     font-family: monospace;
     font-size: 20px;
-    background: linear-gradient(90deg, #000 50%, #0000 0) right/200% 100%;
+    background: linear-gradient(90deg, #fff 50%, #ffff 0) right/200% 100%;
     animation: l21 2s infinite linear;
     &::before {
       content: "Loading...";
       color: #0000;
       padding: 0 5px;
       background: inherit;
-      background-image: linear-gradient(90deg, #fff 50%, #000 0);
+      background-image: linear-gradient(
+        90deg,
+        var(--bg-color) 50%,
+        var(--white-color) 0
+      );
       background-clip: text;
     }
   }
@@ -512,7 +518,9 @@ footer {
   .footer__content {
     width: 100%;
     max-width: 1200px;
+    color: var(--light-grey-color);
     display: flex;
+    font-size: 14px;
     justify-content: space-between;
     align-items: center;
     padding: 0;
@@ -568,64 +576,31 @@ footer {
   bottom: 12px;
   right: 12px;
   transition: background-color var(--extra-time-transition);
+  &::before {
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid var(--white-color);
+    border-left: 3px solid var(--white-color);
+    content: "";
+    display: block;
+    margin: auto;
+    transform: rotate(45deg);
+    transition: border-color var(--max-time-transition);
+  }
   &.show {
     display: flex;
   }
   &:hover {
-    background-color: var(--violet-color);
+    background-color: var(--primary-color);
     transition: background-color ease 0.01s;
+    &::before {
+      border-color: var(--bg-color);
+    }
   }
   &:focus-visible {
     outline: 3px solid var(--blue-color);
     outline-offset: 3px;
   }
-  &::before {
-    width: 12px;
-    height: 12px;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
-    content: "";
-    display: block;
-    margin: auto;
-    transform: rotate(45deg);
-  }
-}
-
-.skill-green {
-  border: 2px solid var(--green-color);
-  color: var(--green-color);
-}
-.skill-blue {
-  border: 2px solid var(--blue-color);
-  color: var(--blue-color);
-}
-.skill-violet {
-  border: 2px solid var(--violet-color);
-  color: var(--violet-color);
-}
-.skill-light-violet {
-  border: 2px solid var(--light-violet-color);
-  color: var(--light-violet-color);
-}
-.skill-pink {
-  border: 2px solid var(--pink-color);
-  color: var(--pink-color);
-}
-.skill-meat {
-  border: 2px solid var(--meat-color);
-  color: var(--meat-color);
-}
-.skill-red {
-  border: 2px solid var(--red-color);
-  color: var(--red-color);
-}
-.skill-yellow {
-  border: 2px solid var(--yellow-color);
-  color: var(--yellow-color);
-}
-.skill-brown {
-  border: 2px solid var(--brown-color);
-  color: var(--brown-color);
 }
 
 .technology-green {
