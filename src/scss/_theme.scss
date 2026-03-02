@@ -40,6 +40,7 @@ h4 {
 }
 
 h1 {
+  line-height: 50px;
   font-size: 50px;
   margin: 10px 0 var(--half-space);
   > span {
@@ -213,8 +214,7 @@ header {
       margin-top: 85px;
       > li > a {
         width: 100%;
-        border-bottom: 1px solid var(--neutral-300);
-        font-family: "Gill Sans Bold";
+        border-bottom: 1px solid var(--neutral-100);
         font-size: 22px;
         justify-content: flex-start;
         padding: var(--default-space);
@@ -229,7 +229,7 @@ header {
         margin-top: auto;
 
         > a {
-          border-top: 1px solid var(--neutral-300);
+          border-top: 1px solid var(--neutral-100);
           border-bottom: none;
           font-size: 18px;
           padding: var(--default-space);
@@ -242,21 +242,21 @@ header {
   }
 
   .burguer-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: none;
-    margin-top: 12px;
+    margin-top: 14px;
     position: relative;
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
     z-index: 3;
     > span {
       width: 100%;
-      height: 6px;
-      background: var(--neutral-0);
+      height: 3px;
+      background: var(--neutral-900);
       display: block;
       opacity: 1;
       position: absolute;
@@ -610,7 +610,7 @@ footer {
   height: 50px;
   background-color: var(--neutral-0);
   border: none;
-  border-radius: 50%;
+  border-radius: 12px;
   cursor: pointer;
   display: none;
   justify-content: center;
