@@ -61,6 +61,16 @@
               <a href="#{{id}}"> {{name}} </a>
             </li>
             {{/each}}
+            <li>
+              <button
+                id="themeToggleDesktop"
+                class="theme-toggle-button"
+                type="button"
+                aria-label="Switch to light mode"
+              >
+                Light mode
+              </button>
+            </li>
           </ul>
         </nav>
         <nav id="menuMobile" class="menu-mobile" aria-label="Mobile navigation">
@@ -70,6 +80,11 @@
               <a href="#{{id}}" id="{{id}}LinkMobile"> {{name}} </a>
             </li>
             {{/each}}
+            <li class="menu-mobile-theme-item">
+              <a href="#" id="themeToggleMobile" aria-label="Switch to light mode">
+                Light mode
+              </a>
+            </li>
           </ul>
         </nav>
         <button
