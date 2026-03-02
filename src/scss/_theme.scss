@@ -9,18 +9,18 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-color);
+  background-color: var(--neutral-0);
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(black, 0.6);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--black-color);
+  background-color: var(--neutral-0);
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--neutral-0);
+  color: var(--neutral-700);
   font-size: 14px;
   padding: 70px var(--default-space) var(--default-space) var(--default-space);
   @media (max-width: 768px) {
@@ -32,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--white-color);
+  color: var(--neutral-900);
   font-family: "Silkscreen", sans-serif;
   font-weight: normal;
   letter-spacing: -2px;
@@ -52,7 +52,7 @@ h2 {
 }
 
 a {
-  color: var(--white-color);
+  color: var(--neutral-900);
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -80,9 +80,9 @@ ul {
 }
 
 .skip-link {
-  background: var(--black-color);
+  background: var(--neutral-0);
   border-radius: 8px;
-  color: var(--white-color);
+  color: var(--neutral-900);
   padding: 10px 14px;
   position: fixed;
   top: -100px;
@@ -98,7 +98,7 @@ ul {
 
 header {
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--neutral-0);
   display: flex;
   justify-content: center;
   position: fixed;
@@ -117,7 +117,7 @@ header {
     .logo {
       width: 80px;
       height: 60px;
-      color: var(--white-color);
+      color: var(--neutral-900);
       font-weight: bold;
       display: inline-flex;
       justify-content: flex-start;
@@ -141,7 +141,7 @@ header {
     }
     li {
       > a {
-        color: var(--white-color);
+        color: var(--neutral-900);
         font-size: 14px;
         margin-left: var(--double-space);
         padding: 14px 0;
@@ -152,7 +152,7 @@ header {
         &:after {
           width: 0%;
           height: 1px;
-          background-color: var(--white-color);
+          background-color: var(--neutral-900);
           content: "";
           position: absolute;
           bottom: 0;
@@ -178,7 +178,7 @@ header {
   .menu-mobile {
     width: 100%;
     height: 100vh;
-    background-color: var(--bg-color);
+    background-color: var(--neutral-0);
     position: absolute;
     top: 0;
     left: 100%;
@@ -188,7 +188,7 @@ header {
       margin-top: 85px;
       > li > a {
         width: 100%;
-        border-bottom: 1px solid var(--grey-color);
+        border-bottom: 1px solid var(--neutral-300);
         font-family: "Gill Sans Bold";
         font-size: 22px;
         justify-content: flex-start;
@@ -220,7 +220,7 @@ header {
     > span {
       width: 100%;
       height: 6px;
-      background: var(--black-color);
+      background: var(--neutral-0);
       display: block;
       opacity: 1;
       position: absolute;
@@ -277,9 +277,9 @@ header {
   margin-top: 7px;
   > li {
     background-color: rgba(#86898f, 0.1);
-    border: 1px solid var(--dark-grey-color);
+    border: 1px solid var(--dark-neutral-300);
     border-radius: 12px;
-    color: var(--white-color);
+    color: var(--neutral-900);
     display: inline-block;
     font-size: 14px;
     margin: 0 var(--mid-half-space) var(--half-space) 0;
@@ -308,10 +308,10 @@ header {
     padding: 0 0 0 var(--default-space);
     > .item-list__name {
       line-height: 18px;
-      color: var(--white-color);
+      color: var(--neutral-900);
       font-size: 16px;
       > span {
-        color: var(--light-grey-color);
+        color: var(--light-neutral-300);
         display: block;
         font-size: 12px;
         margin-top: 0.2rem;
@@ -319,7 +319,7 @@ header {
     }
     > .item-list__info,
     > .item-list__info > a {
-      color: var(--grey-color);
+      color: var(--neutral-300);
       font-size: 12px;
       margin-bottom: 6px;
       &:focus-visible {
@@ -328,16 +328,16 @@ header {
       }
     }
     > .item-list__info > a {
-      background-color: var(--dark-grey-color);
+      background-color: var(--dark-neutral-300);
       border-radius: 6px;
-      color: var(--light-grey-color);
+      color: var(--light-neutral-300);
       font-family: arial;
       font-size: 12px;
       margin: 0.3rem 0 2px 0;
       padding: 3px 0.8rem;
       &:hover {
-        background-color: var(--white-color);
-        color: var(--bg-color);
+        background-color: var(--neutral-900);
+        color: var(--neutral-0);
       }
     }
     @media (max-width: 768px) {
@@ -360,12 +360,12 @@ header {
     width: 100%;
     min-height: 110px;
     background-color: rgba(#86898f, 0.1);
-    border: 1px solid var(--dark-grey-color);
+    border: 1px solid var(--dark-neutral-300);
     border-radius: 12px;
     padding: var(--default-space);
 
     > .repos-title {
-      color: var(--white-color);
+      color: var(--neutral-900);
       display: block;
       font-size: 16px;
       &:hover {
@@ -378,7 +378,7 @@ header {
       > svg {
         width: 20px;
         height: 20px;
-        fill: var(--grey-color);
+        fill: var(--neutral-300);
         position: relative;
         top: 3px;
       }
@@ -398,20 +398,20 @@ header {
     }
 
     > .repos-language {
-      color: var(--grey-color);
+      color: var(--neutral-300);
       font-size: 12px;
       svg {
         width: 16px;
         height: 16px;
-        fill: var(--grey-color);
+        fill: var(--neutral-300);
         position: relative;
         top: 2px;
         left: 4px;
       }
       a {
-        color: var(--grey-color);
+        color: var(--neutral-300);
         &:hover {
-          color: var(--white-color);
+          color: var(--neutral-900);
         }
         &:focus-visible {
           outline: 3px solid var(--blue-color);
@@ -503,8 +503,8 @@ header {
       background: inherit;
       background-image: linear-gradient(
         90deg,
-        var(--bg-color) 50%,
-        var(--white-color) 0
+        var(--neutral-0) 50%,
+        var(--neutral-900) 0
       );
       background-clip: text;
     }
@@ -545,7 +545,7 @@ footer {
         width: 30px;
         height: 30px;
         cursor: pointer;
-        fill: var(--white-color);
+        fill: var(--neutral-900);
         transition: fill var(--extra-time-transition);
         > path {
           cursor: pointer;
@@ -568,7 +568,7 @@ footer {
 .go-up-button {
   width: 50px;
   height: 50px;
-  background-color: var(--bg-color);
+  background-color: var(--neutral-0);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -584,8 +584,8 @@ footer {
   &::before {
     width: 12px;
     height: 12px;
-    border-top: 3px solid var(--white-color);
-    border-left: 3px solid var(--white-color);
+    border-top: 3px solid var(--neutral-900);
+    border-left: 3px solid var(--neutral-900);
     content: "";
     display: block;
     margin: auto;
