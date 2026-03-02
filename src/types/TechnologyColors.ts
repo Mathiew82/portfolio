@@ -1,4 +1,5 @@
 export interface TechnologyColors {
+  SCSS: string;
   CSS: string;
   HTML: string;
   JavaScript: string;
