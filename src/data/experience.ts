@@ -27,7 +27,7 @@ export const experience: ExperienceItem[] = [
     companyName: "Oh! my brand",
     position: "Front-End Developer",
     dates: "oct. 2018 - jul. 2020",
-    description: `CSS, SASS, JavaScript, Vue.js, Vuex, Vue StoreFront, Riot.js, GIT`,
+    description: `CSS, SASS, JavaScript, Typescript, Vue.js, Vuex, Vue StoreFront, Riot.js, GIT`,
   },
   {
     image: "logo_pasiona-min.webp",
