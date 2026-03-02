@@ -4,8 +4,10 @@
 
   // Neutral Colors
   --neutral-0: #0a0a0a;
+  --neutral-50: #191919;
   --neutral-100: #26292f;
-  --neutral-300: #86898f;
+  --neutral-200: #36393f;
+  --neutral-300: #96999f;
   --neutral-500: #b6b9bf;
   --neutral-700: #c0c4c6;
   --neutral-900: #ffffff;
@@ -39,9 +41,15 @@
 }
 
 :root[data-theme="light"] {
+  // Global Colors
+  --primary-color: #56b;
+
+  // Neutral Colors
   --neutral-0: #f0f0ee;
+  --neutral-50: #e6e6e4;
   --neutral-100: #e4e4e1;
-  --neutral-300: #c9c9c4;
+  --neutral-200: #d4d4d1;
+  --neutral-300: #999994;
   --neutral-500: #9a9a94;
   --neutral-700: #4a4a46;
   --neutral-900: #1c1c1a;

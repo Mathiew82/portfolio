@@ -40,7 +40,7 @@ h4 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 10px 0 var(--half-space);
   > span {
     transition: background-color var(--extra-time-transition);
@@ -118,13 +118,12 @@ header {
       width: 80px;
       height: 60px;
       color: var(--neutral-900);
-      font-weight: bold;
       display: inline-flex;
       justify-content: flex-start;
       align-items: center;
       font-family: "Silkscreen", sans-serif;
       font-size: 40px;
-      letter-spacing: -4px;
+      letter-spacing: -6px;
     }
   }
 
@@ -152,7 +151,7 @@ header {
         &:after {
           width: 0%;
           height: 1px;
-          background-color: var(--neutral-900);
+          background-color: var(--neutral-300);
           content: "";
           position: absolute;
           bottom: 0;
@@ -173,8 +172,8 @@ header {
 
     .theme-toggle-button {
       background: transparent;
-      border: 1px solid var(--neutral-300);
-      border-radius: 20px;
+      border: 1px solid var(--neutral-200);
+      border-radius: 12px;
       color: var(--neutral-900);
       cursor: pointer;
       font-size: 12px;
@@ -313,8 +312,7 @@ header {
 .skills {
   margin-top: 7px;
   > li {
-    background-color: rgba(#86898f, 0.1);
-    border: 1px solid var(--dark-neutral-300);
+    background-color: var(--neutral-50);
     border-radius: 12px;
     color: var(--neutral-900);
     display: inline-block;
@@ -348,7 +346,7 @@ header {
       color: var(--neutral-900);
       font-size: 16px;
       > span {
-        color: var(--light-neutral-300);
+        color: var(--neutral-300);
         display: block;
         font-size: 12px;
         margin-top: 0.2rem;
@@ -365,15 +363,15 @@ header {
       }
     }
     > .item-list__info > a {
-      background-color: var(--dark-neutral-300);
+      border: 1px solid var(--neutral-200);
       border-radius: 6px;
-      color: var(--light-neutral-300);
+      color: var(--neutral-500);
       font-family: arial;
       font-size: 12px;
       margin: 0.3rem 0 2px 0;
       padding: 3px 0.8rem;
       &:hover {
-        background-color: var(--neutral-900);
+        background-color: var(--neutral-500);
         color: var(--neutral-0);
       }
     }
@@ -396,8 +394,7 @@ header {
   .repos__item {
     width: 100%;
     min-height: 110px;
-    background-color: rgba(#86898f, 0.1);
-    border: 1px solid var(--dark-neutral-300);
+    background-color: var(--neutral-50);
     border-radius: 12px;
     padding: var(--default-space);
 
@@ -582,10 +579,13 @@ footer {
         width: 30px;
         height: 30px;
         cursor: pointer;
-        fill: var(--neutral-900);
-        transition: fill var(--extra-time-transition);
         > path {
           cursor: pointer;
+          fill: var(--neutral-900);
+          transition: fill var(--extra-time-transition);
+          &.linkedin {
+            fill: var(--neutral-0);
+          }
         }
       }
       &:focus-visible {
@@ -593,9 +593,12 @@ footer {
         outline-offset: 3px;
       }
       &:hover {
-        > svg {
+        > svg > path {
           fill: var(--primary-color);
           transition: color ease 0.01s;
+          &.linkedin {
+            fill: var(--neutral-0);
+          }
         }
       }
     }
