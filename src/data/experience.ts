@@ -13,7 +13,7 @@ export const experience: ExperienceItem[] = [
     companyName: "Housfy",
     position: "Front-End Developer",
     dates: "dic. 2020 - abr. 2021",
-    description: `CSS, SASS, JavaScript, Vue.js, Nuxt.js, Vuex, Jest, GIT`,
+    description: `CSS, SASS, JavaScript, Typescript, Vue.js, Vuex, Nuxt.js, Jest, GIT`,
   },
   {
     image: "logo_crealogix-min.webp",
