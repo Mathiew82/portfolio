@@ -352,11 +352,11 @@ header {
         margin-top: 0.2rem;
       }
     }
-    > .item-list__info,
-    > .item-list__info > a {
+    > .item-list__info {
       color: var(--neutral-300);
       font-size: 12px;
-      margin-bottom: 6px;
+      font-style: italic;
+      margin-bottom: 4px;
       &:focus-visible {
         outline: 3px solid var(--blue-color);
         outline-offset: 3px;
@@ -368,6 +368,7 @@ header {
       color: var(--neutral-500);
       font-family: arial;
       font-size: 12px;
+      font-style: normal;
       margin: 0.3rem 0 2px 0;
       padding: 3px 0.8rem;
       &:hover {
