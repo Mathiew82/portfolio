@@ -528,7 +528,12 @@ header {
     font-weight: bold;
     font-family: monospace;
     font-size: 20px;
-    background: linear-gradient(90deg, #fff 50%, #ffff 0) right/200% 100%;
+    background: linear-gradient(
+        90deg,
+        var(--neutral-900) 50%,
+        var(--neutral-0) 0
+      )
+      right/200% 100%;
     animation: l21 2s infinite linear;
     &::before {
       content: "Loading...";
