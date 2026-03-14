@@ -9,7 +9,7 @@ const loaderWrapper = document.querySelector<HTMLDivElement>(".loader-wrapper");
 
 // Variables and functions
 const TECHNOLOGY_COLORS: TechnologyColors = {
-  SCSS: "technology-violet",
+  SCSS: "technology-pink",
   CSS: "technology-blue",
   HTML: "technology-red",
   JavaScript: "technology-yellow",
