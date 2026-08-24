@@ -1,4 +1,12 @@
 {
-  "$schema": "https://agent-skills-discovery.github.io/schema.json",
-  "skills": []
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "portfolio-qa",
+      "type": "skill-md",
+      "description": "Answer questions about Alberto Mateo based on his portfolio at amateo82.es. Use when a user asks about his skills, work experience, projects, repositories, or how to contact him.",
+      "url": "https://amateo82.es/.well-known/agent-skills/portfolio-qa/SKILL.md",
+      "digest": "sha256:c33cdf2e1d64b582a38ada6f61e97c319529177b6ccd39921589f70ca420905a"
+    }
+  ]
 }
