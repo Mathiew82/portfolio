@@ -7,18 +7,6 @@
   },
   "entries": [
     {
-      "identifier": "amateo82.es:webmcp:tools",
-      "displayName": "WebMCP Portfolio Tools",
-      "type": "application/json",
-      "url": "https://amateo82.es/webmcp.js",
-      "description": "WebMCP tools to interact with the portfolio: get developer info, search projects by technology, and retrieve contact details.",
-      "representativeQueries": [
-        "Who is Alberto Mateo?",
-        "Search projects with React",
-        "How to contact the developer"
-      ]
-    },
-    {
       "identifier": "amateo82.es:auth:agent-registration",
       "displayName": "Agent Registration & OAuth Server",
       "type": "text/markdown",
