@@ -1,0 +1,16 @@
+{
+  "specVersion": "1.0",
+  "host": "amateo82.es",
+  "entries": [
+    {
+      "urn": "urn:air:amateo82.es:site:home",
+      "displayName": "Homepage",
+      "type": "text/html",
+      "url": "https://amateo82.es/",
+      "representativeQueries": [
+        "What is amateo82.es about?",
+        "Homepage of amateo82"
+      ]
+    }
+  ]
+}

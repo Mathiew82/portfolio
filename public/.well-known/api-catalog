@@ -1,0 +1,17 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://amateo82.es",
+      "link": [
+        {
+          "rel": "service-desc",
+          "href": "https://amateo82.es/openapi.json"
+        },
+        {
+          "rel": "service-doc",
+          "href": "https://amateo82.es/docs"
+        }
+      ]
+    }
+  ]
+}

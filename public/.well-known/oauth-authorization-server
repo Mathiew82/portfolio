@@ -1,0 +1,7 @@
+{
+  "issuer": "https://amateo82.es",
+  "authorization_endpoint": "https://amateo82.es/auth",
+  "token_endpoint": "https://amateo82.es/token",
+  "jwks_uri": "https://amateo82.es/keys",
+  "grant_types_supported": ["authorization_code", "refresh_token"]
+}

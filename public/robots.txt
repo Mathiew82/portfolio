@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://amateo82.es/sitemap.xml
+
+# Content Signals for AI agents
+Content-Signal: ai-train=no
+Content-Signal: search=yes
+Content-Signal: ai-input=no

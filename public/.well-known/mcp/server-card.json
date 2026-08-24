@@ -1,0 +1,14 @@
+{
+  "serverInfo": {
+    "name": "amateo82-es",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "sse",
+    "endpoint": "https://amateo82.es/api/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false
+  }
+}
