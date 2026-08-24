@@ -1,15 +1,34 @@
 {
-  "specVersion": "1.0",
-  "host": "amateo82.es",
+  "specVersion": "1.0.0",
+  "host": {
+    "name": "Alberto Mateo Portfolio",
+    "description": "Professional portfolio of a Frontend Developer specialized in JavaScript, TypeScript, and clean UI.",
+    "url": "https://amateo82.es"
+  },
   "entries": [
     {
-      "urn": "urn:air:amateo82.es:site:home",
-      "displayName": "Homepage",
-      "type": "text/html",
-      "url": "https://amateo82.es/",
+      "identifier": "amateo82.es:webmcp:tools",
+      "displayName": "WebMCP Portfolio Tools",
+      "type": "application/json",
+      "url": "https://amateo82.es/webmcp.js",
+      "description": "WebMCP tools to interact with the portfolio: get developer info, search projects by technology, and retrieve contact details.",
       "representativeQueries": [
-        "What is amateo82.es about?",
-        "Homepage of amateo82"
+        "Who is Alberto Mateo?",
+        "Search projects with React",
+        "How to contact the developer"
+      ]
+    },
+    {
+      "identifier": "amateo82.es:auth:agent-registration",
+      "displayName": "Agent Registration & OAuth Server",
+      "type": "text/markdown",
+      "url": "https://amateo82.es/auth.md",
+      "description": "OAuth 2.0 server configuration and registration instructions for AI agents. Includes authorization and token endpoints, JWKS URI, and supported scopes (read, write, admin).",
+      "representativeQueries": [
+        "OAuth 2.0 configuration for agents",
+        "How to register an agent",
+        "Authentication endpoints for AI",
+        "JWKS URI for amateo82.es"
       ]
     }
   ]
